@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+pydantic
+python-dotenv
+pandas
+numpy
+scipy
+yfinance
+scikit-learn
+python-binance

@@ -1,0 +1,456 @@
+{
+  "timestamp_utc": "2026-04-22T19:01:40.743634",
+  "train_symbol": "BTC-USD",
+  "years": 7,
+  "date_range": {
+    "start": "2019-04-21",
+    "end": "2026-04-22"
+  },
+  "autorresearch": {
+    "best_config": {
+      "hidden_layers": [
+        128,
+        64
+      ],
+      "alpha": 0.0001,
+      "learning_rate_init": 0.0007,
+      "threshold": 0.001,
+      "max_iter": 350,
+      "trade_mode": "long_only"
+    },
+    "best_score": 0.7251428043834025,
+    "experiments": [
+      {
+        "trial": 1,
+        "config": {
+          "hidden_layers": [
+            32,
+            16
+          ],
+          "alpha": 0.0001,
+          "learning_rate_init": 0.001,
+          "threshold": 0.0,
+          "max_iter": 300,
+          "trade_mode": "long_short"
+        },
+        "metrics": {
+          "total_return": 0.24373786686149468,
+          "cagr": 0.1342503258523735,
+          "sharpe": 0.5007315389015832,
+          "max_drawdown": 0.3800485638311103,
+          "trade_count": 240,
+          "win_rate": 0.4936708860759494,
+          "daily_hit_rate": 0.4936708860759494
+        },
+        "score": 0.16557515759202177
+      },
+      {
+        "trial": 2,
+        "config": {
+          "hidden_layers": [
+            64,
+            32
+          ],
+          "alpha": 0.0001,
+          "learning_rate_init": 0.001,
+          "threshold": 0.0,
+          "max_iter": 350,
+          "trade_mode": "long_short"
+        },
+        "metrics": {
+          "total_return": -0.49886543512786796,
+          "cagr": -0.32901293686290156,
+          "sharpe": -0.5980757278101883,
+          "max_drawdown": 0.5560059518651643,
+          "trade_count": 271,
+          "win_rate": 0.46044303797468356,
+          "daily_hit_rate": 0.46044303797468356
+        },
+        "score": -0.9589657863007794
+      },
+      {
+        "trial": 3,
+        "config": {
+          "hidden_layers": [
+            128,
+            64
+          ],
+          "alpha": 5e-05,
+          "learning_rate_init": 0.0008,
+          "threshold": 0.0,
+          "max_iter": 350,
+          "trade_mode": "long_short"
+        },
+        "metrics": {
+          "total_return": -0.19831879216901793,
+          "cagr": -0.1198474616413463,
+          "sharpe": -0.02931331058726072,
+          "max_drawdown": 0.556860936945683,
+          "trade_count": 255,
+          "win_rate": 0.49683544303797467,
+          "daily_hit_rate": 0.49683544303797467
+        },
+        "score": -0.5149219098313441
+      },
+      {
+        "trial": 4,
+        "config": {
+          "hidden_layers": [
+            64,
+            32
+          ],
+          "alpha": 0.001,
+          "learning_rate_init": 0.001,
+          "threshold": 0.001,
+          "max_iter": 350,
+          "trade_mode": "long_short"
+        },
+        "metrics": {
+          "total_return": -0.5807986956680518,
+          "cagr": -0.39474676768183425,
+          "sharpe": -0.84229168992796,
+          "max_drawdown": 0.6194977968256996,
+          "trade_count": 296,
+          "win_rate": 0.45723684210526316,
+          "daily_hit_rate": 0.439873417721519
+        },
+        "score": -1.1410766253593856
+      },
+      {
+        "trial": 5,
+        "config": {
+          "hidden_layers": [
+            128,
+            64,
+            32
+          ],
+          "alpha": 0.0001,
+          "learning_rate_init": 0.0005,
+          "threshold": 0.001,
+          "max_iter": 400,
+          "trade_mode": "long_short"
+        },
+        "metrics": {
+          "total_return": -0.5994412729466184,
+          "cagr": -0.4104411600679526,
+          "sharpe": -0.8880108003587969,
+          "max_drawdown": 0.7418900811231278,
+          "trade_count": 309,
+          "win_rate": 0.4902597402597403,
+          "daily_hit_rate": 0.4778481012658228
+        },
+        "score": -1.2426856166469031
+      },
+      {
+        "trial": 6,
+        "config": {
+          "hidden_layers": [
+            96,
+            48
+          ],
+          "alpha": 0.0001,
+          "learning_rate_init": 0.0007,
+          "threshold": 0.002,
+          "max_iter": 350,
+          "trade_mode": "long_short"
+        },
+        "metrics": {
+          "total_return": -0.4107982420627001,
+          "cagr": -0.2632498898219917,
+          "sharpe": -0.4213023333489024,
+          "max_drawdown": 0.6011571187506546,
+          "trade_count": 321,
+          "win_rate": 0.47538200339558573,
+          "daily_hit_rate": 0.4430379746835443
+        },
+        "score": -0.8546661979161413
+      },
+      {
+        "trial": 7,
+        "config": {
+          "hidden_layers": [
+            128,
+            64
+          ],
+          "alpha": 0.001,
+          "learning_rate_init": 0.0005,
+          "threshold": 0.002,
+          "max_iter": 400,
+          "trade_mode": "long_short"
+        },
+        "metrics": {
+          "total_return": -0.14836648845024625,
+          "cagr": -0.0885795862077422,
+          "sharpe": 0.032472945914052545,
+          "max_drawdown": 0.4310603709666513,
+          "trade_count": 302,
+          "win_rate": 0.506872852233677,
+          "daily_hit_rate": 0.46677215189873417
+        },
+        "score": -0.3755458669567871
+      },
+      {
+        "trial": 8,
+        "config": {
+          "hidden_layers": [
+            64,
+            64
+          ],
+          "alpha": 0.0005,
+          "learning_rate_init": 0.001,
+          "threshold": 0.003,
+          "max_iter": 350,
+          "trade_mode": "long_short"
+        },
+        "metrics": {
+          "total_return": -0.8110602857968788,
+          "cagr": -0.6180084306095699,
+          "sharpe": -1.8521331446570342,
+          "max_drawdown": 0.8662195687619111,
+          "trade_count": 305,
+          "win_rate": 0.46678321678321677,
+          "daily_hit_rate": 0.4224683544303797
+        },
+        "score": -1.7727018954967648
+      },
+      {
+        "trial": 9,
+        "config": {
+          "hidden_layers": [
+            32,
+            16
+          ],
+          "alpha": 0.0001,
+          "learning_rate_init": 0.001,
+          "threshold": 0.0,
+          "max_iter": 300,
+          "trade_mode": "long_only"
+        },
+        "metrics": {
+          "total_return": 0.285343444647433,
+          "cagr": 0.15601116986802288,
+          "sharpe": 0.5819488054223296,
+          "max_drawdown": 0.2837498763569807,
+          "trade_count": 239,
+          "win_rate": 0.5053763440860215,
+          "daily_hit_rate": 0.2974683544303797
+        },
+        "score": 0.275454137910346
+      },
+      {
+        "trial": 10,
+        "config": {
+          "hidden_layers": [
+            64,
+            32
+          ],
+          "alpha": 0.0001,
+          "learning_rate_init": 0.001,
+          "threshold": 0.001,
+          "max_iter": 350,
+          "trade_mode": "long_only"
+        },
+        "metrics": {
+          "total_return": -0.020612939502157812,
+          "cagr": -0.01195697251377481,
+          "sharpe": 0.14156598083677863,
+          "max_drawdown": 0.3514593856067023,
+          "trade_count": 280,
+          "win_rate": 0.47129909365558914,
+          "daily_hit_rate": 0.2468354430379747
+        },
+        "score": -0.1837553035050858
+      },
+      {
+        "trial": 11,
+        "config": {
+          "hidden_layers": [
+            128,
+            64
+          ],
+          "alpha": 0.0001,
+          "learning_rate_init": 0.0007,
+          "threshold": 0.001,
+          "max_iter": 350,
+          "trade_mode": "long_only"
+        },
+        "metrics": {
+          "total_return": 0.6076542120149162,
+          "cagr": 0.3154755370621243,
+          "sharpe": 1.015770616675732,
+          "max_drawdown": 0.24983904814842373,
+          "trade_count": 253,
+          "win_rate": 0.5279503105590062,
+          "daily_hit_rate": 0.2689873417721519
+        },
+        "score": 0.7251428043834025
+      },
+      {
+        "trial": 12,
+        "config": {
+          "hidden_layers": [
+            96,
+            48
+          ],
+          "alpha": 0.001,
+          "learning_rate_init": 0.0008,
+          "threshold": 0.002,
+          "max_iter": 350,
+          "trade_mode": "long_only"
+        },
+        "metrics": {
+          "total_return": -0.18294813147694755,
+          "cagr": -0.1101406194099438,
+          "sharpe": -0.13459870023431855,
+          "max_drawdown": 0.40787590850069033,
+          "trade_count": 280,
+          "win_rate": 0.48172757475083056,
+          "daily_hit_rate": 0.22943037974683544
+        },
+        "score": -0.4498518326485996
+      }
+    ]
+  },
+  "evaluation_symbols": [
+    "ETH-USD",
+    "SOL-USD",
+    "BNB-USD",
+    "XRP-USD",
+    "ADA-USD",
+    "DOGE-USD",
+    "TRX-USD",
+    "AVAX-USD",
+    "DOT-USD",
+    "LINK-USD",
+    "LTC-USD"
+  ],
+  "symbol_reports": [
+    {
+      "symbol": "ETH-USD",
+      "total_return": -0.5167705211389413,
+      "cagr": -0.09967947463408289,
+      "sharpe": 0.1552853123100814,
+      "max_drawdown": 0.8681364922617951,
+      "trade_count": 1108,
+      "win_rate": 0.5018234865061999,
+      "daily_hit_rate": 0.2721518987341772,
+      "rows": 2528
+    },
+    {
+      "symbol": "SOL-USD",
+      "total_return": 1.3723128933939241,
+      "cagr": 0.15615973708086028,
+      "sharpe": 0.6241425938142914,
+      "max_drawdown": 0.9007995964399285,
+      "trade_count": 882,
+      "win_rate": 0.48253968253968255,
+      "daily_hit_rate": 0.27979751495628163,
+      "rows": 2173
+    },
+    {
+      "symbol": "BNB-USD",
+      "total_return": 5.111557407133605,
+      "cagr": 0.29869419553423127,
+      "sharpe": 0.7435182311448572,
+      "max_drawdown": 0.7369226080777492,
+      "trade_count": 1086,
+      "win_rate": 0.5193621867881549,
+      "daily_hit_rate": 0.27056962025316456,
+      "rows": 2528
+    },
+    {
+      "symbol": "XRP-USD",
+      "total_return": 0.35041139722546544,
+      "cagr": 0.04432836632261017,
+      "sharpe": 0.3978772080785315,
+      "max_drawdown": 0.8792394957938432,
+      "trade_count": 1047,
+      "win_rate": 0.5093659942363112,
+      "daily_hit_rate": 0.27966772151898733,
+      "rows": 2528
+    },
+    {
+      "symbol": "ADA-USD",
+      "total_return": -0.3811458645377753,
+      "cagr": -0.0669414182727347,
+      "sharpe": 0.2771462120745468,
+      "max_drawdown": 0.9323856280617455,
+      "trade_count": 1094,
+      "win_rate": 0.49469964664310956,
+      "daily_hit_rate": 0.27689873417721517,
+      "rows": 2528
+    },
+    {
+      "symbol": "DOGE-USD",
+      "total_return": -0.9012296430778187,
+      "cagr": -0.2841182932828067,
+      "sharpe": 0.044885357035856534,
+      "max_drawdown": 0.9769239985211141,
+      "trade_count": 1030,
+      "win_rate": 0.4817618719889883,
+      "daily_hit_rate": 0.27689873417721517,
+      "rows": 2528
+    },
+    {
+      "symbol": "TRX-USD",
+      "total_return": 1.1258017548791557,
+      "cagr": 0.11503548802780705,
+      "sharpe": 0.47893177995695396,
+      "max_drawdown": 0.778109200299908,
+      "trade_count": 1035,
+      "win_rate": 0.5394345238095238,
+      "daily_hit_rate": 0.2867879746835443,
+      "rows": 2528
+    },
+    {
+      "symbol": "AVAX-USD",
+      "total_return": -0.18267085533166516,
+      "cagr": -0.03596680173092781,
+      "sharpe": 0.38032363752568776,
+      "max_drawdown": 0.9167450449566293,
+      "trade_count": 834,
+      "win_rate": 0.49476439790575916,
+      "daily_hit_rate": 0.282089552238806,
+      "rows": 2010
+    },
+    {
+      "symbol": "DOT-USD",
+      "total_return": -0.11557840753438253,
+      "cagr": -0.021725167248452304,
+      "sharpe": 0.351775401492428,
+      "max_drawdown": 0.9469982329221458,
+      "trade_count": 851,
+      "win_rate": 0.4750219106047327,
+      "daily_hit_rate": 0.26555609995100443,
+      "rows": 2041
+    },
+    {
+      "symbol": "LINK-USD",
+      "total_return": -0.7863525844143806,
+      "cagr": -0.19976085039711855,
+      "sharpe": 0.15892287450328754,
+      "max_drawdown": 0.9644228516921474,
+      "trade_count": 1104,
+      "win_rate": 0.49329569513055754,
+      "daily_hit_rate": 0.276503164556962,
+      "rows": 2528
+    },
+    {
+      "symbol": "LTC-USD",
+      "total_return": -0.3785608196817677,
+      "cagr": -0.06637968556975771,
+      "sharpe": 0.24055038451815125,
+      "max_drawdown": 0.7856398620412689,
+      "trade_count": 1114,
+      "win_rate": 0.520618556701031,
+      "daily_hit_rate": 0.27966772151898733,
+      "rows": 2528
+    }
+  ],
+  "summary": {
+    "symbols_evaluated": 11,
+    "avg_total_return": 0.4270704324468563,
+    "avg_cagr": -0.014577627651851988,
+    "avg_daily_profitable_rate": 0.27696261243330417
+  }
+}

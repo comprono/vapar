@@ -1,0 +1,6232 @@
+{
+  "strategy": "EnsembleIntelligence",
+  "symbols": [
+    "AAPL",
+    "ABBV",
+    "ADA-USD",
+    "AI",
+    "AMC",
+    "AMZN",
+    "ATOM-USD",
+    "AUDUSD=X",
+    "AVAX-USD",
+    "BCH-USD",
+    "BHARTIARTL.NS",
+    "BNB-USD",
+    "BTC-USD",
+    "COIN",
+    "CVX",
+    "DOGE-USD",
+    "DOT-USD",
+    "ETC-USD",
+    "ETH-USD",
+    "EURUSD=X",
+    "FIL-USD",
+    "GBP=X",
+    "GBPUSD=X",
+    "GME",
+    "GOOGL",
+    "HDFCBANK.NS",
+    "HINDUNILVR.NS",
+    "ICICIBANK.NS",
+    "INFY.NS",
+    "ITC.NS",
+    "JNJ",
+    "JPY=X",
+    "KO",
+    "KOTAKBANK.NS",
+    "LINK-USD",
+    "LTC-USD",
+    "MARA",
+    "MATIC-USD",
+    "META",
+    "MMM",
+    "MSFT",
+    "MSTR",
+    "NVDA",
+    "PEP",
+    "PG",
+    "PLTR",
+    "RELIANCE.NS",
+    "RIOT",
+    "SBIN.NS",
+    "SHIB-USD",
+    "SOL-USD",
+    "T",
+    "TCS.NS",
+    "TRX-USD",
+    "TSLA",
+    "UNI-USD",
+    "UPST",
+    "USDCAD=X",
+    "USDCHF=X",
+    "VZ",
+    "XLB",
+    "XLC",
+    "XLE",
+    "XLF",
+    "XLI",
+    "XLK",
+    "XLM-USD",
+    "XLP",
+    "XLRE",
+    "XLU",
+    "XLV",
+    "XLY",
+    "XOM",
+    "XRP-USD"
+  ],
+  "initial_capital": 10.0,
+  "final_value": 6.52,
+  "metrics": {
+    "total_pnl": -3.48,
+    "total_return_pct": -34.83,
+    "sharpe_ratio": 3.47,
+    "max_drawdown_pct": -98.72,
+    "win_rate_pct": 52.83,
+    "profit_factor": 2.7,
+    "total_trades": 159,
+    "winning_trades": 84,
+    "losing_trades": 75
+  },
+  "trades": [
+    {
+      "symbol": "ICICIBANK.NS",
+      "entry_time": "2023-01-23 00:00:00+05:30",
+      "exit_time": "2023-01-30 00:00:00+05:30",
+      "entry_price": 850.6402587890625,
+      "exit_price": 803.6046752929688,
+      "shares": 0.0023511701678064476,
+      "pnl": -0.11447807208064331,
+      "return_pct": -5.723903604032166,
+      "reason": "RSI Oversold (33.8) | Golden Cross (Gap: 0.19%)"
+    },
+    {
+      "symbol": "USDCAD=X",
+      "entry_time": "2023-01-23 00:00:00+00:00",
+      "exit_time": "2023-03-22 00:00:00+00:00",
+      "entry_price": 1.3371000289916992,
+      "exit_price": 1.3708800077438354,
+      "shares": 1.1963203689452095,
+      "pnl": 0.03717206496707348,
+      "return_pct": 2.323835019196892,
+      "reason": "RSI Oversold (39.6) | Golden Cross (Gap: 0.11%)"
+    },
+    {
+      "symbol": "BHARTIARTL.NS",
+      "entry_time": "2023-01-25 00:00:00+05:30",
+      "exit_time": "2023-02-24 00:00:00+05:30",
+      "entry_price": 762.2931518554688,
+      "exit_price": 743.2481079101562,
+      "shares": 0.0021931648254254745,
+      "pnl": -0.04507082061368628,
+      "return_pct": -2.6958900463760727,
+      "reason": "RSI Oversold (39.9) | Golden Cross (Gap: 0.62%)"
+    },
+    {
+      "symbol": "UNI-USD",
+      "entry_time": "2023-01-25 00:00:00+00:00",
+      "exit_time": "2023-02-06 00:00:00+00:00",
+      "entry_price": 0.0002309999981662,
+      "exit_price": 0.000253000005614,
+      "shares": 5474.760687792332,
+      "pnl": 0.11779499171276697,
+      "return_pct": 9.31428901074687,
+      "reason": "RSI Oversold (18.9) | Golden Cross (Gap: 4.37%)"
+    },
+    {
+      "symbol": "MATIC-USD",
+      "entry_time": "2023-01-26 00:00:00+00:00",
+      "exit_time": "2023-02-14 00:00:00+00:00",
+      "entry_price": 1.122305989265442,
+      "exit_price": 1.2587729692459106,
+      "shares": 1.1511297265814848,
+      "pnl": 0.15435026658183792,
+      "return_pct": 11.947356808611326,
+      "reason": "RSI Overbought (68.8) | Golden Cross (Gap: 2.66%) | Price Breakout > Upper Band (1.11)"
+    },
+    {
+      "symbol": "JPY=X",
+      "entry_time": "2023-01-26 00:00:00+00:00",
+      "exit_time": "2023-03-21 00:00:00+00:00",
+      "entry_price": 129.23699951171875,
+      "exit_price": 131.39199829101562,
+      "shares": 0.009996516411283166,
+      "pnl": 0.01893709860974524,
+      "return_pct": 1.4658107110590894,
+      "reason": "RSI Oversold (30.4) | Golden Cross (Gap: 0.4%)"
+    },
+    {
+      "symbol": "LTC-USD",
+      "entry_time": "2023-01-29 00:00:00+00:00",
+      "exit_time": "2023-03-08 00:00:00+00:00",
+      "entry_price": 95.05005645751952,
+      "exit_price": 82.78353118896484,
+      "shares": 0.007726804075876905,
+      "pnl": -0.09615512273176985,
+      "return_pct": -13.092426580264968,
+      "reason": "RSI Overbought (61.2) | Golden Cross (Gap: 3.1%) | Price Breakout > Upper Band (93.44)"
+    },
+    {
+      "symbol": "ITC.NS",
+      "entry_time": "2023-01-30 00:00:00+05:30",
+      "exit_time": "2023-03-01 00:00:00+05:30",
+      "entry_price": 298.6813659667969,
+      "exit_price": 333.42315673828125,
+      "shares": 0.002466474903753195,
+      "pnl": 0.08413068510750965,
+      "return_pct": 11.420091822055998,
+      "reason": "RSI Overbought (60.3) | Golden Cross (Gap: 2.26%) | Price Breakout > Upper Band (298.44)"
+    },
+    {
+      "symbol": "KO",
+      "entry_time": "2023-01-30 00:00:00-05:00",
+      "exit_time": "2023-03-01 00:00:00-05:00",
+      "entry_price": 55.40843963623047,
+      "exit_price": 53.782005310058594,
+      "shares": 0.0046414004905772676,
+      "pnl": -0.008055729664125877,
+      "return_pct": -3.132419505968668,
+      "reason": "RSI Oversold (32.5) | Golden Cross (Gap: 0.02%)"
+    },
+    {
+      "symbol": "AI",
+      "entry_time": "2023-01-31 00:00:00-05:00",
+      "exit_time": "2023-02-13 00:00:00-05:00",
+      "entry_price": 19.850000381469727,
+      "exit_price": 21.13999938964844,
+      "shares": 0.012982271788597864,
+      "pnl": 0.016214974413554573,
+      "return_pct": 6.292236697252501,
+      "reason": "RSI Overbought (85.6) | Golden Cross (Gap: 20.82%) | Price Breakout > Upper Band (18.32)"
+    },
+    {
+      "symbol": "PLTR",
+      "entry_time": "2023-01-31 00:00:00-05:00",
+      "exit_time": "2023-02-14 00:00:00-05:00",
+      "entry_price": 7.78000020980835,
+      "exit_price": 9.220000267028809,
+      "shares": 0.03312314820134939,
+      "pnl": 0.04713424177004766,
+      "return_pct": 18.290488667977534,
+      "reason": "RSI Overbought (68.4) | Golden Cross (Gap: 5.29%) | Price Breakout > Upper Band (7.76)"
+    },
+    {
+      "symbol": "META",
+      "entry_time": "2023-02-02 00:00:00-05:00",
+      "exit_time": "2023-02-16 00:00:00-05:00",
+      "entry_price": 187.46055603027344,
+      "exit_price": 171.2438201904297,
+      "shares": 0.0014408543123903374,
+      "pnl": -0.023882794515084654,
+      "return_pct": -8.842094874287913,
+      "reason": "RSI Overbought (85.7) | Golden Cross (Gap: 10.72%) | Price Breakout > Upper Band (167.4)"
+    },
+    {
+      "symbol": "GBP=X",
+      "entry_time": "2023-02-06 00:00:00+00:00",
+      "exit_time": "2023-03-21 00:00:00+00:00",
+      "entry_price": 0.8302099704742432,
+      "exit_price": 0.8145800232887268,
+      "shares": 1.6050167974618321,
+      "pnl": -0.027726243344481594,
+      "return_pct": -2.080767250893329,
+      "reason": "Golden Cross (Gap: 0.98%) | Price Breakout > Upper Band (0.83)"
+    },
+    {
+      "symbol": "AMC",
+      "entry_time": "2023-02-06 00:00:00-05:00",
+      "exit_time": "2023-03-07 00:00:00-05:00",
+      "entry_price": 68.0,
+      "exit_price": 60.09999847412109,
+      "shares": 0.0042540143600876615,
+      "pnl": -0.03415165916883944,
+      "return_pct": -11.806031653460343,
+      "reason": "RSI Overbought (60.2) | Golden Cross (Gap: 11.81%) | Price Breakout > Upper Band (67.19)"
+    },
+    {
+      "symbol": "PEP",
+      "entry_time": "2023-02-13 00:00:00-05:00",
+      "exit_time": "2023-05-22 00:00:00-04:00",
+      "entry_price": 161.0126495361328,
+      "exit_price": 170.18890380859375,
+      "shares": 0.0015425185101388603,
+      "pnl": 0.013643657542390886,
+      "return_pct": 5.493389956999212,
+      "reason": "RSI Overbought (69.5) | Golden Cross (Gap: 2.18%) | Price Breakout > Upper Band (159.83)"
+    },
+    {
+      "symbol": "TRX-USD",
+      "entry_time": "2023-02-14 00:00:00+00:00",
+      "exit_time": "2023-02-24 00:00:00+00:00",
+      "entry_price": 0.0667459964752197,
+      "exit_price": 0.06785199791193,
+      "shares": 19.342443492034285,
+      "pnl": 0.018789316191103467,
+      "return_pct": 1.4553733461509022,
+      "reason": "RSI Overbought (64.7) | Golden Cross (Gap: 1.41%) | Price Breakout > Upper Band (0.07)"
+    },
+    {
+      "symbol": "PLTR",
+      "entry_time": "2023-02-15 00:00:00-05:00",
+      "exit_time": "2023-03-29 00:00:00-04:00",
+      "entry_price": 10.109999656677246,
+      "exit_price": 8.220000267028809,
+      "shares": 0.028890597832688627,
+      "pnl": -0.055132776926428956,
+      "return_pct": -18.875662258917767,
+      "reason": "RSI Overbought (73.0) | Golden Cross (Gap: 7.07%) | Price Breakout > Upper Band (9.59)"
+    },
+    {
+      "symbol": "XLE",
+      "entry_time": "2023-02-16 00:00:00-05:00",
+      "exit_time": "2023-03-15 00:00:00-04:00",
+      "entry_price": 39.57517623901367,
+      "exit_price": 34.94504928588867,
+      "shares": 0.00729221356675928,
+      "pnl": -0.034307291982966504,
+      "return_pct": -11.88787423266607,
+      "reason": "RSI Oversold (39.7) | Golden Cross (Gap: 0.91%)"
+    },
+    {
+      "symbol": "RIOT",
+      "entry_time": "2023-02-24 00:00:00-05:00",
+      "exit_time": "2023-03-03 00:00:00-05:00",
+      "entry_price": 5.869999885559082,
+      "exit_price": 6.340000152587891,
+      "shares": 0.14886254228034676,
+      "pnl": 0.06814782297542865,
+      "return_pct": 7.798812196178778,
+      "reason": "RSI Oversold (38.2) | Golden Cross (Gap: 1.21%)"
+    },
+    {
+      "symbol": "UPST",
+      "entry_time": "2023-02-24 00:00:00-05:00",
+      "exit_time": "2023-03-03 00:00:00-05:00",
+      "entry_price": 18.040000915527344,
+      "exit_price": 18.81999969482422,
+      "shares": 0.04843808546581362,
+      "pnl": 0.035996219674978236,
+      "return_pct": 4.119394351287932,
+      "reason": "RSI Oversold (37.0) | Golden Cross (Gap: 1.5%)"
+    },
+    {
+      "symbol": "T",
+      "entry_time": "2023-02-24 00:00:00-05:00",
+      "exit_time": "2023-03-09 00:00:00-05:00",
+      "entry_price": 16.48427391052246,
+      "exit_price": 15.696046829223633,
+      "shares": 0.05300949928961561,
+      "pnl": -0.04348938559555904,
+      "return_pct": -4.976909547195027,
+      "reason": "RSI Oversold (35.9) | Golden Cross (Gap: 0.49%)"
+    },
+    {
+      "symbol": "SBIN.NS",
+      "entry_time": "2023-03-02 00:00:00+05:30",
+      "exit_time": "2023-06-23 00:00:00+05:30",
+      "entry_price": 504.803955078125,
+      "exit_price": 534.716064453125,
+      "shares": 0.0006101351033222186,
+      "pnl": 0.017616180289578953,
+      "return_pct": 5.719564806301965,
+      "reason": "RSI Oversold (37.8) | Golden Cross (Gap: 0.5%)"
+    },
+    {
+      "symbol": "XLB",
+      "entry_time": "2023-03-03 00:00:00-05:00",
+      "exit_time": "2023-03-10 00:00:00-05:00",
+      "entry_price": 39.88774871826172,
+      "exit_price": 36.86080551147461,
+      "shares": 0.025034901331423512,
+      "pnl": -0.0777006170002087,
+      "return_pct": -7.7810652662778255,
+      "reason": "RSI Overbought (64.8) | Golden Cross (Gap: 1.98%) | Price Breakout > Upper Band (39.84)"
+    },
+    {
+      "symbol": "CVX",
+      "entry_time": "2023-03-03 00:00:00-05:00",
+      "exit_time": "2023-03-15 00:00:00-04:00",
+      "entry_price": 146.71214294433594,
+      "exit_price": 136.78663635253906,
+      "shares": 0.006806429471030018,
+      "pnl": -0.06948687502771611,
+      "return_pct": -6.958527880658883,
+      "reason": "RSI Oversold (37.2) | Golden Cross (Gap: 0.05%)"
+    },
+    {
+      "symbol": "AI",
+      "entry_time": "2023-03-03 00:00:00-05:00",
+      "exit_time": "2023-07-17 00:00:00-04:00",
+      "entry_price": 28.479999542236328,
+      "exit_price": 38.72999954223633,
+      "shares": 0.03506270609356495,
+      "pnl": 0.3570361730145931,
+      "return_pct": 35.75417894868389,
+      "reason": "RSI Overbought (62.5) | Golden Cross (Gap: 1.42%) | Price Breakout > Upper Band (27.91)"
+    },
+    {
+      "symbol": "KOTAKBANK.NS",
+      "entry_time": "2023-03-08 00:00:00+05:30",
+      "exit_time": "2023-03-14 00:00:00+05:30",
+      "entry_price": 1734.8642578125,
+      "exit_price": 1643.1962890625,
+      "shares": 7.698557329561164e-05,
+      "pnl": -0.007317173054891379,
+      "return_pct": -5.47858593943935,
+      "reason": "RSI Oversold (39.6) | Golden Cross (Gap: 1.12%)"
+    },
+    {
+      "symbol": "HDFCBANK.NS",
+      "entry_time": "2023-03-08 00:00:00+05:30",
+      "exit_time": "2023-03-15 00:00:00+05:30",
+      "entry_price": 784.568115234375,
+      "exit_price": 741.91259765625,
+      "shares": 0.0001702331727282375,
+      "pnl": -0.007521241746553137,
+      "return_pct": -5.6313782618883215,
+      "reason": "RSI Oversold (38.0) | Golden Cross (Gap: 0.79%)"
+    },
+    {
+      "symbol": "MSFT",
+      "entry_time": "2023-03-09 00:00:00-05:00",
+      "exit_time": "2023-04-25 00:00:00-04:00",
+      "entry_price": 247.0453948974609,
+      "exit_price": 269.6625671386719,
+      "shares": 0.004044209957427848,
+      "pnl": 0.08937891770161732,
+      "return_pct": 8.945912263755366,
+      "reason": "RSI Oversold (37.5) | Golden Cross (Gap: 0.53%)"
+    },
+    {
+      "symbol": "ICICIBANK.NS",
+      "entry_time": "2023-03-10 00:00:00+05:30",
+      "exit_time": "2023-03-13 00:00:00+05:30",
+      "entry_price": 822.2921142578125,
+      "exit_price": 808.3863525390625,
+      "shares": 0.000272654275794236,
+      "pnl": -0.004236076847210696,
+      "return_pct": -1.8894064428149866,
+      "reason": "RSI Oversold (39.9) | Golden Cross (Gap: 0.35%)"
+    },
+    {
+      "symbol": "RELIANCE.NS",
+      "entry_time": "2023-03-10 00:00:00+05:30",
+      "exit_time": "2023-03-13 00:00:00+05:30",
+      "entry_price": 1060.3046875,
+      "exit_price": 1042.866455078125,
+      "shares": 0.00021145003275699941,
+      "pnl": -0.004132030423821348,
+      "return_pct": -1.8429988846440024,
+      "reason": "RSI Oversold (35.8) | Golden Cross (Gap: 0.05%)"
+    },
+    {
+      "symbol": "GOOGL",
+      "entry_time": "2023-03-10 00:00:00-05:00",
+      "exit_time": "2023-03-30 00:00:00-04:00",
+      "entry_price": 89.95035552978516,
+      "exit_price": 100.1334228515625,
+      "shares": 0.009876004023461395,
+      "pnl": 0.09869074568096248,
+      "return_pct": 11.10944307506049,
+      "reason": "RSI Oversold (38.7) | Golden Cross (Gap: 0.6%)"
+    },
+    {
+      "symbol": "META",
+      "entry_time": "2023-03-15 00:00:00-04:00",
+      "exit_time": "2023-05-11 00:00:00-04:00",
+      "entry_price": 196.3782501220703,
+      "exit_price": 234.15435791015625,
+      "shares": 0.00530419800012026,
+      "pnl": 0.19808832518338182,
+      "return_pct": 19.01716465893724,
+      "reason": "RSI Overbought (77.9) | Golden Cross (Gap: 4.29%) | Price Breakout > Upper Band (193.25)"
+    },
+    {
+      "symbol": "BTC-USD",
+      "entry_time": "2023-03-19 00:00:00+00:00",
+      "exit_time": "2023-03-28 00:00:00+00:00",
+      "entry_price": 28038.67578125,
+      "exit_price": 27268.130859375,
+      "shares": 6.872198460642085e-06,
+      "pnl": -0.005675416977423686,
+      "return_pct": -2.945402040234326,
+      "reason": "RSI Overbought (73.8) | Golden Cross (Gap: 15.34%) | Price Breakout > Upper Band (27837.86)"
+    },
+    {
+      "symbol": "XRP-USD",
+      "entry_time": "2023-03-21 00:00:00+00:00",
+      "exit_time": "2023-04-05 00:00:00+00:00",
+      "entry_price": 0.4697099924087524,
+      "exit_price": 0.5062350034713745,
+      "shares": 2.2228834990336814,
+      "pnl": 0.07902143236581893,
+      "return_pct": 7.568301003016852,
+      "reason": "RSI Overbought (72.2) | Golden Cross (Gap: 7.83%) | Price Breakout > Upper Band (0.42)"
+    },
+    {
+      "symbol": "ADA-USD",
+      "entry_time": "2023-03-21 00:00:00+00:00",
+      "exit_time": "2023-04-08 00:00:00+00:00",
+      "entry_price": 0.3712359964847564,
+      "exit_price": 0.3856349885463714,
+      "shares": 2.812525189753587,
+      "pnl": 0.03836880916956065,
+      "return_pct": 3.6747840203432713,
+      "reason": "RSI Overbought (60.7) | Golden Cross (Gap: 4.17%) | Price Breakout > Upper Band (0.37)"
+    },
+    {
+      "symbol": "XLM-USD",
+      "entry_time": "2023-03-21 00:00:00+00:00",
+      "exit_time": "2023-04-08 00:00:00+00:00",
+      "entry_price": 0.0965429991483688,
+      "exit_price": 0.1044140011072158,
+      "shares": 10.814979860445872,
+      "pnl": 0.0829513817558809,
+      "return_pct": 7.944693065526173,
+      "reason": "RSI Overbought (66.4) | Golden Cross (Gap: 5.53%) | Price Breakout > Upper Band (0.09)"
+    },
+    {
+      "symbol": "EURUSD=X",
+      "entry_time": "2023-03-22 00:00:00+00:00",
+      "exit_time": "2023-05-15 00:00:00+01:00",
+      "entry_price": 1.0774236917495728,
+      "exit_price": 1.0852696895599363,
+      "shares": 0.9313711791348755,
+      "pnl": 0.0052932659474707044,
+      "return_pct": 0.5274902039536008,
+      "reason": "Golden Cross (Gap: 0.63%) | Price Breakout > Upper Band (1.08)"
+    },
+    {
+      "symbol": "KOTAKBANK.NS",
+      "entry_time": "2023-03-24 00:00:00+05:30",
+      "exit_time": "2023-06-09 00:00:00+05:30",
+      "entry_price": 1686.9617919921875,
+      "exit_price": 1866.26025390625,
+      "shares": 0.0001397596454551855,
+      "pnl": 0.024562092414411235,
+      "return_pct": 10.417855383708574,
+      "reason": "RSI Oversold (35.7) | Golden Cross (Gap: 0.31%)"
+    },
+    {
+      "symbol": "ITC.NS",
+      "entry_time": "2023-03-28 00:00:00+05:30",
+      "exit_time": "2023-05-12 00:00:00+05:30",
+      "entry_price": 334.3475952148437,
+      "exit_price": 370.18157958984375,
+      "shares": 0.0007065326792707737,
+      "pnl": 0.02482010810391666,
+      "return_pct": 10.50686641775367,
+      "reason": "RSI Oversold (31.7) | Golden Cross (Gap: 0.05%)"
+    },
+    {
+      "symbol": "HDFCBANK.NS",
+      "entry_time": "2023-03-28 00:00:00+05:30",
+      "exit_time": "2023-07-07 00:00:00+05:30",
+      "entry_price": 760.34130859375,
+      "exit_price": 808.093017578125,
+      "shares": 0.0003106861347462313,
+      "pnl": 0.014348503093480736,
+      "return_pct": 6.074018882864475,
+      "reason": "RSI Oversold (36.5) | Golden Cross (Gap: 0.24%)"
+    },
+    {
+      "symbol": "HINDUNILVR.NS",
+      "entry_time": "2023-03-29 00:00:00+05:30",
+      "exit_time": "2023-05-25 00:00:00+05:30",
+      "entry_price": 2395.4189453125,
+      "exit_price": 2458.265625,
+      "shares": 0.00011512018819488736,
+      "pnl": 0.006676164511875804,
+      "return_pct": 2.420995927692383,
+      "reason": "Golden Cross (Gap: 1.24%) | Price Breakout > Upper Band (2389.19)"
+    },
+    {
+      "symbol": "T",
+      "entry_time": "2023-03-30 00:00:00-04:00",
+      "exit_time": "2023-04-20 00:00:00-04:00",
+      "entry_price": 16.347192764282227,
+      "exit_price": 15.336472511291504,
+      "shares": 0.05821529001480655,
+      "pnl": -0.06068384641444313,
+      "return_pct": -6.376653981495189,
+      "reason": "RSI Overbought (64.2) | Golden Cross (Gap: 1.89%) | Price Breakout > Upper Band (16.34)"
+    },
+    {
+      "symbol": "TCS.NS",
+      "entry_time": "2023-03-31 00:00:00+05:30",
+      "exit_time": "2023-05-22 00:00:00+05:30",
+      "entry_price": 3001.9677734375,
+      "exit_price": 3088.864990234375,
+      "shares": 0.00011085087355159468,
+      "pnl": 0.008957458258626316,
+      "return_pct": 2.6917805296981663,
+      "reason": "RSI Oversold (32.5) | Golden Cross (Gap: 0.19%)"
+    },
+    {
+      "symbol": "ETH-USD",
+      "entry_time": "2023-04-05 00:00:00+00:00",
+      "exit_time": "2023-06-10 00:00:00+00:00",
+      "entry_price": 1909.114013671875,
+      "exit_price": 1752.384765625,
+      "shares": 0.0003580761322602347,
+      "pnl": -0.0574320982738461,
+      "return_pct": -8.401318395735089,
+      "reason": "RSI Overbought (67.5) | Golden Cross (Gap: 3.45%) | Price Breakout > Upper Band (1881.9)"
+    },
+    {
+      "symbol": "FIL-USD",
+      "entry_time": "2023-04-10 00:00:00+00:00",
+      "exit_time": "2023-05-08 00:00:00+00:00",
+      "entry_price": 6.176751136779785,
+      "exit_price": 4.541431903839111,
+      "shares": 0.10895058305815626,
+      "pnl": -0.1793367362067027,
+      "return_pct": -26.648919141000793,
+      "reason": "RSI Overbought (73.2) | Golden Cross (Gap: 3.38%) | Price Breakout > Upper Band (6.03)"
+    },
+    {
+      "symbol": "BTC-USD",
+      "entry_time": "2023-04-10 00:00:00+00:00",
+      "exit_time": "2023-06-05 00:00:00+00:00",
+      "entry_price": 29652.98046875,
+      "exit_price": 25760.09765625,
+      "shares": 2.269453616868265e-05,
+      "pnl": -0.08960474389445006,
+      "return_pct": -13.315005197490807,
+      "reason": "RSI Overbought (75.0) | Golden Cross (Gap: 1.35%) | Price Breakout > Upper Band (29139.89)"
+    },
+    {
+      "symbol": "SOL-USD",
+      "entry_time": "2023-04-11 00:00:00+00:00",
+      "exit_time": "2023-05-05 00:00:00+00:00",
+      "entry_price": 23.01882743835449,
+      "exit_price": 22.82611083984375,
+      "shares": 0.029220875074999753,
+      "pnl": -0.006970976864209444,
+      "return_pct": -1.0363757121330992,
+      "reason": "RSI Overbought (68.2) | Golden Cross (Gap: 2.58%) | Price Breakout > Upper Band (22.25)"
+    },
+    {
+      "symbol": "AUDUSD=X",
+      "entry_time": "2023-04-14 00:00:00+01:00",
+      "exit_time": "2023-05-25 00:00:00+01:00",
+      "entry_price": 0.6783998608589172,
+      "exit_price": 0.6545102000236511,
+      "shares": 0.49807492544140314,
+      "pnl": -0.012562730118539756,
+      "return_pct": -3.7179504819199924,
+      "reason": "RSI Overbought (61.2) | Golden Cross (Gap: 0.11%) | Price Breakout > Upper Band (0.68)"
+    },
+    {
+      "symbol": "GBP=X",
+      "entry_time": "2023-04-21 00:00:00+01:00",
+      "exit_time": "2023-05-01 00:00:00+01:00",
+      "entry_price": 0.8037999868392944,
+      "exit_price": 0.7963299751281738,
+      "shares": 0.639768413061208,
+      "pnl": -0.0058027901444318575,
+      "return_pct": -1.1284077906935126,
+      "reason": "RSI Oversold (38.3) | Golden Cross (Gap: 0.04%)"
+    },
+    {
+      "symbol": "USDCAD=X",
+      "entry_time": "2023-04-26 00:00:00+01:00",
+      "exit_time": "2023-09-01 00:00:00+01:00",
+      "entry_price": 1.361840009689331,
+      "exit_price": 1.3509700298309326,
+      "shares": 0.5370167907822138,
+      "pnl": -0.00729418624084921,
+      "return_pct": -0.9973851407858815,
+      "reason": "RSI Overbought (66.3) | Golden Cross (Gap: 0.76%) | Price Breakout > Upper Band (1.36)"
+    },
+    {
+      "symbol": "BHARTIARTL.NS",
+      "entry_time": "2023-04-27 00:00:00+05:30",
+      "exit_time": "2023-08-16 00:00:00+05:30",
+      "entry_price": 772.1102294921875,
+      "exit_price": 845.1356201171875,
+      "shares": 0.0007144158529289733,
+      "pnl": 0.051015110655786455,
+      "return_pct": 9.248439153869983,
+      "reason": "RSI Overbought (65.1) | Golden Cross (Gap: 1.12%) | Price Breakout > Upper Band (770.04)"
+    },
+    {
+      "symbol": "JPY=X",
+      "entry_time": "2023-05-01 00:00:00+01:00",
+      "exit_time": "2023-07-13 00:00:00+01:00",
+      "entry_price": 136.38600158691406,
+      "exit_price": 138.31500244140625,
+      "shares": 0.004540865363175401,
+      "pnl": 0.007511952891277707,
+      "return_pct": 1.21295428505517,
+      "reason": "RSI Overbought (66.9) | Golden Cross (Gap: 0.35%) | Price Breakout > Upper Band (135.91)"
+    },
+    {
+      "symbol": "TRX-USD",
+      "entry_time": "2023-05-05 00:00:00+00:00",
+      "exit_time": "2023-05-10 00:00:00+00:00",
+      "entry_price": 0.0710029974579811,
+      "exit_price": 0.0694079995155334,
+      "shares": 8.504293726351554,
+      "pnl": -0.014758427356174053,
+      "return_pct": -2.4441347570547167,
+      "reason": "RSI Overbought (79.1) | Golden Cross (Gap: 3.24%) | Price Breakout > Upper Band (0.07)"
+    },
+    {
+      "symbol": "NVDA",
+      "entry_time": "2023-05-08 00:00:00-04:00",
+      "exit_time": "2023-06-27 00:00:00-04:00",
+      "entry_price": 29.12679100036621,
+      "exit_price": 41.84555435180664,
+      "shares": 0.02145262208625686,
+      "pnl": 0.2713282806795698,
+      "return_pct": 43.42322161727063,
+      "reason": "Golden Cross (Gap: 2.68%) | Price Breakout > Upper Band (29.05)"
+    },
+    {
+      "symbol": "PLTR",
+      "entry_time": "2023-05-10 00:00:00-04:00",
+      "exit_time": "2023-07-26 00:00:00-04:00",
+      "entry_price": 9.9399995803833,
+      "exit_price": 16.43000030517578,
+      "shares": 0.0752753010316792,
+      "pnl": 0.4865517485749795,
+      "return_pct": 65.02646879043105,
+      "reason": "RSI Overbought (74.8) | Golden Cross (Gap: 13.46%) | Price Breakout > Upper Band (9.59)"
+    },
+    {
+      "symbol": "AMZN",
+      "entry_time": "2023-05-11 00:00:00-04:00",
+      "exit_time": "2023-07-12 00:00:00-04:00",
+      "entry_price": 112.18000030517578,
+      "exit_price": 130.8000030517578,
+      "shares": 0.006655723604225466,
+      "pnl": 0.12231238404747158,
+      "return_pct": 16.38172819863794,
+      "reason": "Golden Cross (Gap: 3.29%) | Price Breakout > Upper Band (110.88)"
+    },
+    {
+      "symbol": "GOOGL",
+      "entry_time": "2023-05-12 00:00:00-04:00",
+      "exit_time": "2023-06-26 00:00:00-04:00",
+      "entry_price": 116.6287841796875,
+      "exit_price": 117.45255279541016,
+      "shares": 0.006743406220790333,
+      "pnl": 0.003976500863827392,
+      "return_pct": 0.5056104141830605,
+      "reason": "RSI Overbought (75.2) | Golden Cross (Gap: 6.08%) | Price Breakout > Upper Band (113.97)"
+    },
+    {
+      "symbol": "UPST",
+      "entry_time": "2023-05-15 00:00:00-04:00",
+      "exit_time": "2023-06-28 00:00:00-04:00",
+      "entry_price": 20.26000022888184,
+      "exit_price": 34.84000015258789,
+      "shares": 0.05046899986883423,
+      "pnl": 0.7330571723250987,
+      "return_pct": 71.6924963436993,
+      "reason": "RSI Overbought (67.9) | Golden Cross (Gap: 20.89%) | Price Breakout > Upper Band (19.05)"
+    },
+    {
+      "symbol": "INFY.NS",
+      "entry_time": "2023-05-22 00:00:00+05:30",
+      "exit_time": "2023-06-07 00:00:00+05:30",
+      "entry_price": 1185.662353515625,
+      "exit_price": 1198.020263671875,
+      "shares": 0.000364672616854293,
+      "pnl": 0.003637327657770084,
+      "return_pct": 0.8412367576222515,
+      "reason": "Golden Cross (Gap: 0.62%) | Price Breakout > Upper Band (1185.09)"
+    },
+    {
+      "symbol": "ITC.NS",
+      "entry_time": "2023-05-25 00:00:00+05:30",
+      "exit_time": "2023-06-12 00:00:00+05:30",
+      "entry_price": 388.40673828125,
+      "exit_price": 393.3500061035156,
+      "shares": 0.001253115412218178,
+      "pnl": 0.005214853669809227,
+      "return_pct": 1.0714312260122252,
+      "reason": "RSI Overbought (60.1) | Golden Cross (Gap: 1.99%) | Price Breakout > Upper Band (384.71)"
+    },
+    {
+      "symbol": "GBP=X",
+      "entry_time": "2023-05-26 00:00:00+01:00",
+      "exit_time": "2023-06-14 00:00:00+01:00",
+      "entry_price": 0.8118000030517578,
+      "exit_price": 0.7932199835777283,
+      "shares": 0.4383601873371807,
+      "pnl": -0.008848317679382822,
+      "return_pct": -2.4864547160357637,
+      "reason": "RSI Overbought (76.6) | Golden Cross (Gap: 0.72%) | Price Breakout > Upper Band (0.81)"
+    },
+    {
+      "symbol": "AVAX-USD",
+      "entry_time": "2023-06-05 00:00:00+00:00",
+      "exit_time": "2023-06-10 00:00:00+00:00",
+      "entry_price": 13.897244453430176,
+      "exit_price": 11.680257797241213,
+      "shares": 0.018536224281806242,
+      "pnl": -0.04156867220717708,
+      "return_pct": -16.136754059083366,
+      "reason": "RSI Oversold (39.9) | Golden Cross (Gap: 0.11%)"
+    },
+    {
+      "symbol": "XLY",
+      "entry_time": "2023-06-12 00:00:00-04:00",
+      "exit_time": "2023-06-27 00:00:00-04:00",
+      "entry_price": 80.16352844238281,
+      "exit_price": 81.7306900024414,
+      "shares": 0.022773214680518617,
+      "pnl": 0.032002454854092255,
+      "return_pct": 1.7530008582691163,
+      "reason": "RSI Overbought (78.0) | Golden Cross (Gap: 3.55%) | Price Breakout > Upper Band (79.92)"
+    },
+    {
+      "symbol": "RELIANCE.NS",
+      "entry_time": "2023-06-14 00:00:00+05:30",
+      "exit_time": "2023-06-30 00:00:00+05:30",
+      "entry_price": 1164.910888671875,
+      "exit_price": 1164.180419921875,
+      "shares": 0.00030011042930680226,
+      "pnl": -0.0009182058826745498,
+      "return_pct": -0.26264327068674714,
+      "reason": "RSI Overbought (70.1) | Golden Cross (Gap: 1.09%) | Price Breakout > Upper Band (1162.0)"
+    },
+    {
+      "symbol": "GBPUSD=X",
+      "entry_time": "2023-06-14 00:00:00+01:00",
+      "exit_time": "2023-07-03 00:00:00+01:00",
+      "entry_price": 1.260684370994568,
+      "exit_price": 1.2693254947662354,
+      "shares": 0.30702147110398414,
+      "pnl": 0.001876243181475501,
+      "return_pct": 0.4847457497300146,
+      "reason": "RSI Overbought (67.5) | Golden Cross (Gap: 0.72%) | Price Breakout > Upper Band (1.26)"
+    },
+    {
+      "symbol": "BCH-USD",
+      "entry_time": "2023-06-18 00:00:00+00:00",
+      "exit_time": "2023-07-09 00:00:00+00:00",
+      "entry_price": 107.03558349609376,
+      "exit_price": 265.5489807128906,
+      "shares": 0.00036613480299636076,
+      "pnl": 0.05790085528623965,
+      "return_pct": 147.74601818128937,
+      "reason": "RSI Oversold (39.2) | Golden Cross (Gap: 0.84%)"
+    },
+    {
+      "symbol": "FIL-USD",
+      "entry_time": "2023-06-19 00:00:00+00:00",
+      "exit_time": "2023-07-12 00:00:00+00:00",
+      "entry_price": 3.68218994140625,
+      "exit_price": 4.235037803649902,
+      "shares": 0.010634364632356914,
+      "pnl": 0.0057949910665996834,
+      "return_pct": 14.799090844577234,
+      "reason": "RSI Oversold (33.3) | Golden Cross (Gap: 0.13%)"
+    },
+    {
+      "symbol": "BNB-USD",
+      "entry_time": "2023-06-19 00:00:00+00:00",
+      "exit_time": "2023-08-15 00:00:00+00:00",
+      "entry_price": 242.9033660888672,
+      "exit_price": 236.67958068847656,
+      "shares": 0.00016120711340074628,
+      "pnl": -0.0010806306613088748,
+      "return_pct": -2.7596852423673215,
+      "reason": "RSI Oversold (31.3) | Golden Cross (Gap: 0.33%)"
+    },
+    {
+      "symbol": "BTC-USD",
+      "entry_time": "2023-06-20 00:00:00+00:00",
+      "exit_time": "2023-07-24 00:00:00+00:00",
+      "entry_price": 28327.48828125,
+      "exit_price": 29176.916015625,
+      "shares": 1.4031426886798829e-06,
+      "pnl": 0.0011111814305941464,
+      "return_pct": 2.795600238946352,
+      "reason": "Golden Cross (Gap: 3.46%) | Price Breakout > Upper Band (27925.85)"
+    },
+    {
+      "symbol": "UNI-USD",
+      "entry_time": "2023-06-23 00:00:00+00:00",
+      "exit_time": "2023-07-07 00:00:00+00:00",
+      "entry_price": 0.0001230000052601,
+      "exit_price": 0.0002819999936036,
+      "shares": 904.8386035045013,
+      "pnl": 0.14350286777657334,
+      "return_pct": 128.93900940025645,
+      "reason": "RSI Overbought (75.8) | Golden Cross (Gap: 10.92%) | Price Breakout > Upper Band (0.0)"
+    },
+    {
+      "symbol": "ETC-USD",
+      "entry_time": "2023-06-23 00:00:00+00:00",
+      "exit_time": "2023-07-13 00:00:00+00:00",
+      "entry_price": 18.846269607543945,
+      "exit_price": 20.20836067199707,
+      "shares": 0.00590542082376053,
+      "pnl": 0.007813086908962569,
+      "return_pct": 7.020150203327183,
+      "reason": "RSI Overbought (63.3) | Golden Cross (Gap: 10.42%) | Price Breakout > Upper Band (18.56)"
+    },
+    {
+      "symbol": "XRP-USD",
+      "entry_time": "2023-06-23 00:00:00+00:00",
+      "exit_time": "2023-07-24 00:00:00+00:00",
+      "entry_price": 0.4965659976005554,
+      "exit_price": 0.7027649879455566,
+      "shares": 0.22412962935114736,
+      "pnl": 0.045946497669346165,
+      "return_pct": 41.28346692081801,
+      "reason": "RSI Oversold (34.2) | Golden Cross (Gap: 0.69%)"
+    },
+    {
+      "symbol": "XLM-USD",
+      "entry_time": "2023-06-27 00:00:00+00:00",
+      "exit_time": "2023-07-06 00:00:00+00:00",
+      "entry_price": 0.1021350026130676,
+      "exit_price": 0.096000999212265,
+      "shares": 2.9502220000286496,
+      "pnl": -0.01868121697288111,
+      "return_pct": -6.199774064349748,
+      "reason": "RSI Overbought (80.1) | Golden Cross (Gap: 10.09%) | Price Breakout > Upper Band (0.1)"
+    },
+    {
+      "symbol": "COIN",
+      "entry_time": "2023-06-27 00:00:00-04:00",
+      "exit_time": "2023-07-26 00:00:00-04:00",
+      "entry_price": 69.88999938964844,
+      "exit_price": 99.75,
+      "shares": 0.023197031076562936,
+      "pnl": 0.6887282177668441,
+      "return_pct": 42.481557977176685,
+      "reason": "RSI Overbought (82.4) | Golden Cross (Gap: 12.72%) | Price Breakout > Upper Band (67.95)"
+    },
+    {
+      "symbol": "MARA",
+      "entry_time": "2023-06-27 00:00:00-04:00",
+      "exit_time": "2023-08-07 00:00:00-04:00",
+      "entry_price": 13.380000114440918,
+      "exit_price": 15.06999969482422,
+      "shares": 0.12116894423886056,
+      "pnl": 0.20132820847867805,
+      "return_pct": 12.418158194040256,
+      "reason": "RSI Overbought (70.4) | Golden Cross (Gap: 15.61%) | Price Breakout > Upper Band (13.04)"
+    },
+    {
+      "symbol": "XOM",
+      "entry_time": "2023-06-28 00:00:00-04:00",
+      "exit_time": "2023-07-11 00:00:00-04:00",
+      "entry_price": 96.63195037841795,
+      "exit_price": 97.15452575683594,
+      "shares": 0.017130648359125814,
+      "pnl": 0.005632367069388744,
+      "return_pct": 0.3402486454999476,
+      "reason": "RSI Oversold (37.9) | Golden Cross (Gap: 0.11%)"
+    },
+    {
+      "symbol": "INFY.NS",
+      "entry_time": "2023-06-30 00:00:00+05:30",
+      "exit_time": "2023-10-25 00:00:00+05:30",
+      "entry_price": 1241.286376953125,
+      "exit_price": 1289.88134765625,
+      "shares": 0.00021797589903629273,
+      "pnl": 0.010040798867272605,
+      "return_pct": 3.71097305454881,
+      "reason": "RSI Overbought (69.1) | Golden Cross (Gap: 0.85%) | Price Breakout > Upper Band (1229.78)"
+    },
+    {
+      "symbol": "GBP=X",
+      "entry_time": "2023-07-03 00:00:00+01:00",
+      "exit_time": "2023-07-12 00:00:00+01:00",
+      "entry_price": 0.7878199815750122,
+      "exit_price": 0.7731099724769592,
+      "shares": 0.49885553606423677,
+      "pnl": -0.008116848023106304,
+      "return_pct": -2.0653118012538814,
+      "reason": "RSI Oversold (36.9) | Golden Cross (Gap: 0.68%)"
+    },
+    {
+      "symbol": "SOL-USD",
+      "entry_time": "2023-07-07 00:00:00+00:00",
+      "exit_time": "2023-07-22 00:00:00+00:00",
+      "entry_price": 21.484664916992188,
+      "exit_price": 24.535053253173828,
+      "shares": 0.01341140125693969,
+      "pnl": 0.04029279305990924,
+      "return_pct": 13.98378159314611,
+      "reason": "RSI Overbought (73.2) | Golden Cross (Gap: 8.25%) | Price Breakout > Upper Band (20.95)"
+    },
+    {
+      "symbol": "RELIANCE.NS",
+      "entry_time": "2023-07-10 00:00:00+05:30",
+      "exit_time": "2023-07-25 00:00:00+05:30",
+      "entry_price": 1248.5411376953125,
+      "exit_price": 1229.425537109375,
+      "shares": 0.00027097720097325956,
+      "pnl": -0.005851364415343674,
+      "return_pct": -1.7295038672575602,
+      "reason": "RSI Overbought (73.3) | Golden Cross (Gap: 3.59%) | Price Breakout > Upper Band (1224.29)"
+    },
+    {
+      "symbol": "MATIC-USD",
+      "entry_time": "2023-07-10 00:00:00+00:00",
+      "exit_time": "2023-07-20 00:00:00+00:00",
+      "entry_price": 0.7364869713783264,
+      "exit_price": 0.7676100134849548,
+      "shares": 0.2975367542581303,
+      "pnl": 0.008812724796079724,
+      "return_pct": 4.021652286167912,
+      "reason": "RSI Overbought (65.6) | Golden Cross (Gap: 3.08%) | Price Breakout > Upper Band (0.73)"
+    },
+    {
+      "symbol": "GBPUSD=X",
+      "entry_time": "2023-07-12 00:00:00+01:00",
+      "exit_time": "2023-07-24 00:00:00+01:00",
+      "entry_price": 1.2934770584106443,
+      "exit_price": 1.2853471040725708,
+      "shares": 0.5625601174959152,
+      "pnl": -0.0060243316915108425,
+      "return_pct": -0.8279063343972224,
+      "reason": "RSI Overbought (64.3) | Golden Cross (Gap: 1.08%) | Price Breakout > Upper Band (1.29)"
+    },
+    {
+      "symbol": "AUDUSD=X",
+      "entry_time": "2023-07-12 00:00:00+01:00",
+      "exit_time": "2023-07-26 00:00:00+01:00",
+      "entry_price": 0.6693798899650574,
+      "exit_price": 0.6787599325180054,
+      "shares": 1.087063738941646,
+      "pnl": 0.008731190212994844,
+      "return_pct": 1.1999020064502126,
+      "reason": "RSI Oversold (38.4) | Golden Cross (Gap: 0.37%)"
+    },
+    {
+      "symbol": "RIOT",
+      "entry_time": "2023-07-12 00:00:00-04:00",
+      "exit_time": "2023-07-25 00:00:00-04:00",
+      "entry_price": 17.649999618530273,
+      "exit_price": 17.950000762939453,
+      "shares": 0.09570335961192401,
+      "pnl": 0.02530407776868837,
+      "return_pct": 1.4980235112873632,
+      "reason": "RSI Overbought (83.8) | Golden Cross (Gap: 25.79%) | Price Breakout > Upper Band (17.5)"
+    },
+    {
+      "symbol": "EURUSD=X",
+      "entry_time": "2023-07-13 00:00:00+01:00",
+      "exit_time": "2023-07-25 00:00:00+01:00",
+      "entry_price": 1.1144545078277588,
+      "exit_price": 1.1063170433044434,
+      "shares": 0.5139576228210156,
+      "pnl": -0.005323694389441913,
+      "return_pct": -0.9294444951940882,
+      "reason": "RSI Overbought (66.0) | Golden Cross (Gap: 1.01%) | Price Breakout > Upper Band (1.11)"
+    },
+    {
+      "symbol": "ADA-USD",
+      "entry_time": "2023-07-13 00:00:00+00:00",
+      "exit_time": "2023-08-03 00:00:00+00:00",
+      "entry_price": 0.3576579988002777,
+      "exit_price": 0.2925759851932525,
+      "shares": 0.6161782782911263,
+      "pnl": -0.04050278314883993,
+      "return_pct": -18.378520209672338,
+      "reason": "RSI Overbought (80.2) | Golden Cross (Gap: 6.36%) | Price Breakout > Upper Band (0.32)"
+    },
+    {
+      "symbol": "TCS.NS",
+      "entry_time": "2023-07-18 00:00:00+05:30",
+      "exit_time": "2023-07-31 00:00:00+05:30",
+      "entry_price": 3298.762451171875,
+      "exit_price": 3236.026611328125,
+      "shares": 0.00015942015445644786,
+      "pnl": -0.01104313435952975,
+      "return_pct": -2.099897459474307,
+      "reason": "RSI Overbought (77.5) | Golden Cross (Gap: 4.51%) | Price Breakout > Upper Band (3297.12)"
+    },
+    {
+      "symbol": "ICICIBANK.NS",
+      "entry_time": "2023-07-18 00:00:00+05:30",
+      "exit_time": "2023-09-07 00:00:00+05:30",
+      "entry_price": 951.8837280273438,
+      "exit_price": 950.0770263671876,
+      "shares": 0.0005524721181764379,
+      "pnl": -0.0020489325797682367,
+      "return_pct": -0.38961296483516417,
+      "reason": "RSI Overbought (74.9) | Golden Cross (Gap: 1.47%) | Price Breakout > Upper Band (951.04)"
+    },
+    {
+      "symbol": "UNI-USD",
+      "entry_time": "2023-07-19 00:00:00+00:00",
+      "exit_time": "2023-08-08 00:00:00+00:00",
+      "entry_price": 0.0005569999921135,
+      "exit_price": 0.0011309999972581,
+      "shares": 486.2945440270305,
+      "pnl": 0.27831220558815745,
+      "return_pct": 102.74901494767138,
+      "reason": "RSI Overbought (92.5) | Golden Cross (Gap: 21.63%) | Price Breakout > Upper Band (0.0)"
+    },
+    {
+      "symbol": "LINK-USD",
+      "entry_time": "2023-07-20 00:00:00+00:00",
+      "exit_time": "2023-07-30 00:00:00+00:00",
+      "entry_price": 8.342902183532715,
+      "exit_price": 7.556169986724853,
+      "shares": 0.03215544439820211,
+      "pnl": -0.025808965141884355,
+      "return_pct": -9.620528340394069,
+      "reason": "RSI Overbought (79.3) | Golden Cross (Gap: 8.59%) | Price Breakout > Upper Band (7.7)"
+    },
+    {
+      "symbol": "TRX-USD",
+      "entry_time": "2023-07-22 00:00:00+00:00",
+      "exit_time": "2023-08-02 00:00:00+00:00",
+      "entry_price": 0.0838159993290901,
+      "exit_price": 0.0764549970626831,
+      "shares": 2.7653612824404186,
+      "pnl": -0.020799037875598003,
+      "return_pct": -8.973553167656787,
+      "reason": "RSI Overbought (62.2) | Golden Cross (Gap: 1.85%) | Price Breakout > Upper Band (0.08)"
+    },
+    {
+      "symbol": "GBP=X",
+      "entry_time": "2023-07-24 00:00:00+01:00",
+      "exit_time": "2023-08-18 00:00:00+01:00",
+      "entry_price": 0.777999997138977,
+      "exit_price": 0.7843000292778015,
+      "shares": 0.7291063528982282,
+      "pnl": 0.003454310581486486,
+      "return_pct": 0.6089629986928526,
+      "reason": "RSI Oversold (38.8) | Golden Cross (Gap: 0.45%)"
+    },
+    {
+      "symbol": "JPY=X",
+      "entry_time": "2023-07-25 00:00:00+01:00",
+      "exit_time": "2023-10-09 00:00:00+01:00",
+      "entry_price": 141.52200317382812,
+      "exit_price": 149.16000366210938,
+      "shares": 0.004752253773685069,
+      "pnl": 0.03491632197991468,
+      "return_pct": 5.191643925800574,
+      "reason": "RSI Oversold (36.1) | Golden Cross (Gap: 0.8%)"
+    },
+    {
+      "symbol": "DOGE-USD",
+      "entry_time": "2023-07-25 00:00:00+00:00",
+      "exit_time": "2023-08-15 00:00:00+00:00",
+      "entry_price": 0.0818450003862381,
+      "exit_price": 0.0708630010485649,
+      "shares": 3.6796923382417983,
+      "pnl": -0.04097229728428042,
+      "return_pct": -13.60462738904239,
+      "reason": "RSI Overbought (74.3) | Golden Cross (Gap: 5.91%) | Price Breakout > Upper Band (0.08)"
+    },
+    {
+      "symbol": "MMM",
+      "entry_time": "2023-07-25 00:00:00-04:00",
+      "exit_time": "2023-09-25 00:00:00-04:00",
+      "entry_price": 84.49678039550781,
+      "exit_price": 74.01651763916016,
+      "shares": 0.017915703207182554,
+      "pnl": -0.1906011542779944,
+      "return_pct": -12.590747250469114,
+      "reason": "RSI Overbought (79.2) | Golden Cross (Gap: 2.99%) | Price Breakout > Upper Band (82.92)"
+    },
+    {
+      "symbol": "USDCHF=X",
+      "entry_time": "2023-07-26 00:00:00+01:00",
+      "exit_time": "2023-10-09 00:00:00+01:00",
+      "entry_price": 0.8645300269126892,
+      "exit_price": 0.9086999893188475,
+      "shares": 0.7543946846985798,
+      "pnl": 0.03198386956354904,
+      "return_pct": 4.90402080553863,
+      "reason": "RSI Oversold (23.5) | Golden Cross (Gap: 0.08%)"
+    },
+    {
+      "symbol": "GOOGL",
+      "entry_time": "2023-07-26 00:00:00-04:00",
+      "exit_time": "2023-08-11 00:00:00-04:00",
+      "entry_price": 128.3005828857422,
+      "exit_price": 128.58840942382812,
+      "shares": 0.012167360437681423,
+      "pnl": 0.00037642827051875827,
+      "return_pct": 0.024113332208283034,
+      "reason": "RSI Overbought (65.8) | Golden Cross (Gap: 1.59%) | Price Breakout > Upper Band (126.43)"
+    },
+    {
+      "symbol": "VZ",
+      "entry_time": "2023-07-26 00:00:00-04:00",
+      "exit_time": "2023-09-11 00:00:00-04:00",
+      "entry_price": 29.49139976501465,
+      "exit_price": 29.14787483215332,
+      "shares": 0.05293337884176452,
+      "pnl": -0.02128791034999833,
+      "return_pct": -1.36366605404595,
+      "reason": "RSI Oversold (37.5) | Golden Cross (Gap: 0.97%)"
+    },
+    {
+      "symbol": "SOL-USD",
+      "entry_time": "2023-07-29 00:00:00+00:00",
+      "exit_time": "2023-08-17 00:00:00+00:00",
+      "entry_price": 25.16897392272949,
+      "exit_price": 21.70997428894043,
+      "shares": 0.020965038160490477,
+      "pnl": -0.07350087825769142,
+      "return_pct": -13.929366341131013,
+      "reason": "RSI Oversold (37.8) | Golden Cross (Gap: 0.46%)"
+    },
+    {
+      "symbol": "SHIB-USD",
+      "entry_time": "2023-07-29 00:00:00+00:00",
+      "exit_time": "2023-09-04 00:00:00+00:00",
+      "entry_price": 9.000000318337698e-06,
+      "exit_price": 7.000000096013537e-06,
+      "shares": 58629.83112070311,
+      "pnl": -0.11819775259845877,
+      "return_pct": -22.40000168256513,
+      "reason": "RSI Overbought (100.0) | Golden Cross (Gap: 3.09%) | Price Breakout > Upper Band (0.0)"
+    },
+    {
+      "symbol": "ETC-USD",
+      "entry_time": "2023-07-31 00:00:00+00:00",
+      "exit_time": "2023-08-15 00:00:00+00:00",
+      "entry_price": 18.493885040283203,
+      "exit_price": 16.705320358276367,
+      "shares": 0.03270922526197472,
+      "pnl": -0.05965390381779778,
+      "return_pct": -9.861442760311803,
+      "reason": "RSI Oversold (39.6) | Golden Cross (Gap: 0.91%)"
+    },
+    {
+      "symbol": "TCS.NS",
+      "entry_time": "2023-08-03 00:00:00+05:30",
+      "exit_time": "2023-09-28 00:00:00+05:30",
+      "entry_price": 3215.69189453125,
+      "exit_price": 3345.077880859375,
+      "shares": 0.00011203646513237926,
+      "pnl": 0.013760903091687426,
+      "return_pct": 3.8195579856893964,
+      "reason": "RSI Oversold (36.6) | Golden Cross (Gap: 0.56%)"
+    },
+    {
+      "symbol": "AMZN",
+      "entry_time": "2023-08-07 00:00:00-04:00",
+      "exit_time": "2023-08-23 00:00:00-04:00",
+      "entry_price": 142.22000122070312,
+      "exit_price": 135.52000427246094,
+      "shares": 0.009220103891759977,
+      "pnl": -0.06433545964281273,
+      "return_pct": -4.906297914388989,
+      "reason": "RSI Overbought (63.2) | Golden Cross (Gap: 3.92%) | Price Breakout > Upper Band (139.77)"
+    },
+    {
+      "symbol": "RELIANCE.NS",
+      "entry_time": "2023-08-08 00:00:00+05:30",
+      "exit_time": "2023-08-28 00:00:00+05:30",
+      "entry_price": 1240.7265625,
+      "exit_price": 1212.897705078125,
+      "shares": 0.00040671052976651696,
+      "pnl": -0.012316204170562284,
+      "return_pct": -2.440705519227006,
+      "reason": "RSI Oversold (35.1) | Golden Cross (Gap: 0.24%)"
+    },
+    {
+      "symbol": "MATIC-USD",
+      "entry_time": "2023-08-10 00:00:00+00:00",
+      "exit_time": "2023-08-15 00:00:00+00:00",
+      "entry_price": 0.6849750280380249,
+      "exit_price": 0.6386299729347229,
+      "shares": 0.8081964815129108,
+      "pnl": -0.03852564337470965,
+      "return_pct": -6.959182182277811,
+      "reason": "RSI Oversold (37.9) | Golden Cross (Gap: 1.03%)"
+    },
+    {
+      "symbol": "XOM",
+      "entry_time": "2023-08-11 00:00:00-04:00",
+      "exit_time": "2023-08-17 00:00:00-04:00",
+      "entry_price": 102.52703857421876,
+      "exit_price": 100.19707489013672,
+      "shares": 0.011729391176588725,
+      "pnl": -0.02970688590559445,
+      "return_pct": -2.4702632912906988,
+      "reason": "RSI Overbought (72.0) | Golden Cross (Gap: 2.82%) | Price Breakout > Upper Band (102.3)"
+    },
+    {
+      "symbol": "T",
+      "entry_time": "2023-08-15 00:00:00-04:00",
+      "exit_time": "2023-09-13 00:00:00-04:00",
+      "entry_price": 12.505622863769531,
+      "exit_price": 12.930140495300291,
+      "shares": 0.11645855394362198,
+      "pnl": 0.04647649727239456,
+      "return_pct": 3.1912194419990616,
+      "reason": "RSI Oversold (30.6) | Golden Cross (Gap: 0.25%)"
+    },
+    {
+      "symbol": "GBPUSD=X",
+      "entry_time": "2023-08-18 00:00:00+01:00",
+      "exit_time": "2023-08-25 00:00:00+01:00",
+      "entry_price": 1.275022268295288,
+      "exit_price": 1.2592872381210327,
+      "shares": 0.841126900791433,
+      "pnl": -0.015366833065109331,
+      "return_pct": -1.4328643612709528,
+      "reason": "RSI Oversold (37.5) | Golden Cross (Gap: 0.04%)"
+    },
+    {
+      "symbol": "SBIN.NS",
+      "entry_time": "2023-08-22 00:00:00+05:30",
+      "exit_time": "2023-09-04 00:00:00+05:30",
+      "entry_price": 548.11767578125,
+      "exit_price": 554.9149780273438,
+      "shares": 0.001413782280503382,
+      "pnl": 0.008050457449982007,
+      "return_pct": 1.0388772053681636,
+      "reason": "RSI Oversold (23.0) | Golden Cross (Gap: 0.08%)"
+    },
+    {
+      "symbol": "AAPL",
+      "entry_time": "2023-08-23 00:00:00-04:00",
+      "exit_time": "2023-10-18 00:00:00-04:00",
+      "entry_price": 179.189453125,
+      "exit_price": 173.96572875976562,
+      "shares": 0.007858584242285475,
+      "pnl": -0.04382637773011444,
+      "return_pct": -3.112281135892951,
+      "reason": "RSI Oversold (33.3) | Golden Cross (Gap: 0.36%)"
+    },
+    {
+      "symbol": "GBP=X",
+      "entry_time": "2023-08-25 00:00:00+01:00",
+      "exit_time": "2023-10-09 00:00:00+01:00",
+      "entry_price": 0.7940999865531921,
+      "exit_price": 0.8182700276374817,
+      "shares": 1.1130755372440824,
+      "pnl": 0.02510839184532565,
+      "return_pct": 2.840658790086494,
+      "reason": "RSI Overbought (67.7) | Golden Cross (Gap: 0.21%) | Price Breakout > Upper Band (0.79)"
+    },
+    {
+      "symbol": "UNI-USD",
+      "entry_time": "2023-08-25 00:00:00+00:00",
+      "exit_time": "2023-09-05 00:00:00+00:00",
+      "entry_price": 0.0001559999946039,
+      "exit_price": 0.0001550000015413,
+      "shares": 2450.2211528250814,
+      "pnl": -0.0032122229237443456,
+      "return_pct": -0.8403801949313825,
+      "reason": "RSI Oversold (2.8) | Golden Cross (Gap: 2.07%)"
+    },
+    {
+      "symbol": "ETC-USD",
+      "entry_time": "2023-08-25 00:00:00+00:00",
+      "exit_time": "2023-09-11 00:00:00+00:00",
+      "entry_price": 15.997550964355469,
+      "exit_price": 14.697254180908203,
+      "shares": 0.023893312637086783,
+      "pnl": -0.03180179814357409,
+      "return_pct": -8.319970922787768,
+      "reason": "RSI Oversold (33.2) | Golden Cross (Gap: 0.75%)"
+    },
+    {
+      "symbol": "XLM-USD",
+      "entry_time": "2023-08-25 00:00:00+00:00",
+      "exit_time": "2023-10-09 00:00:00+00:00",
+      "entry_price": 0.1238590031862258,
+      "exit_price": 0.1060200035572052,
+      "shares": 3.0860452351967758,
+      "pnl": -0.055761376819248365,
+      "return_pct": -14.5882642124908,
+      "reason": "RSI Oversold (37.4) | Golden Cross (Gap: 0.19%)"
+    },
+    {
+      "symbol": "BHARTIARTL.NS",
+      "entry_time": "2023-08-28 00:00:00+05:30",
+      "exit_time": "2023-10-26 00:00:00+05:30",
+      "entry_price": 858.350830078125,
+      "exit_price": 893.0162353515625,
+      "shares": 0.0006385461239491015,
+      "pnl": 0.021017131521236077,
+      "return_pct": 3.8345670621664274,
+      "reason": "RSI Oversold (38.0) | Golden Cross (Gap: 0.42%)"
+    },
+    {
+      "symbol": "EURUSD=X",
+      "entry_time": "2023-09-01 00:00:00+01:00",
+      "exit_time": "2023-09-06 00:00:00+01:00",
+      "entry_price": 1.0844104290008545,
+      "exit_price": 1.0726161003112793,
+      "shares": 0.5901566750470846,
+      "pnl": -0.008233485408379204,
+      "return_pct": -1.2865382742345528,
+      "reason": "RSI Oversold (39.0) | Golden Cross (Gap: 0.21%)"
+    },
+    {
+      "symbol": "CVX",
+      "entry_time": "2023-09-05 00:00:00-04:00",
+      "exit_time": "2023-09-21 00:00:00-04:00",
+      "entry_price": 150.9326629638672,
+      "exit_price": 149.7811279296875,
+      "shares": 0.010489535418152134,
+      "pnl": -0.015233415486575419,
+      "return_pct": -0.962183265408157,
+      "reason": "RSI Overbought (76.0) | Golden Cross (Gap: 2.0%) | Price Breakout > Upper Band (149.45)"
+    },
+    {
+      "symbol": "LINK-USD",
+      "entry_time": "2023-09-07 00:00:00+00:00",
+      "exit_time": "2023-10-04 00:00:00+00:00",
+      "entry_price": 6.384524822235107,
+      "exit_price": 7.679328918457031,
+      "shares": 0.06976347890761894,
+      "pnl": 0.08934889489247827,
+      "return_pct": 20.060071471894897,
+      "reason": "RSI Overbought (62.7) | Golden Cross (Gap: 3.43%) | Price Breakout > Upper Band (6.38)"
+    },
+    {
+      "symbol": "RELIANCE.NS",
+      "entry_time": "2023-09-08 00:00:00+05:30",
+      "exit_time": "2023-09-21 00:00:00+05:30",
+      "entry_price": 1215.1064453125,
+      "exit_price": 1173.7127685546875,
+      "shares": 0.00036904747925394605,
+      "pnl": -0.01615781977379438,
+      "return_pct": -3.6031819385518595,
+      "reason": "RSI Oversold (28.1) | Golden Cross (Gap: 0.15%)"
+    },
+    {
+      "symbol": "SBIN.NS",
+      "entry_time": "2023-09-08 00:00:00+05:30",
+      "exit_time": "2023-09-27 00:00:00+05:30",
+      "entry_price": 562.53173828125,
+      "exit_price": 568.6058349609375,
+      "shares": 0.0007971674132341982,
+      "pnl": 0.003940365924607447,
+      "return_pct": 0.8786987062361964,
+      "reason": "Golden Cross (Gap: 0.84%) | Price Breakout > Upper Band (562.05)"
+    },
+    {
+      "symbol": "AMZN",
+      "entry_time": "2023-09-11 00:00:00-04:00",
+      "exit_time": "2023-09-26 00:00:00-04:00",
+      "entry_price": 143.10000610351562,
+      "exit_price": 125.9800033569336,
+      "shares": 0.011145580515226915,
+      "pnl": -0.19381142194341527,
+      "return_pct": -12.151699520867638,
+      "reason": "RSI Overbought (68.8) | Golden Cross (Gap: 2.48%) | Price Breakout > Upper Band (141.59)"
+    },
+    {
+      "symbol": "TRX-USD",
+      "entry_time": "2023-09-12 00:00:00+00:00",
+      "exit_time": "2023-09-24 00:00:00+00:00",
+      "entry_price": 0.0807840004563331,
+      "exit_price": 0.0836120024323463,
+      "shares": 2.995532592317686,
+      "pnl": 0.007978918505586574,
+      "return_pct": 3.297194937213224,
+      "reason": "RSI Overbought (65.1) | Golden Cross (Gap: 0.92%) | Price Breakout > Upper Band (0.08)"
+    },
+    {
+      "symbol": "ABBV",
+      "entry_time": "2023-09-14 00:00:00-04:00",
+      "exit_time": "2023-09-28 00:00:00-04:00",
+      "entry_price": 141.7948760986328,
+      "exit_price": 140.5120391845703,
+      "shares": 0.010836892647201982,
+      "pnl": -0.016961295656049646,
+      "return_pct": -1.1038084537391555,
+      "reason": "RSI Overbought (73.5) | Golden Cross (Gap: 1.82%) | Price Breakout > Upper Band (140.6)"
+    },
+    {
+      "symbol": "DOT-USD",
+      "entry_time": "2023-09-21 00:00:00+00:00",
+      "exit_time": "2023-10-09 00:00:00+00:00",
+      "entry_price": 4.013978958129883,
+      "exit_price": 3.877218961715698,
+      "shares": 0.08185013433554343,
+      "pnl": -0.011839719688037098,
+      "return_pct": -3.603685914721946,
+      "reason": "RSI Oversold (33.6) | Golden Cross (Gap: 0.47%)"
+    },
+    {
+      "symbol": "AMC",
+      "entry_time": "2023-09-21 00:00:00-04:00",
+      "exit_time": "2023-10-19 00:00:00-04:00",
+      "entry_price": 7.699999809265137,
+      "exit_price": 9.359999656677246,
+      "shares": 0.19508357046172825,
+      "pnl": 0.32051057159118734,
+      "return_pct": 21.336881670688832,
+      "reason": "RSI Oversold (26.9) | Golden Cross (Gap: 1.01%)"
+    },
+    {
+      "symbol": "CVX",
+      "entry_time": "2023-09-27 00:00:00-04:00",
+      "exit_time": "2023-10-04 00:00:00-04:00",
+      "entry_price": 155.08543395996094,
+      "exit_price": 147.83164978027344,
+      "shares": 0.01041653540663393,
+      "pnl": -0.0787146462678503,
+      "return_pct": -4.872605421717861,
+      "reason": "RSI Overbought (61.1) | Golden Cross (Gap: 1.16%) | Price Breakout > Upper Band (155.03)"
+    },
+    {
+      "symbol": "XOM",
+      "entry_time": "2023-09-27 00:00:00-04:00",
+      "exit_time": "2023-10-04 00:00:00-04:00",
+      "entry_price": 111.10413360595705,
+      "exit_price": 103.0624771118164,
+      "shares": 0.014539989300726665,
+      "pnl": -0.12003957961333334,
+      "return_pct": -7.4307074245667515,
+      "reason": "RSI Overbought (65.1) | Golden Cross (Gap: 0.59%) | Price Breakout > Upper Band (111.05)"
+    },
+    {
+      "symbol": "BCH-USD",
+      "entry_time": "2023-09-28 00:00:00+00:00",
+      "exit_time": "2023-10-07 00:00:00+00:00",
+      "entry_price": 239.1876983642578,
+      "exit_price": 230.31724548339844,
+      "shares": 0.0017691627578687885,
+      "pnl": -0.016523905543536777,
+      "return_pct": -3.9048654628062036,
+      "reason": "RSI Overbought (70.7) | Golden Cross (Gap: 5.62%) | Price Breakout > Upper Band (234.98)"
+    },
+    {
+      "symbol": "USDCAD=X",
+      "entry_time": "2023-09-29 00:00:00+01:00",
+      "exit_time": "2023-10-12 00:00:00+01:00",
+      "entry_price": 1.3490999937057495,
+      "exit_price": 1.3594499826431274,
+      "shares": 0.6365051465036734,
+      "pnl": 0.004863815225388812,
+      "return_pct": 0.5664101250226478,
+      "reason": "RSI Oversold (31.2) | Golden Cross (Gap: 0.08%)"
+    },
+    {
+      "symbol": "TRX-USD",
+      "entry_time": "2023-09-29 00:00:00+00:00",
+      "exit_time": "2023-10-07 00:00:00+00:00",
+      "entry_price": 0.0891399979591369,
+      "exit_price": 0.0881289988756179,
+      "shares": 6.226997301692412,
+      "pnl": -0.007399342130050002,
+      "return_pct": -1.3330357948835339,
+      "reason": "RSI Overbought (76.8) | Golden Cross (Gap: 2.73%) | Price Breakout > Upper Band (0.09)"
+    },
+    {
+      "symbol": "SOL-USD",
+      "entry_time": "2023-09-30 00:00:00+00:00",
+      "exit_time": "2023-10-10 00:00:00+00:00",
+      "entry_price": 21.3951473236084,
+      "exit_price": 22.10511589050293,
+      "shares": 0.026051241558573784,
+      "pnl": 0.017362326770311465,
+      "return_pct": 3.115044236900418,
+      "reason": "RSI Overbought (70.3) | Golden Cross (Gap: 3.92%) | Price Breakout > Upper Band (21.02)"
+    },
+    {
+      "symbol": "TSLA",
+      "entry_time": "2023-10-04 00:00:00-04:00",
+      "exit_time": "2023-10-17 00:00:00-04:00",
+      "entry_price": 261.1600036621094,
+      "exit_price": 254.8500061035156,
+      "shares": 0.005023310435899697,
+      "pnl": -0.03428915505367014,
+      "return_pct": -2.613726249288519,
+      "reason": "RSI Oversold (39.8) | Golden Cross (Gap: 0.66%)"
+    },
+    {
+      "symbol": "MSFT",
+      "entry_time": "2023-10-04 00:00:00-04:00",
+      "exit_time": "2023-10-23 00:00:00-04:00",
+      "entry_price": 313.6376953125,
+      "exit_price": 323.8247375488281,
+      "shares": 0.004182812816961775,
+      "pnl": 0.03994410479854027,
+      "return_pct": 3.0447806326187505,
+      "reason": "RSI Oversold (30.7) | Golden Cross (Gap: 0.12%)"
+    },
+    {
+      "symbol": "AVAX-USD",
+      "entry_time": "2023-10-05 00:00:00+00:00",
+      "exit_time": "2023-11-23 00:00:00+00:00",
+      "entry_price": 10.132204055786133,
+      "exit_price": 20.67244911193848,
+      "shares": 0.06264952912408488,
+      "pnl": 0.6584114926046194,
+      "return_pct": 103.72314202439561,
+      "reason": "RSI Overbought (73.5) | Golden Cross (Gap: 5.75%) | Price Breakout > Upper Band (9.99)"
+    },
+    {
+      "symbol": "GBPUSD=X",
+      "entry_time": "2023-10-09 00:00:00+01:00",
+      "exit_time": "2023-10-24 00:00:00+01:00",
+      "entry_price": 1.222090482711792,
+      "exit_price": 1.2250248193740845,
+      "shares": 0.7278355849474104,
+      "pnl": 0.0003546170437049856,
+      "return_pct": 0.03986786306736155,
+      "reason": "RSI Oversold (36.6) | Golden Cross (Gap: 0.03%)"
+    },
+    {
+      "symbol": "PLTR",
+      "entry_time": "2023-10-09 00:00:00-04:00",
+      "exit_time": "2023-10-23 00:00:00-04:00",
+      "entry_price": 17.610000610351562,
+      "exit_price": 16.200000762939453,
+      "shares": 0.10559199674926593,
+      "pnl": -0.15245476485950604,
+      "return_pct": -8.19880635288959,
+      "reason": "RSI Overbought (66.4) | Golden Cross (Gap: 7.9%) | Price Breakout > Upper Band (17.18)"
+    },
+    {
+      "symbol": "ICICIBANK.NS",
+      "entry_time": "2023-10-10 00:00:00+05:30",
+      "exit_time": "2023-10-25 00:00:00+05:30",
+      "entry_price": 935.8600463867188,
+      "exit_price": 901.3260498046876,
+      "shares": 0.0005060327871020898,
+      "pnl": -0.01840501094086011,
+      "return_pct": -3.8863912204232465,
+      "reason": "RSI Oversold (34.4) | Golden Cross (Gap: 0.01%)"
+    },
+    {
+      "symbol": "EURUSD=X",
+      "entry_time": "2023-10-10 00:00:00+01:00",
+      "exit_time": "2023-12-04 00:00:00+00:00",
+      "entry_price": 1.0578875541687012,
+      "exit_price": 1.088814616203308,
+      "shares": 0.5198532346129008,
+      "pnl": 0.014961563168745862,
+      "return_pct": 2.7205500008789576,
+      "reason": "RSI Oversold (38.6) | Golden Cross (Gap: 0.14%)"
+    },
+    {
+      "symbol": "AUDUSD=X",
+      "entry_time": "2023-10-13 00:00:00+01:00",
+      "exit_time": "2023-11-15 00:00:00+00:00",
+      "entry_price": 0.6316800117492676,
+      "exit_price": 0.6499837636947632,
+      "shares": 0.898374802201248,
+      "pnl": 0.015292215092822414,
+      "return_pct": 2.694732752887594,
+      "reason": "RSI Oversold (38.8) | Golden Cross (Gap: 0.17%)"
+    },
+    {
+      "symbol": "BTC-USD",
+      "entry_time": "2023-10-16 00:00:00+00:00",
+      "exit_time": "2023-12-13 00:00:00+00:00",
+      "entry_price": 28519.466796875,
+      "exit_price": 42890.7421875,
+      "shares": 9.994519825983676e-06,
+      "pnl": 0.1429202860668009,
+      "return_pct": 50.14071715817465,
+      "reason": "RSI Overbought (61.3) | Golden Cross (Gap: 0.27%) | Price Breakout > Upper Band (28457.19)"
+    },
+    {
+      "symbol": "UNI-USD",
+      "entry_time": "2023-10-16 00:00:00+00:00",
+      "exit_time": "2023-12-16 00:00:00+00:00",
+      "entry_price": 0.0001710000069579,
+      "exit_price": 0.0002110000059474,
+      "shares": 1666.8910218116332,
+      "pnl": 0.06603888679622816,
+      "return_pct": 23.16841951143814,
+      "reason": "RSI Overbought (62.5) | Golden Cross (Gap: 0.15%) | Price Breakout > Upper Band (0.0)"
+    },
+    {
+      "symbol": "RELIANCE.NS",
+      "entry_time": "2023-10-18 00:00:00+05:30",
+      "exit_time": "2023-10-23 00:00:00+05:30",
+      "entry_price": 1153.4627685546875,
+      "exit_price": 1123.2860107421875,
+      "shares": 0.0005865635975006952,
+      "pnl": -0.019036045577996763,
+      "return_pct": -2.8135720958259927,
+      "reason": "RSI Oversold (38.7) | Golden Cross (Gap: 0.56%)"
+    },
+    {
+      "symbol": "ETH-USD",
+      "entry_time": "2023-10-18 00:00:00+00:00",
+      "exit_time": "2023-11-22 00:00:00+00:00",
+      "entry_price": 1563.7498779296875,
+      "exit_price": 2064.42529296875,
+      "shares": 0.000254637629930436,
+      "pnl": 0.12656693112349432,
+      "return_pct": 31.785597356926782,
+      "reason": "RSI Oversold (34.7) | Golden Cross (Gap: 0.01%)"
+    },
+    {
+      "symbol": "SOL-USD",
+      "entry_time": "2023-10-19 00:00:00+00:00",
+      "exit_time": "2023-11-22 00:00:00+00:00",
+      "entry_price": 24.93791961669922,
+      "exit_price": 57.58855819702149,
+      "shares": 0.01614790601937898,
+      "pnl": 0.5259068134599074,
+      "return_pct": 130.596748257621,
+      "reason": "RSI Overbought (64.4) | Golden Cross (Gap: 6.03%) | Price Breakout > Upper Band (24.86)"
+    },
+    {
+      "symbol": "T",
+      "entry_time": "2023-10-19 00:00:00-04:00",
+      "exit_time": "2023-11-14 00:00:00-05:00",
+      "entry_price": 13.75399684906006,
+      "exit_price": 14.087480545043944,
+      "shares": 0.09303629044924704,
+      "pnl": 0.028435818222271037,
+      "return_pct": 2.222206547987304,
+      "reason": "Golden Cross (Gap: 0.81%) | Price Breakout > Upper Band (13.61)"
+    },
+    {
+      "symbol": "MATIC-USD",
+      "entry_time": "2023-10-20 00:00:00+00:00",
+      "exit_time": "2023-11-18 00:00:00+00:00",
+      "entry_price": 0.5360550284385681,
+      "exit_price": 0.8319600224494934,
+      "shares": 0.9808858267035035,
+      "pnl": 0.2889071481019685,
+      "return_pct": 54.94528795261382,
+      "reason": "RSI Oversold (39.6) | Golden Cross (Gap: 0.39%)"
+    },
+    {
+      "symbol": "LINK-USD",
+      "entry_time": "2023-10-23 00:00:00+00:00",
+      "exit_time": "2023-11-16 00:00:00+00:00",
+      "entry_price": 10.54612159729004,
+      "exit_price": 13.88802433013916,
+      "shares": 0.0693078990026748,
+      "pnl": 0.22992677776691484,
+      "return_pct": 31.456764046549175,
+      "reason": "RSI Overbought (88.9) | Golden Cross (Gap: 23.37%) | Price Breakout > Upper Band (9.68)"
+    },
+    {
+      "symbol": "XOM",
+      "entry_time": "2023-10-23 00:00:00-04:00",
+      "exit_time": "2023-12-05 00:00:00-05:00",
+      "entry_price": 101.1676025390625,
+      "exit_price": 93.6883773803711,
+      "shares": 0.0111651297486926,
+      "pnl": -0.0856821116145845,
+      "return_pct": -7.585512502036147,
+      "reason": "RSI Oversold (38.2) | Golden Cross (Gap: 1.14%)"
+    },
+    {
+      "symbol": "MSTR",
+      "entry_time": "2023-10-23 00:00:00-04:00",
+      "exit_time": "2023-12-19 00:00:00-05:00",
+      "entry_price": 37.749000549316406,
+      "exit_price": 57.130001068115234,
+      "shares": 0.029922630858454626,
+      "pnl": 0.577091494849918,
+      "return_pct": 51.090416266744455,
+      "reason": "RSI Overbought (76.8) | Golden Cross (Gap: 5.31%) | Price Breakout > Upper Band (36.1)"
+    },
+    {
+      "symbol": "GBP=X",
+      "entry_time": "2023-10-24 00:00:00+01:00",
+      "exit_time": "2023-11-06 00:00:00+00:00",
+      "entry_price": 0.8163099884986877,
+      "exit_price": 0.8081600069999695,
+      "shares": 0.6931796842687711,
+      "pnl": -0.006775451200661586,
+      "return_pct": -1.197394572151859,
+      "reason": "RSI Oversold (36.6) | Golden Cross (Gap: 0.2%)"
+    },
+    {
+      "symbol": "FIL-USD",
+      "entry_time": "2023-10-24 00:00:00+00:00",
+      "exit_time": "2023-11-19 00:00:00+00:00",
+      "entry_price": 3.834666967391968,
+      "exit_price": 4.886618137359619,
+      "shares": 0.24699264670850468,
+      "pnl": 0.25767011038769616,
+      "return_pct": 27.205227826405498,
+      "reason": "RSI Overbought (86.3) | Golden Cross (Gap: 10.67%) | Price Breakout > Upper Band (3.71)"
+    },
+    {
+      "symbol": "ITC.NS",
+      "entry_time": "2023-11-07 00:00:00+05:30",
+      "exit_time": "2023-12-20 00:00:00+05:30",
+      "entry_price": 389.5240783691406,
+      "exit_price": 405.998046875,
+      "shares": 0.000666121163671368,
+      "pnl": 0.01044374494761463,
+      "return_pct": 4.025026243886603,
+      "reason": "RSI Oversold (23.1) | Golden Cross (Gap: 0.21%)"
+    },
+    {
+      "symbol": "AI",
+      "entry_time": "2023-11-14 00:00:00-05:00",
+      "exit_time": "2023-12-07 00:00:00-05:00",
+      "entry_price": 29.6299991607666,
+      "exit_price": 26.020000457763672,
+      "shares": 0.0367912120540153,
+      "pnl": -0.13486365873367223,
+      "return_pct": -12.371410079130833,
+      "reason": "RSI Overbought (68.1) | Golden Cross (Gap: 4.86%) | Price Breakout > Upper Band (29.25)"
+    },
+    {
+      "symbol": "BHARTIARTL.NS",
+      "entry_time": "2023-11-21 00:00:00+05:30",
+      "exit_time": "2023-12-11 00:00:00+05:30",
+      "entry_price": 957.46533203125,
+      "exit_price": 987.0516967773438,
+      "shares": 0.0007181447980761916,
+      "pnl": 0.019850849147382665,
+      "return_pct": 2.8869815744287526,
+      "reason": "RSI Overbought (86.0) | Golden Cross (Gap: 1.7%) | Price Breakout > Upper Band (953.91)"
+    },
+    {
+      "symbol": "KO",
+      "entry_time": "2023-11-22 00:00:00-05:00",
+      "exit_time": "2023-12-19 00:00:00-05:00",
+      "entry_price": 54.62907409667969,
+      "exit_price": 55.45051574707031,
+      "shares": 0.033160647808717976,
+      "pnl": 0.02358922675427899,
+      "return_pct": 1.3021675221658493,
+      "reason": "RSI Overbought (70.8) | Golden Cross (Gap: 1.2%) | Price Breakout > Upper Band (54.52)"
+    },
+    {
+      "symbol": "ICICIBANK.NS",
+      "entry_time": "2023-12-05 00:00:00+05:30",
+      "exit_time": "2023-12-20 00:00:00+05:30",
+      "entry_price": 997.1061401367188,
+      "exit_price": 990.415771484375,
+      "shares": 0.0007048418918572418,
+      "pnl": -0.0061165408024349555,
+      "return_pct": -0.8703076046422483,
+      "reason": "RSI Overbought (77.8) | Golden Cross (Gap: 4.51%) | Price Breakout > Upper Band (970.67)"
+    },
+    {
+      "symbol": "DOGE-USD",
+      "entry_time": "2023-12-08 00:00:00+00:00",
+      "exit_time": "2023-12-15 00:00:00+00:00",
+      "entry_price": 0.1014700010418891,
+      "exit_price": 0.0930040031671524,
+      "shares": 10.112798908794295,
+      "pnl": -0.08758161056704583,
+      "return_pct": -8.535007184409578,
+      "reason": "RSI Overbought (94.9) | Golden Cross (Gap: 10.49%) | Price Breakout > Upper Band (0.1)"
+    },
+    {
+      "symbol": "ADA-USD",
+      "entry_time": "2023-12-13 00:00:00+00:00",
+      "exit_time": "2023-12-19 00:00:00+00:00",
+      "entry_price": 0.6652439832687378,
+      "exit_price": 0.5766000151634216,
+      "shares": 1.6849015190282168,
+      "pnl": -0.15144874135269026,
+      "return_pct": -13.511706135557361,
+      "reason": "RSI Overbought (86.6) | Golden Cross (Gap: 18.81%) | Price Breakout > Upper Band (0.64)"
+    },
+    {
+      "symbol": "SOL-USD",
+      "entry_time": "2023-12-20 00:00:00+00:00",
+      "exit_time": "2023-12-31 00:00:00+00:00",
+      "entry_price": 82.19123077392578,
+      "exit_price": 101.50582122802734,
+      "shares": 0.01423763984012765,
+      "pnl": 0.2723787700789686,
+      "return_pct": 23.276076075221233,
+      "reason": "RSI Overbought (69.4) | Golden Cross (Gap: 4.49%) | Price Breakout > Upper Band (81.7)"
+    }
+  ],
+  "equity_curve": [
+    {
+      "timestamp": "2023-01-23 00:00:00+05:30",
+      "value": 10.0
+    },
+    {
+      "timestamp": "2023-01-23 00:00:00+00:00",
+      "value": 7.998
+    },
+    {
+      "timestamp": "2023-01-23 00:00:00-05:00",
+      "value": 6.3968004
+    },
+    {
+      "timestamp": "2023-01-24 00:00:00+05:30",
+      "value": 8.394620717158276
+    },
+    {
+      "timestamp": "2023-01-24 00:00:00+00:00",
+      "value": 7.996292727561551
+    },
+    {
+      "timestamp": "2023-01-24 00:00:00-05:00",
+      "value": 6.3968004
+    },
+    {
+      "timestamp": "2023-01-25 00:00:00+05:30",
+      "value": 8.359172636560668
+    },
+    {
+      "timestamp": "2023-01-25 00:00:00+00:00",
+      "value": 6.323348544202061
+    },
+    {
+      "timestamp": "2023-01-25 00:00:00-05:00",
+      "value": 3.457359659611302
+    },
+    {
+      "timestamp": "2023-01-26 00:00:00+00:00",
+      "value": 6.459598932819454
+    },
+    {
+      "timestamp": "2023-01-26 00:00:00-05:00",
+      "value": 0.8709362469103923
+    },
+    {
+      "timestamp": "2023-01-27 00:00:00+05:30",
+      "value": 4.413421521780615
+    },
+    {
+      "timestamp": "2023-01-27 00:00:00+00:00",
+      "value": 6.496378659699371
+    },
+    {
+      "timestamp": "2023-01-27 00:00:00-05:00",
+      "value": 0.8709362469103923
+    },
+    {
+      "timestamp": "2023-01-28 00:00:00+00:00",
+      "value": 3.5896344886770235
+    },
+    {
+      "timestamp": "2023-01-29 00:00:00+00:00",
+      "value": 3.6721658182414583
+    },
+    {
+      "timestamp": "2023-01-30 00:00:00+05:30",
+      "value": 3.6834504668791404
+    },
+    {
+      "timestamp": "2023-01-30 00:00:00+00:00",
+      "value": 7.52274513681301
+    },
+    {
+      "timestamp": "2023-01-30 00:00:00-05:00",
+      "value": 1.285863794548605
+    },
+    {
+      "timestamp": "2023-01-31 00:00:00+05:30",
+      "value": 3.439740807530681
+    },
+    {
+      "timestamp": "2023-01-31 00:00:00+00:00",
+      "value": 7.348902911682188
+    },
+    {
+      "timestamp": "2023-01-31 00:00:00-05:00",
+      "value": 1.2884904997800564
+    },
+    {
+      "timestamp": "2023-02-01 00:00:00+05:30",
+      "value": 2.94058139253233
+    },
+    {
+      "timestamp": "2023-02-01 00:00:00+00:00",
+      "value": 6.996525258501143
+    },
+    {
+      "timestamp": "2023-02-01 00:00:00-05:00",
+      "value": 1.3256867914085977
+    },
+    {
+      "timestamp": "2023-02-02 00:00:00+05:30",
+      "value": 2.9959543285637675
+    },
+    {
+      "timestamp": "2023-02-02 00:00:00+00:00",
+      "value": 6.936725907937643
+    },
+    {
+      "timestamp": "2023-02-02 00:00:00-05:00",
+      "value": 1.3505167527965496
+    },
+    {
+      "timestamp": "2023-02-03 00:00:00+05:30",
+      "value": 2.7625794679499514
+    },
+    {
+      "timestamp": "2023-02-03 00:00:00+00:00",
+      "value": 6.750412632346618
+    },
+    {
+      "timestamp": "2023-02-03 00:00:00-05:00",
+      "value": 1.3773314172090103
+    },
+    {
+      "timestamp": "2023-02-04 00:00:00+00:00",
+      "value": 3.8617216133702565
+    },
+    {
+      "timestamp": "2023-02-05 00:00:00+00:00",
+      "value": 3.7700675927052494
+    },
+    {
+      "timestamp": "2023-02-06 00:00:00+05:30",
+      "value": 2.760596372349668
+    },
+    {
+      "timestamp": "2023-02-06 00:00:00+00:00",
+      "value": 6.66250474015726
+    },
+    {
+      "timestamp": "2023-02-06 00:00:00-05:00",
+      "value": 1.4463648824298048
+    },
+    {
+      "timestamp": "2023-02-07 00:00:00+05:30",
+      "value": 2.4920312431310054
+    },
+    {
+      "timestamp": "2023-02-07 00:00:00+00:00",
+      "value": 6.511367272589761
+    },
+    {
+      "timestamp": "2023-02-07 00:00:00-05:00",
+      "value": 1.3886882230253206
+    },
+    {
+      "timestamp": "2023-02-08 00:00:00+05:30",
+      "value": 2.473692468627293
+    },
+    {
+      "timestamp": "2023-02-08 00:00:00+00:00",
+      "value": 6.5133851438644745
+    },
+    {
+      "timestamp": "2023-02-08 00:00:00-05:00",
+      "value": 1.3738236886495039
+    },
+    {
+      "timestamp": "2023-02-09 00:00:00+05:30",
+      "value": 2.4527217561616226
+    },
+    {
+      "timestamp": "2023-02-09 00:00:00+00:00",
+      "value": 6.379551181822054
+    },
+    {
+      "timestamp": "2023-02-09 00:00:00-05:00",
+      "value": 1.293223442568904
+    },
+    {
+      "timestamp": "2023-02-10 00:00:00+05:30",
+      "value": 2.4579369385215086
+    },
+    {
+      "timestamp": "2023-02-10 00:00:00+00:00",
+      "value": 6.389986878586464
+    },
+    {
+      "timestamp": "2023-02-10 00:00:00-05:00",
+      "value": 1.2601775821650725
+    },
+    {
+      "timestamp": "2023-02-11 00:00:00+00:00",
+      "value": 2.172666432960774
+    },
+    {
+      "timestamp": "2023-02-12 00:00:00+00:00",
+      "value": 2.1420987930328934
+    },
+    {
+      "timestamp": "2023-02-13 00:00:00+05:30",
+      "value": 2.456813261557312
+    },
+    {
+      "timestamp": "2023-02-13 00:00:00+00:00",
+      "value": 6.3175140729202495
+    },
+    {
+      "timestamp": "2023-02-13 00:00:00-05:00",
+      "value": 1.2418249613799301
+    },
+    {
+      "timestamp": "2023-02-14 00:00:00+05:30",
+      "value": 2.522753837081872
+    },
+    {
+      "timestamp": "2023-02-14 00:00:00+00:00",
+      "value": 6.455153325707282
+    },
+    {
+      "timestamp": "2023-02-14 00:00:00-05:00",
+      "value": 1.4352074364466236
+    },
+    {
+      "timestamp": "2023-02-15 00:00:00+05:30",
+      "value": 3.0093472811444126
+    },
+    {
+      "timestamp": "2023-02-15 00:00:00+00:00",
+      "value": 6.896271176721348
+    },
+    {
+      "timestamp": "2023-02-15 00:00:00-05:00",
+      "value": 1.460419670848412
+    },
+    {
+      "timestamp": "2023-02-16 00:00:00+05:30",
+      "value": 2.715685830917253
+    },
+    {
+      "timestamp": "2023-02-16 00:00:00+00:00",
+      "value": 6.527842842085525
+    },
+    {
+      "timestamp": "2023-02-16 00:00:00-05:00",
+      "value": 1.442953185385125
+    },
+    {
+      "timestamp": "2023-02-17 00:00:00+05:30",
+      "value": 2.6586723063044717
+    },
+    {
+      "timestamp": "2023-02-17 00:00:00+00:00",
+      "value": 6.583832774356537
+    },
+    {
+      "timestamp": "2023-02-17 00:00:00-05:00",
+      "value": 1.421873556042689
+    },
+    {
+      "timestamp": "2023-02-18 00:00:00+00:00",
+      "value": 2.2813179830291697
+    },
+    {
+      "timestamp": "2023-02-19 00:00:00+00:00",
+      "value": 2.2688831331297252
+    },
+    {
+      "timestamp": "2023-02-20 00:00:00+05:30",
+      "value": 2.6651436990717245
+    },
+    {
+      "timestamp": "2023-02-20 00:00:00+00:00",
+      "value": 6.576100430196288
+    },
+    {
+      "timestamp": "2023-02-21 00:00:00+05:30",
+      "value": 2.6610192941960937
+    },
+    {
+      "timestamp": "2023-02-21 00:00:00+00:00",
+      "value": 6.50680275459513
+    },
+    {
+      "timestamp": "2023-02-21 00:00:00-05:00",
+      "value": 1.4344875577870124
+    },
+    {
+      "timestamp": "2023-02-22 00:00:00+05:30",
+      "value": 2.6496381464255743
+    },
+    {
+      "timestamp": "2023-02-22 00:00:00+00:00",
+      "value": 6.526303247277539
+    },
+    {
+      "timestamp": "2023-02-22 00:00:00-05:00",
+      "value": 1.436950961521943
+    },
+    {
+      "timestamp": "2023-02-23 00:00:00+05:30",
+      "value": 2.637973457414128
+    },
+    {
+      "timestamp": "2023-02-23 00:00:00+00:00",
+      "value": 6.532675329199
+    },
+    {
+      "timestamp": "2023-02-23 00:00:00-05:00",
+      "value": 1.4350679555788515
+    },
+    {
+      "timestamp": "2023-02-24 00:00:00+05:30",
+      "value": 2.6199490936683842
+    },
+    {
+      "timestamp": "2023-02-24 00:00:00+00:00",
+      "value": 8.103439090883224
+    },
+    {
+      "timestamp": "2023-02-24 00:00:00-05:00",
+      "value": 4.369115530748347
+    },
+    {
+      "timestamp": "2023-02-25 00:00:00+00:00",
+      "value": 1.1896898062647936
+    },
+    {
+      "timestamp": "2023-02-26 00:00:00+00:00",
+      "value": 1.2050829308580309
+    },
+    {
+      "timestamp": "2023-02-27 00:00:00+05:30",
+      "value": 1.2990417174156204
+    },
+    {
+      "timestamp": "2023-02-27 00:00:00+00:00",
+      "value": 5.52860495583359
+    },
+    {
+      "timestamp": "2023-02-27 00:00:00-05:00",
+      "value": 4.446886198616049
+    },
+    {
+      "timestamp": "2023-02-28 00:00:00+05:30",
+      "value": 1.2870979662467104
+    },
+    {
+      "timestamp": "2023-02-28 00:00:00+00:00",
+      "value": 5.511047457350504
+    },
+    {
+      "timestamp": "2023-02-28 00:00:00-05:00",
+      "value": 4.455615574298408
+    },
+    {
+      "timestamp": "2023-03-01 00:00:00+05:30",
+      "value": 1.291441244289202
+    },
+    {
+      "timestamp": "2023-03-01 00:00:00+00:00",
+      "value": 6.375011728678222
+    },
+    {
+      "timestamp": "2023-03-01 00:00:00-05:00",
+      "value": 5.192615336097857
+    },
+    {
+      "timestamp": "2023-03-02 00:00:00+05:30",
+      "value": 1.5399930664452817
+    },
+    {
+      "timestamp": "2023-03-02 00:00:00+00:00",
+      "value": 6.289123917079229
+    },
+    {
+      "timestamp": "2023-03-02 00:00:00-05:00",
+      "value": 4.8721601634530165
+    },
+    {
+      "timestamp": "2023-03-03 00:00:00+05:30",
+      "value": 1.5555250450334277
+    },
+    {
+      "timestamp": "2023-03-03 00:00:00+00:00",
+      "value": 6.267221632687031
+    },
+    {
+      "timestamp": "2023-03-03 00:00:00-05:00",
+      "value": 4.992929267471484
+    },
+    {
+      "timestamp": "2023-03-04 00:00:00+00:00",
+      "value": 0.7763937846697149
+    },
+    {
+      "timestamp": "2023-03-05 00:00:00+00:00",
+      "value": 0.7815229201237388
+    },
+    {
+      "timestamp": "2023-03-06 00:00:00+05:30",
+      "value": 0.4105981240411032
+    },
+    {
+      "timestamp": "2023-03-06 00:00:00+00:00",
+      "value": 5.081798808302404
+    },
+    {
+      "timestamp": "2023-03-06 00:00:00-05:00",
+      "value": 4.92328608483625
+    },
+    {
+      "timestamp": "2023-03-07 00:00:00+00:00",
+      "value": 5.076330233689225
+    },
+    {
+      "timestamp": "2023-03-07 00:00:00-05:00",
+      "value": 4.8290458637766385
+    },
+    {
+      "timestamp": "2023-03-08 00:00:00+05:30",
+      "value": 0.6677975973888055
+    },
+    {
+      "timestamp": "2023-03-08 00:00:00+00:00",
+      "value": 5.08927382040827
+    },
+    {
+      "timestamp": "2023-03-08 00:00:00-05:00",
+      "value": 5.141446691321629
+    },
+    {
+      "timestamp": "2023-03-09 00:00:00+05:30",
+      "value": 1.3013470345510068
+    },
+    {
+      "timestamp": "2023-03-09 00:00:00+00:00",
+      "value": 5.090565753137177
+    },
+    {
+      "timestamp": "2023-03-09 00:00:00-05:00",
+      "value": 4.995517229905031
+    },
+    {
+      "timestamp": "2023-03-10 00:00:00+05:30",
+      "value": 1.121007304521375
+    },
+    {
+      "timestamp": "2023-03-10 00:00:00+00:00",
+      "value": 4.460075100230023
+    },
+    {
+      "timestamp": "2023-03-10 00:00:00-05:00",
+      "value": 4.441750365619706
+    },
+    {
+      "timestamp": "2023-03-11 00:00:00+00:00",
+      "value": 0.12840701269433952
+    },
+    {
+      "timestamp": "2023-03-12 00:00:00+00:00",
+      "value": 0.12840701269433952
+    },
+    {
+      "timestamp": "2023-03-13 00:00:00+05:30",
+      "value": 1.1321179655206228
+    },
+    {
+      "timestamp": "2023-03-13 00:00:00+00:00",
+      "value": 4.8935405645875445
+    },
+    {
+      "timestamp": "2023-03-13 00:00:00-04:00",
+      "value": 4.929454100916305
+    },
+    {
+      "timestamp": "2023-03-14 00:00:00+05:30",
+      "value": 1.126709964087632
+    },
+    {
+      "timestamp": "2023-03-14 00:00:00+00:00",
+      "value": 4.987794211686009
+    },
+    {
+      "timestamp": "2023-03-14 00:00:00-04:00",
+      "value": 5.103294534946639
+    },
+    {
+      "timestamp": "2023-03-15 00:00:00+05:30",
+      "value": 1.120214735386735
+    },
+    {
+      "timestamp": "2023-03-15 00:00:00+00:00",
+      "value": 5.123339185553799
+    },
+    {
+      "timestamp": "2023-03-15 00:00:00-04:00",
+      "value": 5.208145607823008
+    },
+    {
+      "timestamp": "2023-03-16 00:00:00+05:30",
+      "value": 1.2660976779382431
+    },
+    {
+      "timestamp": "2023-03-16 00:00:00+00:00",
+      "value": 5.268823319471893
+    },
+    {
+      "timestamp": "2023-03-16 00:00:00-04:00",
+      "value": 5.372529206017263
+    },
+    {
+      "timestamp": "2023-03-17 00:00:00+05:30",
+      "value": 1.2691560062114298
+    },
+    {
+      "timestamp": "2023-03-17 00:00:00+00:00",
+      "value": 5.263206495804401
+    },
+    {
+      "timestamp": "2023-03-17 00:00:00-04:00",
+      "value": 5.3283606469773686
+    },
+    {
+      "timestamp": "2023-03-18 00:00:00+00:00",
+      "value": 0.9634367227117437
+    },
+    {
+      "timestamp": "2023-03-19 00:00:00+00:00",
+      "value": 0.9634367227117437
+    },
+    {
+      "timestamp": "2023-03-20 00:00:00+05:30",
+      "value": 1.07015929915832
+    },
+    {
+      "timestamp": "2023-03-20 00:00:00+00:00",
+      "value": 5.2408054292286606
+    },
+    {
+      "timestamp": "2023-03-20 00:00:00-04:00",
+      "value": 5.12247453313224
+    },
+    {
+      "timestamp": "2023-03-21 00:00:00+05:30",
+      "value": 1.0716884539849905
+    },
+    {
+      "timestamp": "2023-03-21 00:00:00+00:00",
+      "value": 5.220552957283258
+    },
+    {
+      "timestamp": "2023-03-21 00:00:00-04:00",
+      "value": 4.741821638845479
+    },
+    {
+      "timestamp": "2023-03-22 00:00:00+05:30",
+      "value": 0.5543072311107127
+    },
+    {
+      "timestamp": "2023-03-22 00:00:00+00:00",
+      "value": 5.017406871063251
+    },
+    {
+      "timestamp": "2023-03-22 00:00:00-04:00",
+      "value": 5.3142596440202166
+    },
+    {
+      "timestamp": "2023-03-23 00:00:00+05:30",
+      "value": 1.1831160547962536
+    },
+    {
+      "timestamp": "2023-03-23 00:00:00+00:00",
+      "value": 5.130561987838383
+    },
+    {
+      "timestamp": "2023-03-23 00:00:00-04:00",
+      "value": 5.458218119408122
+    },
+    {
+      "timestamp": "2023-03-24 00:00:00+05:30",
+      "value": 1.1788459097263624
+    },
+    {
+      "timestamp": "2023-03-24 00:00:00+00:00",
+      "value": 4.770067595170568
+    },
+    {
+      "timestamp": "2023-03-24 00:00:00-04:00",
+      "value": 5.255686730745462
+    },
+    {
+      "timestamp": "2023-03-25 00:00:00+00:00",
+      "value": 3.8002858143260925
+    },
+    {
+      "timestamp": "2023-03-26 00:00:00+00:00",
+      "value": 3.837796250977239
+    },
+    {
+      "timestamp": "2023-03-27 00:00:00+05:30",
+      "value": 1.183198211600463
+    },
+    {
+      "timestamp": "2023-03-27 00:00:00+01:00",
+      "value": 1.6550795527972222
+    },
+    {
+      "timestamp": "2023-03-27 00:00:00+00:00",
+      "value": 3.8779170870596715
+    },
+    {
+      "timestamp": "2023-03-27 00:00:00-04:00",
+      "value": 5.195088975468115
+    },
+    {
+      "timestamp": "2023-03-28 00:00:00+05:30",
+      "value": 1.181137511274418
+    },
+    {
+      "timestamp": "2023-03-28 00:00:00+01:00",
+      "value": 1.184842526119096
+    },
+    {
+      "timestamp": "2023-03-28 00:00:00+00:00",
+      "value": 3.6033887073272988
+    },
+    {
+      "timestamp": "2023-03-28 00:00:00-04:00",
+      "value": 4.8413622029996475
+    },
+    {
+      "timestamp": "2023-03-29 00:00:00+05:30",
+      "value": 1.378805398949868
+    },
+    {
+      "timestamp": "2023-03-29 00:00:00+01:00",
+      "value": 1.0990324849475095
+    },
+    {
+      "timestamp": "2023-03-29 00:00:00+00:00",
+      "value": 3.4729352837900063
+    },
+    {
+      "timestamp": "2023-03-29 00:00:00-04:00",
+      "value": 4.678209748200032
+    },
+    {
+      "timestamp": "2023-03-30 00:00:00+01:00",
+      "value": 1.3366588840862057
+    },
+    {
+      "timestamp": "2023-03-30 00:00:00+00:00",
+      "value": 3.7223848562485955
+    },
+    {
+      "timestamp": "2023-03-30 00:00:00-04:00",
+      "value": 4.758282838503185
+    },
+    {
+      "timestamp": "2023-03-31 00:00:00+05:30",
+      "value": 1.6638537502964126
+    },
+    {
+      "timestamp": "2023-03-31 00:00:00+01:00",
+      "value": 1.0445590589534361
+    },
+    {
+      "timestamp": "2023-03-31 00:00:00+00:00",
+      "value": 3.560103697555273
+    },
+    {
+      "timestamp": "2023-03-31 00:00:00-04:00",
+      "value": 4.68048275169539
+    },
+    {
+      "timestamp": "2023-04-01 00:00:00+00:00",
+      "value": 3.42246553956804
+    },
+    {
+      "timestamp": "2023-04-02 00:00:00+00:00",
+      "value": 3.4093514770260676
+    },
+    {
+      "timestamp": "2023-04-03 00:00:00+05:30",
+      "value": 1.6610758755994164
+    },
+    {
+      "timestamp": "2023-04-03 00:00:00+01:00",
+      "value": 1.0351230030819116
+    },
+    {
+      "timestamp": "2023-04-03 00:00:00+00:00",
+      "value": 3.3773639070179393
+    },
+    {
+      "timestamp": "2023-04-03 00:00:00-04:00",
+      "value": 4.699981052085923
+    },
+    {
+      "timestamp": "2023-04-04 00:00:00+01:00",
+      "value": 1.0452684174624394
+    },
+    {
+      "timestamp": "2023-04-04 00:00:00+00:00",
+      "value": 3.3922938843198347
+    },
+    {
+      "timestamp": "2023-04-04 00:00:00-04:00",
+      "value": 4.407269918559475
+    },
+    {
+      "timestamp": "2023-04-05 00:00:00+05:30",
+      "value": 1.6801135747535645
+    },
+    {
+      "timestamp": "2023-04-05 00:00:00+01:00",
+      "value": 1.0497240860060002
+    },
+    {
+      "timestamp": "2023-04-05 00:00:00+00:00",
+      "value": 3.418040810297189
+    },
+    {
+      "timestamp": "2023-04-05 00:00:00-04:00",
+      "value": 4.697988978986191
+    },
+    {
+      "timestamp": "2023-04-06 00:00:00+05:30",
+      "value": 2.121990926328182
+    },
+    {
+      "timestamp": "2023-04-06 00:00:00+01:00",
+      "value": 1.4843216253239255
+    },
+    {
+      "timestamp": "2023-04-06 00:00:00+00:00",
+      "value": 3.3612718134650907
+    },
+    {
+      "timestamp": "2023-04-06 00:00:00-04:00",
+      "value": 4.815871926635527
+    },
+    {
+      "timestamp": "2023-04-07 00:00:00+01:00",
+      "value": 1.4858852340079594
+    },
+    {
+      "timestamp": "2023-04-07 00:00:00+00:00",
+      "value": 3.367234772143941
+    },
+    {
+      "timestamp": "2023-04-08 00:00:00+00:00",
+      "value": 3.344920386642792
+    },
+    {
+      "timestamp": "2023-04-09 00:00:00+00:00",
+      "value": 3.3462477902662453
+    },
+    {
+      "timestamp": "2023-04-10 00:00:00+05:30",
+      "value": 4.333539126048248
+    },
+    {
+      "timestamp": "2023-04-10 00:00:00+01:00",
+      "value": 3.69690439655466
+    },
+    {
+      "timestamp": "2023-04-10 00:00:00+00:00",
+      "value": 3.364803188786435
+    },
+    {
+      "timestamp": "2023-04-10 00:00:00-04:00",
+      "value": 5.666758399138325
+    },
+    {
+      "timestamp": "2023-04-11 00:00:00+05:30",
+      "value": 3.003679209465484
+    },
+    {
+      "timestamp": "2023-04-11 00:00:00+01:00",
+      "value": 2.345516169904081
+    },
+    {
+      "timestamp": "2023-04-11 00:00:00+00:00",
+      "value": 3.3631514047456657
+    },
+    {
+      "timestamp": "2023-04-11 00:00:00-04:00",
+      "value": 4.957195840051056
+    },
+    {
+      "timestamp": "2023-04-12 00:00:00+05:30",
+      "value": 2.3303317717928542
+    },
+    {
+      "timestamp": "2023-04-12 00:00:00+01:00",
+      "value": 1.676700459196986
+    },
+    {
+      "timestamp": "2023-04-12 00:00:00+00:00",
+      "value": 3.381509420254123
+    },
+    {
+      "timestamp": "2023-04-12 00:00:00-04:00",
+      "value": 4.939245147627728
+    },
+    {
+      "timestamp": "2023-04-13 00:00:00+05:30",
+      "value": 2.3343319748581677
+    },
+    {
+      "timestamp": "2023-04-13 00:00:00+01:00",
+      "value": 1.6843733888949353
+    },
+    {
+      "timestamp": "2023-04-13 00:00:00+00:00",
+      "value": 3.4471055128461576
+    },
+    {
+      "timestamp": "2023-04-13 00:00:00-04:00",
+      "value": 5.0187736912065635
+    },
+    {
+      "timestamp": "2023-04-14 00:00:00+01:00",
+      "value": 1.6894698005838173
+    },
+    {
+      "timestamp": "2023-04-14 00:00:00+00:00",
+      "value": 3.1686762140417826
+    },
+    {
+      "timestamp": "2023-04-14 00:00:00-04:00",
+      "value": 4.655129315755622
+    },
+    {
+      "timestamp": "2023-04-15 00:00:00+00:00",
+      "value": 3.15026811743528
+    },
+    {
+      "timestamp": "2023-04-16 00:00:00+00:00",
+      "value": 3.2009058540249566
+    },
+    {
+      "timestamp": "2023-04-17 00:00:00+05:30",
+      "value": 2.0016065492439963
+    },
+    {
+      "timestamp": "2023-04-17 00:00:00+01:00",
+      "value": 1.6788725225949763
+    },
+    {
+      "timestamp": "2023-04-17 00:00:00+00:00",
+      "value": 3.117547795185585
+    },
+    {
+      "timestamp": "2023-04-17 00:00:00-04:00",
+      "value": 4.67725545988004
+    },
+    {
+      "timestamp": "2023-04-18 00:00:00+05:30",
+      "value": 1.9975542793110177
+    },
+    {
+      "timestamp": "2023-04-18 00:00:00+01:00",
+      "value": 1.6729320227688032
+    },
+    {
+      "timestamp": "2023-04-18 00:00:00+00:00",
+      "value": 3.173725079684563
+    },
+    {
+      "timestamp": "2023-04-18 00:00:00-04:00",
+      "value": 4.671794173605889
+    },
+    {
+      "timestamp": "2023-04-19 00:00:00+05:30",
+      "value": 1.9896444814807224
+    },
+    {
+      "timestamp": "2023-04-19 00:00:00+01:00",
+      "value": 1.6793471650204939
+    },
+    {
+      "timestamp": "2023-04-19 00:00:00+00:00",
+      "value": 2.9543958961776484
+    },
+    {
+      "timestamp": "2023-04-19 00:00:00-04:00",
+      "value": 4.652596934043643
+    },
+    {
+      "timestamp": "2023-04-20 00:00:00+05:30",
+      "value": 1.9913351045522707
+    },
+    {
+      "timestamp": "2023-04-20 00:00:00+01:00",
+      "value": 1.6756830385448278
+    },
+    {
+      "timestamp": "2023-04-20 00:00:00+00:00",
+      "value": 2.9125571031115096
+    },
+    {
+      "timestamp": "2023-04-20 00:00:00-04:00",
+      "value": 4.4565121908081995
+    },
+    {
+      "timestamp": "2023-04-21 00:00:00+05:30",
+      "value": 2.89540182026139
+    },
+    {
+      "timestamp": "2023-04-21 00:00:00+01:00",
+      "value": 2.5712292099939766
+    },
+    {
+      "timestamp": "2023-04-21 00:00:00+00:00",
+      "value": 3.175258400167647
+    },
+    {
+      "timestamp": "2023-04-21 00:00:00-04:00",
+      "value": 3.9158474021781933
+    },
+    {
+      "timestamp": "2023-04-22 00:00:00+00:00",
+      "value": 3.219013247977902
+    },
+    {
+      "timestamp": "2023-04-23 00:00:00+00:00",
+      "value": 3.193802725638485
+    },
+    {
+      "timestamp": "2023-04-24 00:00:00+05:30",
+      "value": 2.391700189086359
+    },
+    {
+      "timestamp": "2023-04-24 00:00:00+01:00",
+      "value": 2.569863141889382
+    },
+    {
+      "timestamp": "2023-04-24 00:00:00+00:00",
+      "value": 3.180872907427958
+    },
+    {
+      "timestamp": "2023-04-24 00:00:00-04:00",
+      "value": 3.8221596112283613
+    },
+    {
+      "timestamp": "2023-04-25 00:00:00+05:30",
+      "value": 2.3920435494270853
+    },
+    {
+      "timestamp": "2023-04-25 00:00:00+01:00",
+      "value": 2.574572145710393
+    },
+    {
+      "timestamp": "2023-04-25 00:00:00+00:00",
+      "value": 3.233337097463205
+    },
+    {
+      "timestamp": "2023-04-25 00:00:00-04:00",
+      "value": 3.7697263272007615
+    },
+    {
+      "timestamp": "2023-04-26 00:00:00+05:30",
+      "value": 3.488755251372953
+    },
+    {
+      "timestamp": "2023-04-26 00:00:00+01:00",
+      "value": 3.6566547578109168
+    },
+    {
+      "timestamp": "2023-04-26 00:00:00+00:00",
+      "value": 3.563649260796729
+    },
+    {
+      "timestamp": "2023-04-26 00:00:00-04:00",
+      "value": 3.044672395414985
+    },
+    {
+      "timestamp": "2023-04-27 00:00:00+05:30",
+      "value": 2.758038940789232
+    },
+    {
+      "timestamp": "2023-04-27 00:00:00+01:00",
+      "value": 3.1071033923174007
+    },
+    {
+      "timestamp": "2023-04-27 00:00:00+00:00",
+      "value": 3.0968908280123717
+    },
+    {
+      "timestamp": "2023-04-27 00:00:00-04:00",
+      "value": 2.6442217391868543
+    },
+    {
+      "timestamp": "2023-04-28 00:00:00+05:30",
+      "value": 2.787293622173305
+    },
+    {
+      "timestamp": "2023-04-28 00:00:00+01:00",
+      "value": 3.1040480063933487
+    },
+    {
+      "timestamp": "2023-04-28 00:00:00+00:00",
+      "value": 3.130776380413182
+    },
+    {
+      "timestamp": "2023-04-28 00:00:00-04:00",
+      "value": 2.6632447671834774
+    },
+    {
+      "timestamp": "2023-04-29 00:00:00+00:00",
+      "value": 3.1365563816370834
+    },
+    {
+      "timestamp": "2023-04-30 00:00:00+00:00",
+      "value": 3.100129276744741
+    },
+    {
+      "timestamp": "2023-05-01 00:00:00+01:00",
+      "value": 3.0965523531400168
+    },
+    {
+      "timestamp": "2023-05-01 00:00:00+00:00",
+      "value": 2.9067453506274723
+    },
+    {
+      "timestamp": "2023-05-01 00:00:00-04:00",
+      "value": 2.596848878730177
+    },
+    {
+      "timestamp": "2023-05-02 00:00:00+05:30",
+      "value": 2.6645218947144684
+    },
+    {
+      "timestamp": "2023-05-02 00:00:00+01:00",
+      "value": 3.0968332410406463
+    },
+    {
+      "timestamp": "2023-05-02 00:00:00+00:00",
+      "value": 2.940448867473069
+    },
+    {
+      "timestamp": "2023-05-02 00:00:00-04:00",
+      "value": 2.5281599044801037
+    },
+    {
+      "timestamp": "2023-05-03 00:00:00+05:30",
+      "value": 2.657671574985482
+    },
+    {
+      "timestamp": "2023-05-03 00:00:00+01:00",
+      "value": 3.102048852415204
+    },
+    {
+      "timestamp": "2023-05-03 00:00:00+00:00",
+      "value": 2.964934972088135
+    },
+    {
+      "timestamp": "2023-05-03 00:00:00-04:00",
+      "value": 2.522030585042442
+    },
+    {
+      "timestamp": "2023-05-04 00:00:00+05:30",
+      "value": 2.682436269178943
+    },
+    {
+      "timestamp": "2023-05-04 00:00:00+01:00",
+      "value": 3.0978223971197
+    },
+    {
+      "timestamp": "2023-05-04 00:00:00+00:00",
+      "value": 2.9286480407205637
+    },
+    {
+      "timestamp": "2023-05-04 00:00:00-04:00",
+      "value": 2.523462349554995
+    },
+    {
+      "timestamp": "2023-05-05 00:00:00+05:30",
+      "value": 2.664215960701357
+    },
+    {
+      "timestamp": "2023-05-05 00:00:00+01:00",
+      "value": 3.0887512308599394
+    },
+    {
+      "timestamp": "2023-05-05 00:00:00+00:00",
+      "value": 3.0191517291703196
+    },
+    {
+      "timestamp": "2023-05-05 00:00:00-04:00",
+      "value": 2.6100629853588067
+    },
+    {
+      "timestamp": "2023-05-06 00:00:00+00:00",
+      "value": 2.9409454893860527
+    },
+    {
+      "timestamp": "2023-05-07 00:00:00+00:00",
+      "value": 2.9101848596481332
+    },
+    {
+      "timestamp": "2023-05-08 00:00:00+05:30",
+      "value": 2.7471852051624563
+    },
+    {
+      "timestamp": "2023-05-08 00:00:00+01:00",
+      "value": 3.149774772072047
+    },
+    {
+      "timestamp": "2023-05-08 00:00:00+00:00",
+      "value": 2.822416547712722
+    },
+    {
+      "timestamp": "2023-05-08 00:00:00-04:00",
+      "value": 3.1242301995812185
+    },
+    {
+      "timestamp": "2023-05-09 00:00:00+05:30",
+      "value": 2.6080271674229794
+    },
+    {
+      "timestamp": "2023-05-09 00:00:00+01:00",
+      "value": 3.0171805261138958
+    },
+    {
+      "timestamp": "2023-05-09 00:00:00+00:00",
+      "value": 2.200947627432978
+    },
+    {
+      "timestamp": "2023-05-09 00:00:00-04:00",
+      "value": 3.1356018587266457
+    },
+    {
+      "timestamp": "2023-05-10 00:00:00+05:30",
+      "value": 2.612829005394472
+    },
+    {
+      "timestamp": "2023-05-10 00:00:00+01:00",
+      "value": 3.0146638318426033
+    },
+    {
+      "timestamp": "2023-05-10 00:00:00+00:00",
+      "value": 2.2006677114224042
+    },
+    {
+      "timestamp": "2023-05-10 00:00:00-04:00",
+      "value": 3.7411823033405898
+    },
+    {
+      "timestamp": "2023-05-11 00:00:00+05:30",
+      "value": 2.453108849601675
+    },
+    {
+      "timestamp": "2023-05-11 00:00:00+01:00",
+      "value": 2.8522991218226528
+    },
+    {
+      "timestamp": "2023-05-11 00:00:00+00:00",
+      "value": 1.4205606014032934
+    },
+    {
+      "timestamp": "2023-05-11 00:00:00-04:00",
+      "value": 3.7331953797658923
+    },
+    {
+      "timestamp": "2023-05-12 00:00:00+05:30",
+      "value": 2.9566898022839014
+    },
+    {
+      "timestamp": "2023-05-12 00:00:00+01:00",
+      "value": 3.6045319974680994
+    },
+    {
+      "timestamp": "2023-05-12 00:00:00+00:00",
+      "value": 2.1749025588403113
+    },
+    {
+      "timestamp": "2023-05-12 00:00:00-04:00",
+      "value": 3.9323763438025887
+    },
+    {
+      "timestamp": "2023-05-13 00:00:00+00:00",
+      "value": 1.3829033610538544
+    },
+    {
+      "timestamp": "2023-05-14 00:00:00+00:00",
+      "value": 1.3878000454167976
+    },
+    {
+      "timestamp": "2023-05-15 00:00:00+05:30",
+      "value": 2.1800658584622905
+    },
+    {
+      "timestamp": "2023-05-15 00:00:00+01:00",
+      "value": 2.8183817398275184
+    },
+    {
+      "timestamp": "2023-05-15 00:00:00+00:00",
+      "value": 2.4096301986798077
+    },
+    {
+      "timestamp": "2023-05-15 00:00:00-04:00",
+      "value": 5.112509744470095
+    },
+    {
+      "timestamp": "2023-05-16 00:00:00+05:30",
+      "value": 2.158812392739658
+    },
+    {
+      "timestamp": "2023-05-16 00:00:00+01:00",
+      "value": 1.7928737720284706
+    },
+    {
+      "timestamp": "2023-05-16 00:00:00+00:00",
+      "value": 1.3849175342311235
+    },
+    {
+      "timestamp": "2023-05-16 00:00:00-04:00",
+      "value": 5.08804763048506
+    },
+    {
+      "timestamp": "2023-05-17 00:00:00+05:30",
+      "value": 2.1489555503033646
+    },
+    {
+      "timestamp": "2023-05-17 00:00:00+01:00",
+      "value": 1.7930252719774247
+    },
+    {
+      "timestamp": "2023-05-17 00:00:00+00:00",
+      "value": 1.3923265024822056
+    },
+    {
+      "timestamp": "2023-05-17 00:00:00-04:00",
+      "value": 5.4087037695768245
+    },
+    {
+      "timestamp": "2023-05-18 00:00:00+05:30",
+      "value": 2.1458410307652014
+    },
+    {
+      "timestamp": "2023-05-18 00:00:00+01:00",
+      "value": 1.797729635909814
+    },
+    {
+      "timestamp": "2023-05-18 00:00:00+00:00",
+      "value": 1.3722594524448755
+    },
+    {
+      "timestamp": "2023-05-18 00:00:00-04:00",
+      "value": 5.740211953231945
+    },
+    {
+      "timestamp": "2023-05-19 00:00:00+05:30",
+      "value": 2.157052496654495
+    },
+    {
+      "timestamp": "2023-05-19 00:00:00+01:00",
+      "value": 1.8026855175631995
+    },
+    {
+      "timestamp": "2023-05-19 00:00:00+00:00",
+      "value": 1.3774629694415683
+    },
+    {
+      "timestamp": "2023-05-19 00:00:00-04:00",
+      "value": 5.5846402518628215
+    },
+    {
+      "timestamp": "2023-05-20 00:00:00+00:00",
+      "value": 1.3857220371013215
+    },
+    {
+      "timestamp": "2023-05-21 00:00:00+00:00",
+      "value": 1.3714842268668095
+    },
+    {
+      "timestamp": "2023-05-22 00:00:00+05:30",
+      "value": 2.161892965810814
+    },
+    {
+      "timestamp": "2023-05-22 00:00:00+01:00",
+      "value": 1.7087457215715172
+    },
+    {
+      "timestamp": "2023-05-22 00:00:00+00:00",
+      "value": 1.2876020569366635
+    },
+    {
+      "timestamp": "2023-05-22 00:00:00-04:00",
+      "value": 5.8245192163612245
+    },
+    {
+      "timestamp": "2023-05-23 00:00:00+05:30",
+      "value": 2.422779746820839
+    },
+    {
+      "timestamp": "2023-05-23 00:00:00+01:00",
+      "value": 1.9756894778344591
+    },
+    {
+      "timestamp": "2023-05-23 00:00:00+00:00",
+      "value": 1.5715506336614473
+    },
+    {
+      "timestamp": "2023-05-23 00:00:00-04:00",
+      "value": 5.74804052973522
+    },
+    {
+      "timestamp": "2023-05-24 00:00:00+05:30",
+      "value": 2.417719322971155
+    },
+    {
+      "timestamp": "2023-05-24 00:00:00+01:00",
+      "value": 1.9733671899618828
+    },
+    {
+      "timestamp": "2023-05-24 00:00:00+00:00",
+      "value": 1.531895283720727
+    },
+    {
+      "timestamp": "2023-05-24 00:00:00-04:00",
+      "value": 5.772574006083086
+    },
+    {
+      "timestamp": "2023-05-25 00:00:00+05:30",
+      "value": 2.4335923497481327
+    },
+    {
+      "timestamp": "2023-05-25 00:00:00+01:00",
+      "value": 1.7733595344487225
+    },
+    {
+      "timestamp": "2023-05-25 00:00:00+00:00",
+      "value": 1.6583770666248956
+    },
+    {
+      "timestamp": "2023-05-25 00:00:00-04:00",
+      "value": 5.977072338905623
+    },
+    {
+      "timestamp": "2023-05-26 00:00:00+05:30",
+      "value": 2.768027079399295
+    },
+    {
+      "timestamp": "2023-05-26 00:00:00+01:00",
+      "value": 1.779304007090462
+    },
+    {
+      "timestamp": "2023-05-26 00:00:00+00:00",
+      "value": 1.3158182879862146
+    },
+    {
+      "timestamp": "2023-05-26 00:00:00-04:00",
+      "value": 5.960476951958311
+    },
+    {
+      "timestamp": "2023-05-27 00:00:00+00:00",
+      "value": 1.3200708119922713
+    },
+    {
+      "timestamp": "2023-05-28 00:00:00+00:00",
+      "value": 1.376269717982182
+    },
+    {
+      "timestamp": "2023-05-29 00:00:00+05:30",
+      "value": 2.4284806118284514
+    },
+    {
+      "timestamp": "2023-05-29 00:00:00+01:00",
+      "value": 1.780165355329395
+    },
+    {
+      "timestamp": "2023-05-29 00:00:00+00:00",
+      "value": 1.3621723161415755
+    },
+    {
+      "timestamp": "2023-05-30 00:00:00+05:30",
+      "value": 2.443624475487498
+    },
+    {
+      "timestamp": "2023-05-30 00:00:00+01:00",
+      "value": 1.777712971994187
+    },
+    {
+      "timestamp": "2023-05-30 00:00:00+00:00",
+      "value": 1.364030469205149
+    },
+    {
+      "timestamp": "2023-05-30 00:00:00-04:00",
+      "value": 6.66828522994645
+    },
+    {
+      "timestamp": "2023-05-31 00:00:00+05:30",
+      "value": 2.459499715383127
+    },
+    {
+      "timestamp": "2023-05-31 00:00:00+01:00",
+      "value": 1.7729076587800452
+    },
+    {
+      "timestamp": "2023-05-31 00:00:00+00:00",
+      "value": 1.3434451536626946
+    },
+    {
+      "timestamp": "2023-05-31 00:00:00-04:00",
+      "value": 6.375420812160177
+    },
+    {
+      "timestamp": "2023-06-01 00:00:00+05:30",
+      "value": 2.426888266838279
+    },
+    {
+      "timestamp": "2023-06-01 00:00:00+01:00",
+      "value": 1.7670831666103182
+    },
+    {
+      "timestamp": "2023-06-01 00:00:00+00:00",
+      "value": 1.3301029577562935
+    },
+    {
+      "timestamp": "2023-06-01 00:00:00-04:00",
+      "value": 6.365582257369498
+    },
+    {
+      "timestamp": "2023-06-02 00:00:00+05:30",
+      "value": 2.4402496935964155
+    },
+    {
+      "timestamp": "2023-06-02 00:00:00+01:00",
+      "value": 1.7565344008295893
+    },
+    {
+      "timestamp": "2023-06-02 00:00:00+00:00",
+      "value": 1.355986103638755
+    },
+    {
+      "timestamp": "2023-06-02 00:00:00-04:00",
+      "value": 6.275451141982959
+    },
+    {
+      "timestamp": "2023-06-03 00:00:00+00:00",
+      "value": 1.346711469863005
+    },
+    {
+      "timestamp": "2023-06-04 00:00:00+00:00",
+      "value": 1.3470286510467173
+    },
+    {
+      "timestamp": "2023-06-05 00:00:00+05:30",
+      "value": 2.4353617329819595
+    },
+    {
+      "timestamp": "2023-06-05 00:00:00+01:00",
+      "value": 1.7650659514777827
+    },
+    {
+      "timestamp": "2023-06-05 00:00:00+00:00",
+      "value": 1.2880122004393475
+    },
+    {
+      "timestamp": "2023-06-05 00:00:00-04:00",
+      "value": 6.708094776697877
+    },
+    {
+      "timestamp": "2023-06-06 00:00:00+05:30",
+      "value": 2.754684864527106
+    },
+    {
+      "timestamp": "2023-06-06 00:00:00+01:00",
+      "value": 2.0884677475967934
+    },
+    {
+      "timestamp": "2023-06-06 00:00:00+00:00",
+      "value": 1.3268074378325414
+    },
+    {
+      "timestamp": "2023-06-06 00:00:00-04:00",
+      "value": 6.975459703909156
+    },
+    {
+      "timestamp": "2023-06-07 00:00:00+05:30",
+      "value": 2.770516569126563
+    },
+    {
+      "timestamp": "2023-06-07 00:00:00+01:00",
+      "value": 2.5230485419774387
+    },
+    {
+      "timestamp": "2023-06-07 00:00:00+00:00",
+      "value": 1.733483315794138
+    },
+    {
+      "timestamp": "2023-06-07 00:00:00-04:00",
+      "value": 7.070504838271146
+    },
+    {
+      "timestamp": "2023-06-08 00:00:00+05:30",
+      "value": 2.755477795663022
+    },
+    {
+      "timestamp": "2023-06-08 00:00:00+01:00",
+      "value": 2.5227969053331325
+    },
+    {
+      "timestamp": "2023-06-08 00:00:00+00:00",
+      "value": 1.736591338501734
+    },
+    {
+      "timestamp": "2023-06-08 00:00:00-04:00",
+      "value": 7.353987256970401
+    },
+    {
+      "timestamp": "2023-06-09 00:00:00+05:30",
+      "value": 2.7412066320415054
+    },
+    {
+      "timestamp": "2023-06-09 00:00:00+01:00",
+      "value": 2.7749572055495735
+    },
+    {
+      "timestamp": "2023-06-09 00:00:00+00:00",
+      "value": 1.9919554117330098
+    },
+    {
+      "timestamp": "2023-06-09 00:00:00-04:00",
+      "value": 7.59565994470265
+    },
+    {
+      "timestamp": "2023-06-10 00:00:00+00:00",
+      "value": 1.9218054299626393
+    },
+    {
+      "timestamp": "2023-06-11 00:00:00+00:00",
+      "value": 1.9209614349253334
+    },
+    {
+      "timestamp": "2023-06-12 00:00:00+05:30",
+      "value": 3.582892332486389
+    },
+    {
+      "timestamp": "2023-06-12 00:00:00+01:00",
+      "value": 4.110885596452205
+    },
+    {
+      "timestamp": "2023-06-12 00:00:00+00:00",
+      "value": 2.4133814770147186
+    },
+    {
+      "timestamp": "2023-06-12 00:00:00-04:00",
+      "value": 9.127906213831219
+    },
+    {
+      "timestamp": "2023-06-13 00:00:00+05:30",
+      "value": 1.7526745221730113
+    },
+    {
+      "timestamp": "2023-06-13 00:00:00+01:00",
+      "value": 2.287117866393213
+    },
+    {
+      "timestamp": "2023-06-13 00:00:00+00:00",
+      "value": 0.5859746530057086
+    },
+    {
+      "timestamp": "2023-06-13 00:00:00-04:00",
+      "value": 9.56345796653973
+    },
+    {
+      "timestamp": "2023-06-14 00:00:00+05:30",
+      "value": 1.7480095345174247
+    },
+    {
+      "timestamp": "2023-06-14 00:00:00+01:00",
+      "value": 1.935285850902766
+    },
+    {
+      "timestamp": "2023-06-14 00:00:00+00:00",
+      "value": 0.19594726138471408
+    },
+    {
+      "timestamp": "2023-06-14 00:00:00-04:00",
+      "value": 9.198550349896426
+    },
+    {
+      "timestamp": "2023-06-15 00:00:00+05:30",
+      "value": 1.7000165458751386
+    },
+    {
+      "timestamp": "2023-06-15 00:00:00+01:00",
+      "value": 1.9362378668093507
+    },
+    {
+      "timestamp": "2023-06-15 00:00:00+00:00",
+      "value": 0.19594726138471408
+    },
+    {
+      "timestamp": "2023-06-15 00:00:00-04:00",
+      "value": 9.426822181813371
+    },
+    {
+      "timestamp": "2023-06-16 00:00:00+05:30",
+      "value": 1.7150260335153988
+    },
+    {
+      "timestamp": "2023-06-16 00:00:00+01:00",
+      "value": 1.9354739700910462
+    },
+    {
+      "timestamp": "2023-06-16 00:00:00+00:00",
+      "value": 0.19594726138471408
+    },
+    {
+      "timestamp": "2023-06-16 00:00:00-04:00",
+      "value": 9.291935359641903
+    },
+    {
+      "timestamp": "2023-06-17 00:00:00+00:00",
+      "value": 0.19594726138471408
+    },
+    {
+      "timestamp": "2023-06-18 00:00:00+00:00",
+      "value": 0.19594726138471408
+    },
+    {
+      "timestamp": "2023-06-19 00:00:00+05:30",
+      "value": 1.66432211106761
+    },
+    {
+      "timestamp": "2023-06-19 00:00:00+01:00",
+      "value": 1.9035926505311478
+    },
+    {
+      "timestamp": "2023-06-19 00:00:00+00:00",
+      "value": 0.195788752412555
+    },
+    {
+      "timestamp": "2023-06-20 00:00:00+05:30",
+      "value": 1.5884471553585626
+    },
+    {
+      "timestamp": "2023-06-20 00:00:00+01:00",
+      "value": 1.8248679948218678
+    },
+    {
+      "timestamp": "2023-06-20 00:00:00+00:00",
+      "value": 0.198737540352505
+    },
+    {
+      "timestamp": "2023-06-20 00:00:00-04:00",
+      "value": 8.89310174530621
+    },
+    {
+      "timestamp": "2023-06-21 00:00:00+05:30",
+      "value": 1.558747929546003
+    },
+    {
+      "timestamp": "2023-06-21 00:00:00+01:00",
+      "value": 1.7824816425455219
+    },
+    {
+      "timestamp": "2023-06-21 00:00:00+00:00",
+      "value": 0.2124768466473735
+    },
+    {
+      "timestamp": "2023-06-21 00:00:00-04:00",
+      "value": 8.514572222083387
+    },
+    {
+      "timestamp": "2023-06-22 00:00:00+05:30",
+      "value": 1.5566770404670138
+    },
+    {
+      "timestamp": "2023-06-22 00:00:00+01:00",
+      "value": 1.7808207029795486
+    },
+    {
+      "timestamp": "2023-06-22 00:00:00+00:00",
+      "value": 0.21010345621337545
+    },
+    {
+      "timestamp": "2023-06-22 00:00:00-04:00",
+      "value": 8.503606191271832
+    },
+    {
+      "timestamp": "2023-06-23 00:00:00+05:30",
+      "value": 1.5573233858769804
+    },
+    {
+      "timestamp": "2023-06-23 00:00:00+01:00",
+      "value": 2.111261616930493
+    },
+    {
+      "timestamp": "2023-06-23 00:00:00+00:00",
+      "value": 0.556475764952976
+    },
+    {
+      "timestamp": "2023-06-23 00:00:00-04:00",
+      "value": 8.207409278007166
+    },
+    {
+      "timestamp": "2023-06-24 00:00:00+00:00",
+      "value": 0.5651158073199427
+    },
+    {
+      "timestamp": "2023-06-25 00:00:00+00:00",
+      "value": 0.5556673448536443
+    },
+    {
+      "timestamp": "2023-06-26 00:00:00+05:30",
+      "value": 1.216946419911801
+    },
+    {
+      "timestamp": "2023-06-26 00:00:00+01:00",
+      "value": 1.7798342263375584
+    },
+    {
+      "timestamp": "2023-06-26 00:00:00+00:00",
+      "value": 0.7072390213753191
+    },
+    {
+      "timestamp": "2023-06-26 00:00:00-04:00",
+      "value": 8.0569928522659
+    },
+    {
+      "timestamp": "2023-06-27 00:00:00+05:30",
+      "value": 2.0208757552741123
+    },
+    {
+      "timestamp": "2023-06-27 00:00:00+01:00",
+      "value": 2.56937376071253
+    },
+    {
+      "timestamp": "2023-06-27 00:00:00+00:00",
+      "value": 1.5066046584102781
+    },
+    {
+      "timestamp": "2023-06-27 00:00:00-04:00",
+      "value": 8.106202438913197
+    },
+    {
+      "timestamp": "2023-06-28 00:00:00+05:30",
+      "value": 1.242039795485164
+    },
+    {
+      "timestamp": "2023-06-28 00:00:00+01:00",
+      "value": 1.7837190313906937
+    },
+    {
+      "timestamp": "2023-06-28 00:00:00+00:00",
+      "value": 0.9895780887695363
+    },
+    {
+      "timestamp": "2023-06-28 00:00:00-04:00",
+      "value": 8.276839810945862
+    },
+    {
+      "timestamp": "2023-06-29 00:00:00+01:00",
+      "value": 1.8853485139027644
+    },
+    {
+      "timestamp": "2023-06-29 00:00:00+00:00",
+      "value": 1.1146246033415763
+    },
+    {
+      "timestamp": "2023-06-29 00:00:00-04:00",
+      "value": 8.414603936810884
+    },
+    {
+      "timestamp": "2023-06-30 00:00:00+05:30",
+      "value": 1.3528525698892997
+    },
+    {
+      "timestamp": "2023-06-30 00:00:00+01:00",
+      "value": 1.9643626663408438
+    },
+    {
+      "timestamp": "2023-06-30 00:00:00+00:00",
+      "value": 1.25689873198731
+    },
+    {
+      "timestamp": "2023-06-30 00:00:00-04:00",
+      "value": 8.530609900721846
+    },
+    {
+      "timestamp": "2023-07-01 00:00:00+00:00",
+      "value": 1.2452993271683308
+    },
+    {
+      "timestamp": "2023-07-02 00:00:00+00:00",
+      "value": 1.2472250558733446
+    },
+    {
+      "timestamp": "2023-07-03 00:00:00+05:30",
+      "value": 1.3549306294363723
+    },
+    {
+      "timestamp": "2023-07-03 00:00:00+01:00",
+      "value": 1.9650417961535993
+    },
+    {
+      "timestamp": "2023-07-03 00:00:00+00:00",
+      "value": 1.245826275205523
+    },
+    {
+      "timestamp": "2023-07-03 00:00:00-04:00",
+      "value": 8.951311083234572
+    },
+    {
+      "timestamp": "2023-07-04 00:00:00+05:30",
+      "value": 1.3446208877732737
+    },
+    {
+      "timestamp": "2023-07-04 00:00:00+01:00",
+      "value": 1.9650062691141519
+    },
+    {
+      "timestamp": "2023-07-04 00:00:00+00:00",
+      "value": 1.2228972544848444
+    },
+    {
+      "timestamp": "2023-07-05 00:00:00+05:30",
+      "value": 1.337807247802031
+    },
+    {
+      "timestamp": "2023-07-05 00:00:00+01:00",
+      "value": 1.962119093154465
+    },
+    {
+      "timestamp": "2023-07-05 00:00:00+00:00",
+      "value": 1.2094214387365985
+    },
+    {
+      "timestamp": "2023-07-05 00:00:00-04:00",
+      "value": 9.0422823428855
+    },
+    {
+      "timestamp": "2023-07-06 00:00:00+05:30",
+      "value": 1.3394794272570918
+    },
+    {
+      "timestamp": "2023-07-06 00:00:00+01:00",
+      "value": 1.9662509982324237
+    },
+    {
+      "timestamp": "2023-07-06 00:00:00+00:00",
+      "value": 1.1805705312519028
+    },
+    {
+      "timestamp": "2023-07-06 00:00:00-04:00",
+      "value": 9.134861453986767
+    },
+    {
+      "timestamp": "2023-07-07 00:00:00+05:30",
+      "value": 1.6179983126557855
+    },
+    {
+      "timestamp": "2023-07-07 00:00:00+01:00",
+      "value": 2.500653270151909
+    },
+    {
+      "timestamp": "2023-07-07 00:00:00+00:00",
+      "value": 1.4406973103633853
+    },
+    {
+      "timestamp": "2023-07-07 00:00:00-04:00",
+      "value": 9.443936137284298
+    },
+    {
+      "timestamp": "2023-07-08 00:00:00+00:00",
+      "value": 1.4413879131238698
+    },
+    {
+      "timestamp": "2023-07-09 00:00:00+00:00",
+      "value": 1.429001020407629
+    },
+    {
+      "timestamp": "2023-07-10 00:00:00+05:30",
+      "value": 1.6916309139632242
+    },
+    {
+      "timestamp": "2023-07-10 00:00:00+01:00",
+      "value": 2.210062996529048
+    },
+    {
+      "timestamp": "2023-07-10 00:00:00+00:00",
+      "value": 1.0956597150865388
+    },
+    {
+      "timestamp": "2023-07-10 00:00:00-04:00",
+      "value": 9.325274568247817
+    },
+    {
+      "timestamp": "2023-07-11 00:00:00+05:30",
+      "value": 1.4841084491241598
+    },
+    {
+      "timestamp": "2023-07-11 00:00:00+01:00",
+      "value": 1.9855775973069465
+    },
+    {
+      "timestamp": "2023-07-11 00:00:00+00:00",
+      "value": 1.1073395730159554
+    },
+    {
+      "timestamp": "2023-07-11 00:00:00-04:00",
+      "value": 9.635287965340419
+    },
+    {
+      "timestamp": "2023-07-12 00:00:00+05:30",
+      "value": 3.1426740821591723
+    },
+    {
+      "timestamp": "2023-07-12 00:00:00+01:00",
+      "value": 3.6382930297888136
+    },
+    {
+      "timestamp": "2023-07-12 00:00:00+00:00",
+      "value": 1.6883733375596037
+    },
+    {
+      "timestamp": "2023-07-12 00:00:00-04:00",
+      "value": 8.445821303212622
+    },
+    {
+      "timestamp": "2023-07-13 00:00:00+05:30",
+      "value": 1.294967115350906
+    },
+    {
+      "timestamp": "2023-07-13 00:00:00+01:00",
+      "value": 2.8639119479265993
+    },
+    {
+      "timestamp": "2023-07-13 00:00:00+00:00",
+      "value": 1.101905449589024
+    },
+    {
+      "timestamp": "2023-07-13 00:00:00-04:00",
+      "value": 9.42387835700895
+    },
+    {
+      "timestamp": "2023-07-14 00:00:00+05:30",
+      "value": 1.2607322594481634
+    },
+    {
+      "timestamp": "2023-07-14 00:00:00+01:00",
+      "value": 2.7794667494261724
+    },
+    {
+      "timestamp": "2023-07-14 00:00:00+00:00",
+      "value": 1.0568637713345255
+    },
+    {
+      "timestamp": "2023-07-14 00:00:00-04:00",
+      "value": 9.013219201726411
+    },
+    {
+      "timestamp": "2023-07-15 00:00:00+00:00",
+      "value": 1.060236741827288
+    },
+    {
+      "timestamp": "2023-07-16 00:00:00+00:00",
+      "value": 1.049690081322971
+    },
+    {
+      "timestamp": "2023-07-17 00:00:00+05:30",
+      "value": 1.2611603586535947
+    },
+    {
+      "timestamp": "2023-07-17 00:00:00+01:00",
+      "value": 2.7780475463877723
+    },
+    {
+      "timestamp": "2023-07-17 00:00:00+00:00",
+      "value": 1.0431449577599317
+    },
+    {
+      "timestamp": "2023-07-17 00:00:00-04:00",
+      "value": 8.987258922381022
+    },
+    {
+      "timestamp": "2023-07-18 00:00:00+05:30",
+      "value": 2.629446097404754
+    },
+    {
+      "timestamp": "2023-07-18 00:00:00+01:00",
+      "value": 3.077075152744001
+    },
+    {
+      "timestamp": "2023-07-18 00:00:00+00:00",
+      "value": 1.3218932373887158
+    },
+    {
+      "timestamp": "2023-07-18 00:00:00-04:00",
+      "value": 7.8883219687370225
+    },
+    {
+      "timestamp": "2023-07-19 00:00:00+05:30",
+      "value": 2.62258577392621
+    },
+    {
+      "timestamp": "2023-07-19 00:00:00+01:00",
+      "value": 3.073140888245623
+    },
+    {
+      "timestamp": "2023-07-19 00:00:00+00:00",
+      "value": 1.3543302859394704
+    },
+    {
+      "timestamp": "2023-07-19 00:00:00-04:00",
+      "value": 7.900621354851397
+    },
+    {
+      "timestamp": "2023-07-20 00:00:00+05:30",
+      "value": 2.3680368131323153
+    },
+    {
+      "timestamp": "2023-07-20 00:00:00+01:00",
+      "value": 2.790382780401271
+    },
+    {
+      "timestamp": "2023-07-20 00:00:00+00:00",
+      "value": 1.341348636411126
+    },
+    {
+      "timestamp": "2023-07-20 00:00:00-04:00",
+      "value": 7.476529018804977
+    },
+    {
+      "timestamp": "2023-07-21 00:00:00+05:30",
+      "value": 2.280144419257062
+    },
+    {
+      "timestamp": "2023-07-21 00:00:00+01:00",
+      "value": 2.7442035724592646
+    },
+    {
+      "timestamp": "2023-07-21 00:00:00+00:00",
+      "value": 1.1933165759582
+    },
+    {
+      "timestamp": "2023-07-21 00:00:00-04:00",
+      "value": 7.383205880012415
+    },
+    {
+      "timestamp": "2023-07-22 00:00:00+00:00",
+      "value": 1.1589075969685894
+    },
+    {
+      "timestamp": "2023-07-23 00:00:00+00:00",
+      "value": 1.1658440282953284
+    },
+    {
+      "timestamp": "2023-07-24 00:00:00+05:30",
+      "value": 2.3737831155340636
+    },
+    {
+      "timestamp": "2023-07-24 00:00:00+01:00",
+      "value": 2.8362237023441574
+    },
+    {
+      "timestamp": "2023-07-24 00:00:00+00:00",
+      "value": 1.2838223492127154
+    },
+    {
+      "timestamp": "2023-07-24 00:00:00-04:00",
+      "value": 7.6320801100596505
+    },
+    {
+      "timestamp": "2023-07-25 00:00:00+05:30",
+      "value": 2.7249277895663613
+    },
+    {
+      "timestamp": "2023-07-25 00:00:00+01:00",
+      "value": 3.3627423682114745
+    },
+    {
+      "timestamp": "2023-07-25 00:00:00+00:00",
+      "value": 1.5058221042231867
+    },
+    {
+      "timestamp": "2023-07-25 00:00:00-04:00",
+      "value": 7.569096197641995
+    },
+    {
+      "timestamp": "2023-07-26 00:00:00+05:30",
+      "value": 2.524991277935428
+    },
+    {
+      "timestamp": "2023-07-26 00:00:00+01:00",
+      "value": 3.260984285326264
+    },
+    {
+      "timestamp": "2023-07-26 00:00:00+00:00",
+      "value": 1.79114313666469
+    },
+    {
+      "timestamp": "2023-07-26 00:00:00-04:00",
+      "value": 7.805397181677228
+    },
+    {
+      "timestamp": "2023-07-27 00:00:00+05:30",
+      "value": 3.0339629811098274
+    },
+    {
+      "timestamp": "2023-07-27 00:00:00+01:00",
+      "value": 3.676070802571684
+    },
+    {
+      "timestamp": "2023-07-27 00:00:00+00:00",
+      "value": 2.2199839061651594
+    },
+    {
+      "timestamp": "2023-07-27 00:00:00-04:00",
+      "value": 7.641401475866348
+    },
+    {
+      "timestamp": "2023-07-28 00:00:00+05:30",
+      "value": 3.028315464549801
+    },
+    {
+      "timestamp": "2023-07-28 00:00:00+01:00",
+      "value": 3.681529574942182
+    },
+    {
+      "timestamp": "2023-07-28 00:00:00+00:00",
+      "value": 2.657553076978175
+    },
+    {
+      "timestamp": "2023-07-28 00:00:00-04:00",
+      "value": 7.799588665955656
+    },
+    {
+      "timestamp": "2023-07-29 00:00:00+00:00",
+      "value": 2.638342493752067
+    },
+    {
+      "timestamp": "2023-07-30 00:00:00+00:00",
+      "value": 2.5335749875523565
+    },
+    {
+      "timestamp": "2023-07-31 00:00:00+05:30",
+      "value": 2.225175876987198
+    },
+    {
+      "timestamp": "2023-07-31 00:00:00+01:00",
+      "value": 3.391591064699313
+    },
+    {
+      "timestamp": "2023-07-31 00:00:00+00:00",
+      "value": 3.0246032587584386
+    },
+    {
+      "timestamp": "2023-07-31 00:00:00-04:00",
+      "value": 6.975680792076602
+    },
+    {
+      "timestamp": "2023-08-01 00:00:00+05:30",
+      "value": 1.6202647134779513
+    },
+    {
+      "timestamp": "2023-08-01 00:00:00+01:00",
+      "value": 2.79259716086961
+    },
+    {
+      "timestamp": "2023-08-01 00:00:00+00:00",
+      "value": 3.0433140187463925
+    },
+    {
+      "timestamp": "2023-08-01 00:00:00-04:00",
+      "value": 6.853615678851719
+    },
+    {
+      "timestamp": "2023-08-02 00:00:00+05:30",
+      "value": 1.6049725169766846
+    },
+    {
+      "timestamp": "2023-08-02 00:00:00+01:00",
+      "value": 2.802029630242603
+    },
+    {
+      "timestamp": "2023-08-02 00:00:00+00:00",
+      "value": 2.9739072505421884
+    },
+    {
+      "timestamp": "2023-08-02 00:00:00-04:00",
+      "value": 6.956396479510782
+    },
+    {
+      "timestamp": "2023-08-03 00:00:00+05:30",
+      "value": 1.8013737640906249
+    },
+    {
+      "timestamp": "2023-08-03 00:00:00+01:00",
+      "value": 2.665503306748783
+    },
+    {
+      "timestamp": "2023-08-03 00:00:00+00:00",
+      "value": 2.5925710504285
+    },
+    {
+      "timestamp": "2023-08-03 00:00:00-04:00",
+      "value": 6.750872195617559
+    },
+    {
+      "timestamp": "2023-08-04 00:00:00+05:30",
+      "value": 2.0041330521816305
+    },
+    {
+      "timestamp": "2023-08-04 00:00:00+01:00",
+      "value": 2.8402947510657914
+    },
+    {
+      "timestamp": "2023-08-04 00:00:00+00:00",
+      "value": 2.650679746183442
+    },
+    {
+      "timestamp": "2023-08-04 00:00:00-04:00",
+      "value": 6.615154415480989
+    },
+    {
+      "timestamp": "2023-08-05 00:00:00+00:00",
+      "value": 2.714127830198461
+    },
+    {
+      "timestamp": "2023-08-06 00:00:00+00:00",
+      "value": 2.658458715219079
+    },
+    {
+      "timestamp": "2023-08-07 00:00:00+05:30",
+      "value": 2.0153964681138916
+    },
+    {
+      "timestamp": "2023-08-07 00:00:00+01:00",
+      "value": 2.8365918996212156
+    },
+    {
+      "timestamp": "2023-08-07 00:00:00+00:00",
+      "value": 2.650696996850293
+    },
+    {
+      "timestamp": "2023-08-07 00:00:00-04:00",
+      "value": 6.556415933705567
+    },
+    {
+      "timestamp": "2023-08-08 00:00:00+05:30",
+      "value": 2.5230827876488227
+    },
+    {
+      "timestamp": "2023-08-08 00:00:00+01:00",
+      "value": 2.8434313371259403
+    },
+    {
+      "timestamp": "2023-08-08 00:00:00+00:00",
+      "value": 2.7657297079069663
+    },
+    {
+      "timestamp": "2023-08-08 00:00:00-04:00",
+      "value": 6.561533593075948
+    },
+    {
+      "timestamp": "2023-08-09 00:00:00+05:30",
+      "value": 3.074591378645403
+    },
+    {
+      "timestamp": "2023-08-09 00:00:00+01:00",
+      "value": 3.403348669787003
+    },
+    {
+      "timestamp": "2023-08-09 00:00:00+00:00",
+      "value": 2.7660918287463288
+    },
+    {
+      "timestamp": "2023-08-09 00:00:00-04:00",
+      "value": 6.521964655015617
+    },
+    {
+      "timestamp": "2023-08-10 00:00:00+05:30",
+      "value": 3.0627023180171093
+    },
+    {
+      "timestamp": "2023-08-10 00:00:00+01:00",
+      "value": 3.406949063214038
+    },
+    {
+      "timestamp": "2023-08-10 00:00:00+00:00",
+      "value": 2.7679720379226955
+    },
+    {
+      "timestamp": "2023-08-10 00:00:00-04:00",
+      "value": 5.991436523288584
+    },
+    {
+      "timestamp": "2023-08-11 00:00:00+05:30",
+      "value": 2.5016304585762907
+    },
+    {
+      "timestamp": "2023-08-11 00:00:00+01:00",
+      "value": 2.861881284184539
+    },
+    {
+      "timestamp": "2023-08-11 00:00:00+00:00",
+      "value": 2.75983271733046
+    },
+    {
+      "timestamp": "2023-08-11 00:00:00-04:00",
+      "value": 6.0128987080710665
+    },
+    {
+      "timestamp": "2023-08-12 00:00:00+00:00",
+      "value": 3.1926871613452104
+    },
+    {
+      "timestamp": "2023-08-13 00:00:00+00:00",
+      "value": 3.1025448678482035
+    },
+    {
+      "timestamp": "2023-08-14 00:00:00+05:30",
+      "value": 2.872603381033502
+    },
+    {
+      "timestamp": "2023-08-14 00:00:00+01:00",
+      "value": 3.219413138404226
+    },
+    {
+      "timestamp": "2023-08-14 00:00:00+00:00",
+      "value": 3.1223407000288903
+    },
+    {
+      "timestamp": "2023-08-14 00:00:00-04:00",
+      "value": 6.0245314452425305
+    },
+    {
+      "timestamp": "2023-08-15 00:00:00+01:00",
+      "value": 3.224850612325881
+    },
+    {
+      "timestamp": "2023-08-15 00:00:00+00:00",
+      "value": 3.02258053777525
+    },
+    {
+      "timestamp": "2023-08-15 00:00:00-04:00",
+      "value": 7.2819337743944805
+    },
+    {
+      "timestamp": "2023-08-16 00:00:00+05:30",
+      "value": 2.7716282200790627
+    },
+    {
+      "timestamp": "2023-08-16 00:00:00+01:00",
+      "value": 3.7325328127758035
+    },
+    {
+      "timestamp": "2023-08-16 00:00:00+00:00",
+      "value": 2.085181750307832
+    },
+    {
+      "timestamp": "2023-08-16 00:00:00-04:00",
+      "value": 7.8314579985831605
+    },
+    {
+      "timestamp": "2023-08-17 00:00:00+05:30",
+      "value": 2.7571072634973954
+    },
+    {
+      "timestamp": "2023-08-17 00:00:00+01:00",
+      "value": 3.7384116341625546
+    },
+    {
+      "timestamp": "2023-08-17 00:00:00+00:00",
+      "value": 2.0034484023336887
+    },
+    {
+      "timestamp": "2023-08-17 00:00:00-04:00",
+      "value": 8.293542885426332
+    },
+    {
+      "timestamp": "2023-08-18 00:00:00+05:30",
+      "value": 4.377232503723953
+    },
+    {
+      "timestamp": "2023-08-18 00:00:00+01:00",
+      "value": 5.362277644856393
+    },
+    {
+      "timestamp": "2023-08-18 00:00:00+00:00",
+      "value": 2.7334368496040256
+    },
+    {
+      "timestamp": "2023-08-18 00:00:00-04:00",
+      "value": 7.788616510840821
+    },
+    {
+      "timestamp": "2023-08-19 00:00:00+00:00",
+      "value": 2.6748069986350282
+    },
+    {
+      "timestamp": "2023-08-20 00:00:00+00:00",
+      "value": 2.6748069986350282
+    },
+    {
+      "timestamp": "2023-08-21 00:00:00+05:30",
+      "value": 3.8788564277765456
+    },
+    {
+      "timestamp": "2023-08-21 00:00:00+01:00",
+      "value": 5.360839615600487
+    },
+    {
+      "timestamp": "2023-08-21 00:00:00+00:00",
+      "value": 2.6748069986350282
+    },
+    {
+      "timestamp": "2023-08-21 00:00:00-04:00",
+      "value": 7.787573481826279
+    },
+    {
+      "timestamp": "2023-08-22 00:00:00+05:30",
+      "value": 3.8745952882511445
+    },
+    {
+      "timestamp": "2023-08-22 00:00:00+01:00",
+      "value": 4.5883685461409005
+    },
+    {
+      "timestamp": "2023-08-22 00:00:00+00:00",
+      "value": 1.899113021927149
+    },
+    {
+      "timestamp": "2023-08-22 00:00:00-04:00",
+      "value": 7.023973751723817
+    },
+    {
+      "timestamp": "2023-08-23 00:00:00+05:30",
+      "value": 3.896464481509763
+    },
+    {
+      "timestamp": "2023-08-23 00:00:00+01:00",
+      "value": 4.585042141267394
+    },
+    {
+      "timestamp": "2023-08-23 00:00:00+00:00",
+      "value": 1.899113021927149
+    },
+    {
+      "timestamp": "2023-08-23 00:00:00-04:00",
+      "value": 7.040877063559383
+    },
+    {
+      "timestamp": "2023-08-24 00:00:00+05:30",
+      "value": 3.729848680705903
+    },
+    {
+      "timestamp": "2023-08-24 00:00:00+01:00",
+      "value": 4.414390475570662
+    },
+    {
+      "timestamp": "2023-08-24 00:00:00+00:00",
+      "value": 1.7377884440876024
+    },
+    {
+      "timestamp": "2023-08-24 00:00:00-04:00",
+      "value": 6.99288574662835
+    },
+    {
+      "timestamp": "2023-08-25 00:00:00+05:30",
+      "value": 3.7173914076283747
+    },
+    {
+      "timestamp": "2023-08-25 00:00:00+01:00",
+      "value": 4.419466345791064
+    },
+    {
+      "timestamp": "2023-08-25 00:00:00+00:00",
+      "value": 1.9111724330953719
+    },
+    {
+      "timestamp": "2023-08-25 00:00:00-04:00",
+      "value": 6.036569600313611
+    },
+    {
+      "timestamp": "2023-08-26 00:00:00+00:00",
+      "value": 1.8983447919253982
+    },
+    {
+      "timestamp": "2023-08-27 00:00:00+00:00",
+      "value": 1.903586354408909
+    },
+    {
+      "timestamp": "2023-08-28 00:00:00+05:30",
+      "value": 2.7404829776744024
+    },
+    {
+      "timestamp": "2023-08-28 00:00:00+01:00",
+      "value": 3.216368585546584
+    },
+    {
+      "timestamp": "2023-08-28 00:00:00+00:00",
+      "value": 1.8421489983862518
+    },
+    {
+      "timestamp": "2023-08-28 00:00:00-04:00",
+      "value": 6.0847306940536745
+    },
+    {
+      "timestamp": "2023-08-29 00:00:00+05:30",
+      "value": 2.731573949693678
+    },
+    {
+      "timestamp": "2023-08-29 00:00:00+01:00",
+      "value": 3.2140008568913525
+    },
+    {
+      "timestamp": "2023-08-29 00:00:00+00:00",
+      "value": 1.9011939610742619
+    },
+    {
+      "timestamp": "2023-08-29 00:00:00-04:00",
+      "value": 6.245072874330576
+    },
+    {
+      "timestamp": "2023-08-30 00:00:00+05:30",
+      "value": 2.7233280091100185
+    },
+    {
+      "timestamp": "2023-08-30 00:00:00+01:00",
+      "value": 3.2042556211547235
+    },
+    {
+      "timestamp": "2023-08-30 00:00:00+00:00",
+      "value": 1.8638286599466865
+    },
+    {
+      "timestamp": "2023-08-30 00:00:00-04:00",
+      "value": 6.250457064240759
+    },
+    {
+      "timestamp": "2023-08-31 00:00:00+05:30",
+      "value": 2.710591581153648
+    },
+    {
+      "timestamp": "2023-08-31 00:00:00+01:00",
+      "value": 3.197677519601968
+    },
+    {
+      "timestamp": "2023-08-31 00:00:00+00:00",
+      "value": 1.8149306696429919
+    },
+    {
+      "timestamp": "2023-08-31 00:00:00-04:00",
+      "value": 6.304860047945373
+    },
+    {
+      "timestamp": "2023-09-01 00:00:00+05:30",
+      "value": 2.737267003565094
+    },
+    {
+      "timestamp": "2023-09-01 00:00:00+01:00",
+      "value": 3.199860265827634
+    },
+    {
+      "timestamp": "2023-09-01 00:00:00+00:00",
+      "value": 1.8909789086666058
+    },
+    {
+      "timestamp": "2023-09-01 00:00:00-04:00",
+      "value": 6.385420664481776
+    },
+    {
+      "timestamp": "2023-09-02 00:00:00+00:00",
+      "value": 1.8910067089950138
+    },
+    {
+      "timestamp": "2023-09-03 00:00:00+00:00",
+      "value": 1.908783176186412
+    },
+    {
+      "timestamp": "2023-09-04 00:00:00+05:30",
+      "value": 2.8369281449721235
+    },
+    {
+      "timestamp": "2023-09-04 00:00:00+01:00",
+      "value": 3.988240650631303
+    },
+    {
+      "timestamp": "2023-09-04 00:00:00+00:00",
+      "value": 2.6473715824076027
+    },
+    {
+      "timestamp": "2023-09-05 00:00:00+05:30",
+      "value": 3.251036192630911
+    },
+    {
+      "timestamp": "2023-09-05 00:00:00+01:00",
+      "value": 4.3990395922923895
+    },
+    {
+      "timestamp": "2023-09-05 00:00:00+00:00",
+      "value": 2.6412611613533987
+    },
+    {
+      "timestamp": "2023-09-05 00:00:00-04:00",
+      "value": 7.916067569577518
+    },
+    {
+      "timestamp": "2023-09-06 00:00:00+05:30",
+      "value": 2.0485518615246967
+    },
+    {
+      "timestamp": "2023-09-06 00:00:00+01:00",
+      "value": 3.201195521349086
+    },
+    {
+      "timestamp": "2023-09-06 00:00:00+00:00",
+      "value": 1.6958185425986219
+    },
+    {
+      "timestamp": "2023-09-06 00:00:00-04:00",
+      "value": 8.496908231201665
+    },
+    {
+      "timestamp": "2023-09-07 00:00:00+05:30",
+      "value": 2.682618713169582
+    },
+    {
+      "timestamp": "2023-09-07 00:00:00+01:00",
+      "value": 3.7326326693344805
+    },
+    {
+      "timestamp": "2023-09-07 00:00:00+00:00",
+      "value": 2.2270333138558422
+    },
+    {
+      "timestamp": "2023-09-07 00:00:00-04:00",
+      "value": 8.511226888213464
+    },
+    {
+      "timestamp": "2023-09-08 00:00:00+05:30",
+      "value": 2.242159853339005
+    },
+    {
+      "timestamp": "2023-09-08 00:00:00+01:00",
+      "value": 2.389903514811463
+    },
+    {
+      "timestamp": "2023-09-08 00:00:00+00:00",
+      "value": 1.3217328361929832
+    },
+    {
+      "timestamp": "2023-09-08 00:00:00-04:00",
+      "value": 7.589769780181316
+    },
+    {
+      "timestamp": "2023-09-09 00:00:00+00:00",
+      "value": 1.3285624057387702
+    },
+    {
+      "timestamp": "2023-09-10 00:00:00+00:00",
+      "value": 1.3171447126750877
+    },
+    {
+      "timestamp": "2023-09-11 00:00:00+05:30",
+      "value": 2.2610505734601176
+    },
+    {
+      "timestamp": "2023-09-11 00:00:00+01:00",
+      "value": 2.387294757368517
+    },
+    {
+      "timestamp": "2023-09-11 00:00:00+00:00",
+      "value": 1.2778015804813767
+    },
+    {
+      "timestamp": "2023-09-11 00:00:00-04:00",
+      "value": 7.974663198780982
+    },
+    {
+      "timestamp": "2023-09-12 00:00:00+05:30",
+      "value": 2.562922045069871
+    },
+    {
+      "timestamp": "2023-09-12 00:00:00+01:00",
+      "value": 2.6789346755148826
+    },
+    {
+      "timestamp": "2023-09-12 00:00:00+00:00",
+      "value": 1.2099555315237631
+    },
+    {
+      "timestamp": "2023-09-12 00:00:00-04:00",
+      "value": 7.69727585469105
+    },
+    {
+      "timestamp": "2023-09-13 00:00:00+05:30",
+      "value": 2.3428058899786217
+    },
+    {
+      "timestamp": "2023-09-13 00:00:00+01:00",
+      "value": 2.44033174907473
+    },
+    {
+      "timestamp": "2023-09-13 00:00:00+00:00",
+      "value": 1.213594166896785
+    },
+    {
+      "timestamp": "2023-09-13 00:00:00-04:00",
+      "value": 7.646575393668937
+    },
+    {
+      "timestamp": "2023-09-14 00:00:00+05:30",
+      "value": 3.8489808148398423
+    },
+    {
+      "timestamp": "2023-09-14 00:00:00+01:00",
+      "value": 3.947066019327032
+    },
+    {
+      "timestamp": "2023-09-14 00:00:00+00:00",
+      "value": 2.7327679657444666
+    },
+    {
+      "timestamp": "2023-09-14 00:00:00-04:00",
+      "value": 7.683079251020949
+    },
+    {
+      "timestamp": "2023-09-15 00:00:00+05:30",
+      "value": 2.3311604343181394
+    },
+    {
+      "timestamp": "2023-09-15 00:00:00+01:00",
+      "value": 2.418273930934647
+    },
+    {
+      "timestamp": "2023-09-15 00:00:00+00:00",
+      "value": 1.2106557560965159
+    },
+    {
+      "timestamp": "2023-09-15 00:00:00-04:00",
+      "value": 7.587834787577427
+    },
+    {
+      "timestamp": "2023-09-16 00:00:00+00:00",
+      "value": 1.2005433782047508
+    },
+    {
+      "timestamp": "2023-09-17 00:00:00+00:00",
+      "value": 1.1805491551666698
+    },
+    {
+      "timestamp": "2023-09-18 00:00:00+05:30",
+      "value": 2.317974851112561
+    },
+    {
+      "timestamp": "2023-09-18 00:00:00+01:00",
+      "value": 2.4207820350029747
+    },
+    {
+      "timestamp": "2023-09-18 00:00:00+00:00",
+      "value": 1.2177827916532513
+    },
+    {
+      "timestamp": "2023-09-18 00:00:00-04:00",
+      "value": 7.631049638099267
+    },
+    {
+      "timestamp": "2023-09-19 00:00:00+01:00",
+      "value": 2.4208131368394135
+    },
+    {
+      "timestamp": "2023-09-19 00:00:00+00:00",
+      "value": 1.2414556049448704
+    },
+    {
+      "timestamp": "2023-09-19 00:00:00-04:00",
+      "value": 7.59738778376647
+    },
+    {
+      "timestamp": "2023-09-20 00:00:00+05:30",
+      "value": 2.2995312687009393
+    },
+    {
+      "timestamp": "2023-09-20 00:00:00+01:00",
+      "value": 2.4207971100389507
+    },
+    {
+      "timestamp": "2023-09-20 00:00:00+00:00",
+      "value": 1.2399181707229017
+    },
+    {
+      "timestamp": "2023-09-20 00:00:00-04:00",
+      "value": 7.522475259929497
+    },
+    {
+      "timestamp": "2023-09-21 00:00:00+05:30",
+      "value": 2.2910967246568887
+    },
+    {
+      "timestamp": "2023-09-21 00:00:00+01:00",
+      "value": 2.862405366114336
+    },
+    {
+      "timestamp": "2023-09-21 00:00:00+00:00",
+      "value": 1.6427235847148776
+    },
+    {
+      "timestamp": "2023-09-21 00:00:00-04:00",
+      "value": 7.510717276730346
+    },
+    {
+      "timestamp": "2023-09-22 00:00:00+05:30",
+      "value": 2.0320790232642953
+    },
+    {
+      "timestamp": "2023-09-22 00:00:00+01:00",
+      "value": 2.602757150335255
+    },
+    {
+      "timestamp": "2023-09-22 00:00:00+00:00",
+      "value": 1.729488418128906
+    },
+    {
+      "timestamp": "2023-09-22 00:00:00-04:00",
+      "value": 7.483186867261612
+    },
+    {
+      "timestamp": "2023-09-23 00:00:00+00:00",
+      "value": 1.7482785467840598
+    },
+    {
+      "timestamp": "2023-09-24 00:00:00+00:00",
+      "value": 1.724540369850574
+    },
+    {
+      "timestamp": "2023-09-25 00:00:00+05:30",
+      "value": 2.2712448259236964
+    },
+    {
+      "timestamp": "2023-09-25 00:00:00+01:00",
+      "value": 2.8625809975041796
+    },
+    {
+      "timestamp": "2023-09-25 00:00:00+00:00",
+      "value": 1.7671670977785057
+    },
+    {
+      "timestamp": "2023-09-25 00:00:00-04:00",
+      "value": 7.856461566706505
+    },
+    {
+      "timestamp": "2023-09-26 00:00:00+05:30",
+      "value": 3.5958649983552076
+    },
+    {
+      "timestamp": "2023-09-26 00:00:00+01:00",
+      "value": 4.194998512365245
+    },
+    {
+      "timestamp": "2023-09-26 00:00:00+00:00",
+      "value": 3.0758148501555387
+    },
+    {
+      "timestamp": "2023-09-26 00:00:00-04:00",
+      "value": 7.711873248093963
+    },
+    {
+      "timestamp": "2023-09-27 00:00:00+05:30",
+      "value": 5.001429768465652
+    },
+    {
+      "timestamp": "2023-09-27 00:00:00+01:00",
+      "value": 6.059399030827153
+    },
+    {
+      "timestamp": "2023-09-27 00:00:00+00:00",
+      "value": 4.950826605218854
+    },
+    {
+      "timestamp": "2023-09-27 00:00:00-04:00",
+      "value": 8.077264569485607
+    },
+    {
+      "timestamp": "2023-09-28 00:00:00+05:30",
+      "value": 1.759090336511115
+    },
+    {
+      "timestamp": "2023-09-28 00:00:00+01:00",
+      "value": 3.2064964465219616
+    },
+    {
+      "timestamp": "2023-09-28 00:00:00+00:00",
+      "value": 2.115809840431991
+    },
+    {
+      "timestamp": "2023-09-28 00:00:00-04:00",
+      "value": 8.046921931027128
+    },
+    {
+      "timestamp": "2023-09-29 00:00:00+05:30",
+      "value": 2.855983505199504
+    },
+    {
+      "timestamp": "2023-09-29 00:00:00+01:00",
+      "value": 4.293545445708915
+    },
+    {
+      "timestamp": "2023-09-29 00:00:00+00:00",
+      "value": 2.775372633822063
+    },
+    {
+      "timestamp": "2023-09-29 00:00:00-04:00",
+      "value": 6.62925380006
+    },
+    {
+      "timestamp": "2023-09-30 00:00:00+00:00",
+      "value": 2.7868507555429787
+    },
+    {
+      "timestamp": "2023-10-01 00:00:00+00:00",
+      "value": 2.882419765602835
+    },
+    {
+      "timestamp": "2023-10-02 00:00:00+01:00",
+      "value": 3.186780688621931
+    },
+    {
+      "timestamp": "2023-10-02 00:00:00+00:00",
+      "value": 2.8026696369312045
+    },
+    {
+      "timestamp": "2023-10-02 00:00:00-04:00",
+      "value": 6.076434839228236
+    },
+    {
+      "timestamp": "2023-10-03 00:00:00+05:30",
+      "value": 0.8818720815728747
+    },
+    {
+      "timestamp": "2023-10-03 00:00:00+01:00",
+      "value": 3.2043061513826605
+    },
+    {
+      "timestamp": "2023-10-03 00:00:00+00:00",
+      "value": 2.799248576064503
+    },
+    {
+      "timestamp": "2023-10-03 00:00:00-04:00",
+      "value": 6.013785333900426
+    },
+    {
+      "timestamp": "2023-10-04 00:00:00+05:30",
+      "value": 0.8833077531951883
+    },
+    {
+      "timestamp": "2023-10-04 00:00:00+01:00",
+      "value": 3.206546616573607
+    },
+    {
+      "timestamp": "2023-10-04 00:00:00+00:00",
+      "value": 2.793036111441156
+    },
+    {
+      "timestamp": "2023-10-04 00:00:00-04:00",
+      "value": 6.559438859177385
+    },
+    {
+      "timestamp": "2023-10-05 00:00:00+05:30",
+      "value": 1.8342583788470765
+    },
+    {
+      "timestamp": "2023-10-05 00:00:00+01:00",
+      "value": 4.1441271229823196
+    },
+    {
+      "timestamp": "2023-10-05 00:00:00+00:00",
+      "value": 3.1738890654207212
+    },
+    {
+      "timestamp": "2023-10-05 00:00:00-04:00",
+      "value": 5.916348098025572
+    },
+    {
+      "timestamp": "2023-10-06 00:00:00+05:30",
+      "value": 1.2001721307689017
+    },
+    {
+      "timestamp": "2023-10-06 00:00:00+01:00",
+      "value": 3.497056440359395
+    },
+    {
+      "timestamp": "2023-10-06 00:00:00+00:00",
+      "value": 3.225655446228171
+    },
+    {
+      "timestamp": "2023-10-06 00:00:00-04:00",
+      "value": 6.158591415166434
+    },
+    {
+      "timestamp": "2023-10-07 00:00:00+00:00",
+      "value": 3.2046602848074963
+    },
+    {
+      "timestamp": "2023-10-08 00:00:00+00:00",
+      "value": 3.1812058699766963
+    },
+    {
+      "timestamp": "2023-10-09 00:00:00+05:30",
+      "value": 2.1538605562377744
+    },
+    {
+      "timestamp": "2023-10-09 00:00:00+01:00",
+      "value": 4.447404706716001
+    },
+    {
+      "timestamp": "2023-10-09 00:00:00+00:00",
+      "value": 4.50349958766078
+    },
+    {
+      "timestamp": "2023-10-09 00:00:00-04:00",
+      "value": 9.297375636014067
+    },
+    {
+      "timestamp": "2023-10-10 00:00:00+05:30",
+      "value": 2.3678793380528114
+    },
+    {
+      "timestamp": "2023-10-10 00:00:00+01:00",
+      "value": 2.7497313344566483
+    },
+    {
+      "timestamp": "2023-10-10 00:00:00+00:00",
+      "value": 1.6163289407285095
+    },
+    {
+      "timestamp": "2023-10-10 00:00:00-04:00",
+      "value": 8.895126584989907
+    },
+    {
+      "timestamp": "2023-10-11 00:00:00+05:30",
+      "value": 2.397558996036972
+    },
+    {
+      "timestamp": "2023-10-11 00:00:00+01:00",
+      "value": 2.8490055159188734
+    },
+    {
+      "timestamp": "2023-10-11 00:00:00+00:00",
+      "value": 1.1213952995115488
+    },
+    {
+      "timestamp": "2023-10-11 00:00:00-04:00",
+      "value": 8.549721507470798
+    },
+    {
+      "timestamp": "2023-10-12 00:00:00+05:30",
+      "value": 2.388603318280057
+    },
+    {
+      "timestamp": "2023-10-12 00:00:00+01:00",
+      "value": 2.8525304757157555
+    },
+    {
+      "timestamp": "2023-10-12 00:00:00+00:00",
+      "value": 1.9741452507561745
+    },
+    {
+      "timestamp": "2023-10-12 00:00:00-04:00",
+      "value": 9.510610092199219
+    },
+    {
+      "timestamp": "2023-10-13 00:00:00+05:30",
+      "value": 3.2493667331298615
+    },
+    {
+      "timestamp": "2023-10-13 00:00:00+01:00",
+      "value": 2.8374270280486513
+    },
+    {
+      "timestamp": "2023-10-13 00:00:00+00:00",
+      "value": 1.408549943245951
+    },
+    {
+      "timestamp": "2023-10-13 00:00:00-04:00",
+      "value": 8.521189207082642
+    },
+    {
+      "timestamp": "2023-10-14 00:00:00+00:00",
+      "value": 1.4081718626678172
+    },
+    {
+      "timestamp": "2023-10-15 00:00:00+00:00",
+      "value": 1.4095765801887565
+    },
+    {
+      "timestamp": "2023-10-16 00:00:00+05:30",
+      "value": 2.6750625151257723
+    },
+    {
+      "timestamp": "2023-10-16 00:00:00+01:00",
+      "value": 2.8335838720070194
+    },
+    {
+      "timestamp": "2023-10-16 00:00:00+00:00",
+      "value": 1.4251918816392517
+    },
+    {
+      "timestamp": "2023-10-16 00:00:00-04:00",
+      "value": 7.9506273383461314
+    },
+    {
+      "timestamp": "2023-10-17 00:00:00+05:30",
+      "value": 2.1114098291048884
+    },
+    {
+      "timestamp": "2023-10-17 00:00:00+01:00",
+      "value": 2.2710700417518153
+    },
+    {
+      "timestamp": "2023-10-17 00:00:00+00:00",
+      "value": 1.4041880628483652
+    },
+    {
+      "timestamp": "2023-10-17 00:00:00-04:00",
+      "value": 8.094785533650617
+    },
+    {
+      "timestamp": "2023-10-18 00:00:00+05:30",
+      "value": 3.382896355532746
+    },
+    {
+      "timestamp": "2023-10-18 00:00:00+01:00",
+      "value": 2.873554870698545
+    },
+    {
+      "timestamp": "2023-10-18 00:00:00+00:00",
+      "value": 1.9909478136001209
+    },
+    {
+      "timestamp": "2023-10-18 00:00:00-04:00",
+      "value": 6.795318868926575
+    },
+    {
+      "timestamp": "2023-10-19 00:00:00+05:30",
+      "value": 2.972126196026192
+    },
+    {
+      "timestamp": "2023-10-19 00:00:00+01:00",
+      "value": 2.473211239380741
+    },
+    {
+      "timestamp": "2023-10-19 00:00:00+00:00",
+      "value": 2.0134759114464322
+    },
+    {
+      "timestamp": "2023-10-19 00:00:00-04:00",
+      "value": 6.3981042284359
+    },
+    {
+      "timestamp": "2023-10-20 00:00:00+05:30",
+      "value": 3.0989262949608163
+    },
+    {
+      "timestamp": "2023-10-20 00:00:00+01:00",
+      "value": 2.6149273033599414
+    },
+    {
+      "timestamp": "2023-10-20 00:00:00+00:00",
+      "value": 2.629043898642675
+    },
+    {
+      "timestamp": "2023-10-20 00:00:00-04:00",
+      "value": 5.75144811848335
+    },
+    {
+      "timestamp": "2023-10-21 00:00:00+00:00",
+      "value": 2.740589204038587
+    },
+    {
+      "timestamp": "2023-10-22 00:00:00+00:00",
+      "value": 2.8066821262829293
+    },
+    {
+      "timestamp": "2023-10-23 00:00:00+05:30",
+      "value": 2.551077138959181
+    },
+    {
+      "timestamp": "2023-10-23 00:00:00+01:00",
+      "value": 2.748344566624718
+    },
+    {
+      "timestamp": "2023-10-23 00:00:00+00:00",
+      "value": 3.654647652674527
+    },
+    {
+      "timestamp": "2023-10-23 00:00:00-04:00",
+      "value": 5.647747043563979
+    },
+    {
+      "timestamp": "2023-10-24 00:00:00+01:00",
+      "value": 2.8292475004648225
+    },
+    {
+      "timestamp": "2023-10-24 00:00:00+00:00",
+      "value": 4.735672717609087
+    },
+    {
+      "timestamp": "2023-10-24 00:00:00-04:00",
+      "value": 5.267611001712064
+    },
+    {
+      "timestamp": "2023-10-25 00:00:00+05:30",
+      "value": 1.9728487505566747
+    },
+    {
+      "timestamp": "2023-10-25 00:00:00+01:00",
+      "value": 2.618655074222297
+    },
+    {
+      "timestamp": "2023-10-25 00:00:00+00:00",
+      "value": 5.5676485366687025
+    },
+    {
+      "timestamp": "2023-10-25 00:00:00-04:00",
+      "value": 5.991453339478936
+    },
+    {
+      "timestamp": "2023-10-26 00:00:00+05:30",
+      "value": 1.9611739990124522
+    },
+    {
+      "timestamp": "2023-10-26 00:00:00+01:00",
+      "value": 3.183858338702589
+    },
+    {
+      "timestamp": "2023-10-26 00:00:00+00:00",
+      "value": 6.160674052446242
+    },
+    {
+      "timestamp": "2023-10-26 00:00:00-04:00",
+      "value": 5.24112725821352
+    },
+    {
+      "timestamp": "2023-10-27 00:00:00+05:30",
+      "value": 0.7282966622830287
+    },
+    {
+      "timestamp": "2023-10-27 00:00:00+01:00",
+      "value": 1.9522625838893282
+    },
+    {
+      "timestamp": "2023-10-27 00:00:00+00:00",
+      "value": 6.064283495083319
+    },
+    {
+      "timestamp": "2023-10-27 00:00:00-04:00",
+      "value": 5.157423900138683
+    },
+    {
+      "timestamp": "2023-10-28 00:00:00+00:00",
+      "value": 6.117440709436878
+    },
+    {
+      "timestamp": "2023-10-29 00:00:00+00:00",
+      "value": 6.21611888111089
+    },
+    {
+      "timestamp": "2023-10-30 00:00:00+05:30",
+      "value": 0.727705792975495
+    },
+    {
+      "timestamp": "2023-10-30 00:00:00+00:00",
+      "value": 7.988598987390487
+    },
+    {
+      "timestamp": "2023-10-30 00:00:00-04:00",
+      "value": 5.268749396352918
+    },
+    {
+      "timestamp": "2023-10-31 00:00:00+05:30",
+      "value": 0.7286624042415013
+    },
+    {
+      "timestamp": "2023-10-31 00:00:00+00:00",
+      "value": 8.033041233414801
+    },
+    {
+      "timestamp": "2023-10-31 00:00:00-04:00",
+      "value": 5.311649797544237
+    },
+    {
+      "timestamp": "2023-11-01 00:00:00+05:30",
+      "value": 0.7264584502064801
+    },
+    {
+      "timestamp": "2023-11-01 00:00:00+00:00",
+      "value": 8.086423719834041
+    },
+    {
+      "timestamp": "2023-11-01 00:00:00-04:00",
+      "value": 5.1829578638705485
+    },
+    {
+      "timestamp": "2023-11-02 00:00:00+05:30",
+      "value": 0.7339255180683391
+    },
+    {
+      "timestamp": "2023-11-02 00:00:00+00:00",
+      "value": 8.019759833502988
+    },
+    {
+      "timestamp": "2023-11-02 00:00:00-04:00",
+      "value": 5.3389236770692605
+    },
+    {
+      "timestamp": "2023-11-03 00:00:00+05:30",
+      "value": 0.7397193670549126
+    },
+    {
+      "timestamp": "2023-11-03 00:00:00+00:00",
+      "value": 8.02971650136942
+    },
+    {
+      "timestamp": "2023-11-03 00:00:00-04:00",
+      "value": 5.362563424248307
+    },
+    {
+      "timestamp": "2023-11-04 00:00:00+00:00",
+      "value": 6.424809813428184
+    },
+    {
+      "timestamp": "2023-11-05 00:00:00+00:00",
+      "value": 6.51713335727802
+    },
+    {
+      "timestamp": "2023-11-06 00:00:00+05:30",
+      "value": 0.7365055163969432
+    },
+    {
+      "timestamp": "2023-11-06 00:00:00+00:00",
+      "value": 8.43094304499015
+    },
+    {
+      "timestamp": "2023-11-06 00:00:00-05:00",
+      "value": 5.903358967455235
+    },
+    {
+      "timestamp": "2023-11-07 00:00:00+05:30",
+      "value": 1.2973511618063454
+    },
+    {
+      "timestamp": "2023-11-07 00:00:00+00:00",
+      "value": 7.901138520862227
+    },
+    {
+      "timestamp": "2023-11-07 00:00:00-05:00",
+      "value": 5.41027915153985
+    },
+    {
+      "timestamp": "2023-11-08 00:00:00+05:30",
+      "value": 1.3045989562916929
+    },
+    {
+      "timestamp": "2023-11-08 00:00:00+00:00",
+      "value": 8.138441884794235
+    },
+    {
+      "timestamp": "2023-11-08 00:00:00-05:00",
+      "value": 5.3712188531212535
+    },
+    {
+      "timestamp": "2023-11-09 00:00:00+05:30",
+      "value": 1.2934816336382018
+    },
+    {
+      "timestamp": "2023-11-09 00:00:00+00:00",
+      "value": 8.306767919471744
+    },
+    {
+      "timestamp": "2023-11-09 00:00:00-05:00",
+      "value": 5.4188780558043135
+    },
+    {
+      "timestamp": "2023-11-10 00:00:00+05:30",
+      "value": 1.2979477032633118
+    },
+    {
+      "timestamp": "2023-11-10 00:00:00+00:00",
+      "value": 8.820127150175644
+    },
+    {
+      "timestamp": "2023-11-10 00:00:00-05:00",
+      "value": 5.490147861798189
+    },
+    {
+      "timestamp": "2023-11-11 00:00:00+00:00",
+      "value": 7.86031812026231
+    },
+    {
+      "timestamp": "2023-11-12 00:00:00+00:00",
+      "value": 8.151647347055286
+    },
+    {
+      "timestamp": "2023-11-13 00:00:00+05:30",
+      "value": 1.2960341630402656
+    },
+    {
+      "timestamp": "2023-11-13 00:00:00+00:00",
+      "value": 8.8850669808375
+    },
+    {
+      "timestamp": "2023-11-13 00:00:00-05:00",
+      "value": 5.48165405873445
+    },
+    {
+      "timestamp": "2023-11-14 00:00:00+00:00",
+      "value": 8.77094193241686
+    },
+    {
+      "timestamp": "2023-11-14 00:00:00-05:00",
+      "value": 5.450617911420298
+    },
+    {
+      "timestamp": "2023-11-15 00:00:00+05:30",
+      "value": 1.5228645139361632
+    },
+    {
+      "timestamp": "2023-11-15 00:00:00+00:00",
+      "value": 9.785808781190829
+    },
+    {
+      "timestamp": "2023-11-15 00:00:00-05:00",
+      "value": 6.144337416387064
+    },
+    {
+      "timestamp": "2023-11-16 00:00:00+05:30",
+      "value": 2.105813996338935
+    },
+    {
+      "timestamp": "2023-11-16 00:00:00+00:00",
+      "value": 8.422954927288172
+    },
+    {
+      "timestamp": "2023-11-16 00:00:00-05:00",
+      "value": 6.170550141062076
+    },
+    {
+      "timestamp": "2023-11-17 00:00:00+05:30",
+      "value": 3.066326778903931
+    },
+    {
+      "timestamp": "2023-11-17 00:00:00+00:00",
+      "value": 8.559402739491556
+    },
+    {
+      "timestamp": "2023-11-17 00:00:00-05:00",
+      "value": 6.1925525819299185
+    },
+    {
+      "timestamp": "2023-11-18 00:00:00+00:00",
+      "value": 7.99965833747933
+    },
+    {
+      "timestamp": "2023-11-19 00:00:00+00:00",
+      "value": 8.168918866308124
+    },
+    {
+      "timestamp": "2023-11-20 00:00:00+05:30",
+      "value": 5.083613206346511
+    },
+    {
+      "timestamp": "2023-11-20 00:00:00+00:00",
+      "value": 8.381920325973173
+    },
+    {
+      "timestamp": "2023-11-20 00:00:00-05:00",
+      "value": 8.223165988956389
+    },
+    {
+      "timestamp": "2023-11-21 00:00:00+05:30",
+      "value": 3.437993737682679
+    },
+    {
+      "timestamp": "2023-11-21 00:00:00+00:00",
+      "value": 5.807374717483305
+    },
+    {
+      "timestamp": "2023-11-21 00:00:00-05:00",
+      "value": 7.437292176274871
+    },
+    {
+      "timestamp": "2023-11-22 00:00:00+05:30",
+      "value": 3.4480277234280607
+    },
+    {
+      "timestamp": "2023-11-22 00:00:00+00:00",
+      "value": 6.0712037725413355
+    },
+    {
+      "timestamp": "2023-11-22 00:00:00-05:00",
+      "value": 9.057677431181766
+    },
+    {
+      "timestamp": "2023-11-23 00:00:00+05:30",
+      "value": 3.090392904845383
+    },
+    {
+      "timestamp": "2023-11-23 00:00:00+00:00",
+      "value": 4.244098170499031
+    },
+    {
+      "timestamp": "2023-11-24 00:00:00+05:30",
+      "value": 4.371694809338651
+    },
+    {
+      "timestamp": "2023-11-24 00:00:00+00:00",
+      "value": 4.25291067009552
+    },
+    {
+      "timestamp": "2023-11-24 00:00:00-05:00",
+      "value": 10.48526625640982
+    },
+    {
+      "timestamp": "2023-11-25 00:00:00+00:00",
+      "value": 3.6867070627451803
+    },
+    {
+      "timestamp": "2023-11-26 00:00:00+00:00",
+      "value": 3.780211748374119
+    },
+    {
+      "timestamp": "2023-11-27 00:00:00+00:00",
+      "value": 6.085705482734322
+    },
+    {
+      "timestamp": "2023-11-27 00:00:00-05:00",
+      "value": 9.646126723151042
+    },
+    {
+      "timestamp": "2023-11-28 00:00:00+05:30",
+      "value": 3.6243765607458576
+    },
+    {
+      "timestamp": "2023-11-28 00:00:00+00:00",
+      "value": 6.132751912072122
+    },
+    {
+      "timestamp": "2023-11-28 00:00:00-05:00",
+      "value": 9.897409186134434
+    },
+    {
+      "timestamp": "2023-11-29 00:00:00+05:30",
+      "value": 3.6522836310517337
+    },
+    {
+      "timestamp": "2023-11-29 00:00:00+00:00",
+      "value": 6.1382167068799465
+    },
+    {
+      "timestamp": "2023-11-29 00:00:00-05:00",
+      "value": 9.89595573143306
+    },
+    {
+      "timestamp": "2023-11-30 00:00:00+05:30",
+      "value": 3.6634923405142152
+    },
+    {
+      "timestamp": "2023-11-30 00:00:00+00:00",
+      "value": 6.122548077261146
+    },
+    {
+      "timestamp": "2023-11-30 00:00:00-05:00",
+      "value": 9.797900984009065
+    },
+    {
+      "timestamp": "2023-12-01 00:00:00+05:30",
+      "value": 3.6785748351854326
+    },
+    {
+      "timestamp": "2023-12-01 00:00:00+00:00",
+      "value": 6.209055526039842
+    },
+    {
+      "timestamp": "2023-12-01 00:00:00-05:00",
+      "value": 10.239376222643827
+    },
+    {
+      "timestamp": "2023-12-02 00:00:00+00:00",
+      "value": 3.830631525332
+    },
+    {
+      "timestamp": "2023-12-03 00:00:00+00:00",
+      "value": 3.82766041022279
+    },
+    {
+      "timestamp": "2023-12-04 00:00:00+05:30",
+      "value": 2.9533407253898742
+    },
+    {
+      "timestamp": "2023-12-04 00:00:00+00:00",
+      "value": 4.437500136708282
+    },
+    {
+      "timestamp": "2023-12-04 00:00:00-05:00",
+      "value": 10.350291066162901
+    },
+    {
+      "timestamp": "2023-12-05 00:00:00+05:30",
+      "value": 3.5140108909821843
+    },
+    {
+      "timestamp": "2023-12-05 00:00:00+00:00",
+      "value": 3.786530493587119
+    },
+    {
+      "timestamp": "2023-12-05 00:00:00-05:00",
+      "value": 9.699629658925579
+    },
+    {
+      "timestamp": "2023-12-06 00:00:00+05:30",
+      "value": 4.569676932551115
+    },
+    {
+      "timestamp": "2023-12-06 00:00:00+00:00",
+      "value": 4.0231571878927115
+    },
+    {
+      "timestamp": "2023-12-06 00:00:00-05:00",
+      "value": 8.78071709832114
+    },
+    {
+      "timestamp": "2023-12-07 00:00:00+05:30",
+      "value": 4.534720673148923
+    },
+    {
+      "timestamp": "2023-12-07 00:00:00+00:00",
+      "value": 4.053222103337258
+    },
+    {
+      "timestamp": "2023-12-07 00:00:00-05:00",
+      "value": 8.679166785990244
+    },
+    {
+      "timestamp": "2023-12-08 00:00:00+05:30",
+      "value": 5.507759186783298
+    },
+    {
+      "timestamp": "2023-12-08 00:00:00+00:00",
+      "value": 5.130728579058859
+    },
+    {
+      "timestamp": "2023-12-08 00:00:00-05:00",
+      "value": 7.929365865460904
+    },
+    {
+      "timestamp": "2023-12-09 00:00:00+00:00",
+      "value": 5.034802443627653
+    },
+    {
+      "timestamp": "2023-12-10 00:00:00+00:00",
+      "value": 5.083139129425311
+    },
+    {
+      "timestamp": "2023-12-11 00:00:00+05:30",
+      "value": 4.485958351482011
+    },
+    {
+      "timestamp": "2023-12-11 00:00:00+00:00",
+      "value": 5.545673121011768
+    },
+    {
+      "timestamp": "2023-12-11 00:00:00-05:00",
+      "value": 8.187995014861267
+    },
+    {
+      "timestamp": "2023-12-12 00:00:00+05:30",
+      "value": 4.467940774892448
+    },
+    {
+      "timestamp": "2023-12-12 00:00:00+00:00",
+      "value": 5.529594748241353
+    },
+    {
+      "timestamp": "2023-12-12 00:00:00-05:00",
+      "value": 8.235140119945324
+    },
+    {
+      "timestamp": "2023-12-13 00:00:00+05:30",
+      "value": 4.457549897178399
+    },
+    {
+      "timestamp": "2023-12-13 00:00:00+00:00",
+      "value": 5.6043529896693896
+    },
+    {
+      "timestamp": "2023-12-13 00:00:00-05:00",
+      "value": 7.954659954673142
+    },
+    {
+      "timestamp": "2023-12-14 00:00:00+05:30",
+      "value": 3.8207178471587495
+    },
+    {
+      "timestamp": "2023-12-14 00:00:00+00:00",
+      "value": 5.611501868241965
+    },
+    {
+      "timestamp": "2023-12-14 00:00:00-05:00",
+      "value": 8.124330887213508
+    },
+    {
+      "timestamp": "2023-12-15 00:00:00+05:30",
+      "value": 3.8882809061723305
+    },
+    {
+      "timestamp": "2023-12-15 00:00:00+00:00",
+      "value": 5.4064633707497665
+    },
+    {
+      "timestamp": "2023-12-15 00:00:00-05:00",
+      "value": 9.086092272724452
+    },
+    {
+      "timestamp": "2023-12-16 00:00:00+00:00",
+      "value": 5.737937607472958
+    },
+    {
+      "timestamp": "2023-12-17 00:00:00+00:00",
+      "value": 5.279023683480079
+    },
+    {
+      "timestamp": "2023-12-18 00:00:00+05:30",
+      "value": 4.022926499459424
+    },
+    {
+      "timestamp": "2023-12-18 00:00:00+00:00",
+      "value": 5.341548205743567
+    },
+    {
+      "timestamp": "2023-12-18 00:00:00-05:00",
+      "value": 8.53473916220206
+    },
+    {
+      "timestamp": "2023-12-19 00:00:00+05:30",
+      "value": 4.034313341199443
+    },
+    {
+      "timestamp": "2023-12-19 00:00:00+00:00",
+      "value": 5.2332213722879075
+    },
+    {
+      "timestamp": "2023-12-19 00:00:00-05:00",
+      "value": 9.826534919688612
+    },
+    {
+      "timestamp": "2023-12-20 00:00:00+05:30",
+      "value": 4.578877466036749
+    },
+    {
+      "timestamp": "2023-12-20 00:00:00+00:00",
+      "value": 5.851045708879857
+    },
+    {
+      "timestamp": "2023-12-20 00:00:00-05:00",
+      "value": 9.541169934304184
+    },
+    {
+      "timestamp": "2023-12-21 00:00:00+05:30",
+      "value": 3.4266976685222876
+    },
+    {
+      "timestamp": "2023-12-21 00:00:00+00:00",
+      "value": 6.115059407385007
+    },
+    {
+      "timestamp": "2023-12-21 00:00:00-05:00",
+      "value": 10.02025478904961
+    },
+    {
+      "timestamp": "2023-12-22 00:00:00+05:30",
+      "value": 3.439533335751817
+    },
+    {
+      "timestamp": "2023-12-22 00:00:00+00:00",
+      "value": 6.375348811697156
+    },
+    {
+      "timestamp": "2023-12-22 00:00:00-05:00",
+      "value": 10.320598197996194
+    },
+    {
+      "timestamp": "2023-12-23 00:00:00+00:00",
+      "value": 6.527213574461303
+    },
+    {
+      "timestamp": "2023-12-24 00:00:00+00:00",
+      "value": 6.566489481184396
+    },
+    {
+      "timestamp": "2023-12-25 00:00:00+00:00",
+      "value": 6.748237156272977
+    },
+    {
+      "timestamp": "2023-12-26 00:00:00+05:30",
+      "value": 3.4394978148366997
+    },
+    {
+      "timestamp": "2023-12-26 00:00:00+00:00",
+      "value": 6.605662745998905
+    },
+    {
+      "timestamp": "2023-12-26 00:00:00-05:00",
+      "value": 10.412897038999002
+    },
+    {
+      "timestamp": "2023-12-27 00:00:00+05:30",
+      "value": 3.4621787199365324
+    },
+    {
+      "timestamp": "2023-12-27 00:00:00+00:00",
+      "value": 6.665303742305365
+    },
+    {
+      "timestamp": "2023-12-27 00:00:00-05:00",
+      "value": 11.05825768220512
+    },
+    {
+      "timestamp": "2023-12-28 00:00:00+05:30",
+      "value": 3.4723546758683286
+    },
+    {
+      "timestamp": "2023-12-28 00:00:00+00:00",
+      "value": 6.638789003141046
+    },
+    {
+      "timestamp": "2023-12-28 00:00:00-05:00",
+      "value": 10.57764530803446
+    },
+    {
+      "timestamp": "2023-12-29 00:00:00+05:30",
+      "value": 3.4621616074295263
+    },
+    {
+      "timestamp": "2023-12-29 00:00:00+00:00",
+      "value": 6.392544182184926
+    },
+    {
+      "timestamp": "2023-12-29 00:00:00-05:00",
+      "value": 9.837818580266878
+    },
+    {
+      "timestamp": "2023-12-30 00:00:00+00:00",
+      "value": 6.356152034034215
+    },
+    {
+      "timestamp": "2023-12-31 00:00:00+00:00",
+      "value": 6.516790412178947
+    }
+  ],
+  "symbol_results": {
+    "AAPL": {
+      "total_pnl": -0.04,
+      "total_return_pct": -32.43,
+      "win_rate_pct": 0.0,
+      "total_trades": 1,
+      "sharpe_ratio": 0.0
+    },
+    "ABBV": {
+      "total_pnl": -0.02,
+      "total_return_pct": -12.55,
+      "win_rate_pct": 0.0,
+      "total_trades": 1,
+      "sharpe_ratio": 0.0
+    },
+    "ADA-USD": {
+      "total_pnl": -0.15,
+      "total_return_pct": -113.65,
+      "win_rate_pct": 33.33,
+      "total_trades": 3,
+      "sharpe_ratio": 0.0
+    },
+    "AI": {
+      "total_pnl": 0.24,
+      "total_return_pct": 176.41,
+      "win_rate_pct": 66.67,
+      "total_trades": 3,
+      "sharpe_ratio": 0.0
+    },
+    "AMC": {
+      "total_pnl": 0.29,
+      "total_return_pct": 211.91,
+      "win_rate_pct": 50.0,
+      "total_trades": 2,
+      "sharpe_ratio": 0.0
+    },
+    "AMZN": {
+      "total_pnl": -0.14,
+      "total_return_pct": -100.52,
+      "win_rate_pct": 33.33,
+      "total_trades": 3,
+      "sharpe_ratio": 0.0
+    },
+    "ATOM-USD": {
+      "total_pnl": 0.0,
+      "total_return_pct": 0.0,
+      "win_rate_pct": 0,
+      "total_trades": 0,
+      "sharpe_ratio": 0.0
+    },
+    "AUDUSD=X": {
+      "total_pnl": 0.01,
+      "total_return_pct": 8.48,
+      "win_rate_pct": 66.67,
+      "total_trades": 3,
+      "sharpe_ratio": 0.0
+    },
+    "AVAX-USD": {
+      "total_pnl": 0.62,
+      "total_return_pct": 456.46,
+      "win_rate_pct": 50.0,
+      "total_trades": 2,
+      "sharpe_ratio": 0.0
+    },
+    "BCH-USD": {
+      "total_pnl": 0.04,
+      "total_return_pct": 30.62,
+      "win_rate_pct": 50.0,
+      "total_trades": 2,
+      "sharpe_ratio": 0.0
+    },
+    "BHARTIARTL.NS": {
+      "total_pnl": 0.05,
+      "total_return_pct": 34.64,
+      "win_rate_pct": 75.0,
+      "total_trades": 4,
+      "sharpe_ratio": 0.0
+    },
+    "BNB-USD": {
+      "total_pnl": -0.0,
+      "total_return_pct": -0.8,
+      "win_rate_pct": 0.0,
+      "total_trades": 1,
+      "sharpe_ratio": 0.0
+    },
+    "BTC-USD": {
+      "total_pnl": 0.05,
+      "total_return_pct": 36.08,
+      "win_rate_pct": 50.0,
+      "total_trades": 4,
+      "sharpe_ratio": 0.0
+    },
+    "COIN": {
+      "total_pnl": 0.69,
+      "total_return_pct": 509.66,
+      "win_rate_pct": 100.0,
+      "total_trades": 1,
+      "sharpe_ratio": 0.0
+    },
+    "CVX": {
+      "total_pnl": -0.16,
+      "total_return_pct": -120.94,
+      "win_rate_pct": 0.0,
+      "total_trades": 3,
+      "sharpe_ratio": 0.0
+    },
+    "DOGE-USD": {
+      "total_pnl": -0.13,
+      "total_return_pct": -95.13,
+      "win_rate_pct": 0.0,
+      "total_trades": 2,
+      "sharpe_ratio": 0.0
+    },
+    "DOT-USD": {
+      "total_pnl": -0.01,
+      "total_return_pct": -8.76,
+      "win_rate_pct": 0.0,
+      "total_trades": 1,
+      "sharpe_ratio": 0.0
+    },
+    "ETC-USD": {
+      "total_pnl": -0.08,
+      "total_return_pct": -61.9,
+      "win_rate_pct": 33.33,
+      "total_trades": 3,
+      "sharpe_ratio": 0.0
+    },
+    "ETH-USD": {
+      "total_pnl": 0.07,
+      "total_return_pct": 51.16,
+      "win_rate_pct": 50.0,
+      "total_trades": 2,
+      "sharpe_ratio": 0.0
+    },
+    "EURUSD=X": {
+      "total_pnl": 0.01,
+      "total_return_pct": 4.96,
+      "win_rate_pct": 50.0,
+      "total_trades": 4,
+      "sharpe_ratio": 0.0
+    },
+    "FIL-USD": {
+      "total_pnl": 0.08,
+      "total_return_pct": 62.25,
+      "win_rate_pct": 66.67,
+      "total_trades": 3,
+      "sharpe_ratio": 0.0
+    },
+    "GBP=X": {
+      "total_pnl": -0.03,
+      "total_return_pct": -21.24,
+      "win_rate_pct": 28.57,
+      "total_trades": 7,
+      "sharpe_ratio": 0.0
+    },
+    "GBPUSD=X": {
+      "total_pnl": -0.02,
+      "total_return_pct": -14.18,
+      "win_rate_pct": 50.0,
+      "total_trades": 4,
+      "sharpe_ratio": 0.0
+    },
+    "GME": {
+      "total_pnl": 0.0,
+      "total_return_pct": 0.0,
+      "win_rate_pct": 0,
+      "total_trades": 0,
+      "sharpe_ratio": 0.0
+    },
+    "GOOGL": {
+      "total_pnl": 0.1,
+      "total_return_pct": 76.25,
+      "win_rate_pct": 100.0,
+      "total_trades": 3,
+      "sharpe_ratio": 0.0
+    },
+    "HDFCBANK.NS": {
+      "total_pnl": 0.01,
+      "total_return_pct": 5.05,
+      "win_rate_pct": 50.0,
+      "total_trades": 2,
+      "sharpe_ratio": 0.0
+    },
+    "HINDUNILVR.NS": {
+      "total_pnl": 0.01,
+      "total_return_pct": 4.94,
+      "win_rate_pct": 100.0,
+      "total_trades": 1,
+      "sharpe_ratio": 0.0
+    },
+    "ICICIBANK.NS": {
+      "total_pnl": -0.15,
+      "total_return_pct": -107.51,
+      "win_rate_pct": 0.0,
+      "total_trades": 5,
+      "sharpe_ratio": 0.0
+    },
+    "INFY.NS": {
+      "total_pnl": 0.01,
+      "total_return_pct": 10.12,
+      "win_rate_pct": 100.0,
+      "total_trades": 2,
+      "sharpe_ratio": 0.0
+    },
+    "ITC.NS": {
+      "total_pnl": 0.12,
+      "total_return_pct": 92.21,
+      "win_rate_pct": 100.0,
+      "total_trades": 4,
+      "sharpe_ratio": 0.0
+    },
+    "JNJ": {
+      "total_pnl": 0.0,
+      "total_return_pct": 0.0,
+      "win_rate_pct": 0,
+      "total_trades": 0,
+      "sharpe_ratio": 0.0
+    },
+    "JPY=X": {
+      "total_pnl": 0.06,
+      "total_return_pct": 45.41,
+      "win_rate_pct": 100.0,
+      "total_trades": 3,
+      "sharpe_ratio": 0.0
+    },
+    "KO": {
+      "total_pnl": 0.02,
+      "total_return_pct": 11.49,
+      "win_rate_pct": 50.0,
+      "total_trades": 2,
+      "sharpe_ratio": 0.0
+    },
+    "KOTAKBANK.NS": {
+      "total_pnl": 0.02,
+      "total_return_pct": 12.76,
+      "win_rate_pct": 50.0,
+      "total_trades": 2,
+      "sharpe_ratio": 0.0
+    },
+    "LINK-USD": {
+      "total_pnl": 0.29,
+      "total_return_pct": 217.17,
+      "win_rate_pct": 66.67,
+      "total_trades": 3,
+      "sharpe_ratio": 0.0
+    },
+    "LTC-USD": {
+      "total_pnl": -0.1,
+      "total_return_pct": -71.15,
+      "win_rate_pct": 0.0,
+      "total_trades": 1,
+      "sharpe_ratio": 0.0
+    },
+    "MARA": {
+      "total_pnl": 0.2,
+      "total_return_pct": 148.98,
+      "win_rate_pct": 100.0,
+      "total_trades": 1,
+      "sharpe_ratio": 0.0
+    },
+    "MATIC-USD": {
+      "total_pnl": 0.41,
+      "total_return_pct": 306.02,
+      "win_rate_pct": 75.0,
+      "total_trades": 4,
+      "sharpe_ratio": 0.0
+    },
+    "META": {
+      "total_pnl": 0.17,
+      "total_return_pct": 128.91,
+      "win_rate_pct": 50.0,
+      "total_trades": 2,
+      "sharpe_ratio": 0.0
+    },
+    "MMM": {
+      "total_pnl": -0.19,
+      "total_return_pct": -141.04,
+      "win_rate_pct": 0.0,
+      "total_trades": 1,
+      "sharpe_ratio": 0.0
+    },
+    "MSFT": {
+      "total_pnl": 0.13,
+      "total_return_pct": 95.7,
+      "win_rate_pct": 100.0,
+      "total_trades": 2,
+      "sharpe_ratio": 0.0
+    },
+    "MSTR": {
+      "total_pnl": 0.58,
+      "total_return_pct": 427.05,
+      "win_rate_pct": 100.0,
+      "total_trades": 1,
+      "sharpe_ratio": 0.0
+    },
+    "NVDA": {
+      "total_pnl": 0.27,
+      "total_return_pct": 200.78,
+      "win_rate_pct": 100.0,
+      "total_trades": 1,
+      "sharpe_ratio": 0.0
+    },
+    "PEP": {
+      "total_pnl": 0.01,
+      "total_return_pct": 10.1,
+      "win_rate_pct": 100.0,
+      "total_trades": 1,
+      "sharpe_ratio": 0.0
+    },
+    "PG": {
+      "total_pnl": 0.0,
+      "total_return_pct": 0.0,
+      "win_rate_pct": 0,
+      "total_trades": 0,
+      "sharpe_ratio": 0.0
+    },
+    "PLTR": {
+      "total_pnl": 0.33,
+      "total_return_pct": 241.31,
+      "win_rate_pct": 50.0,
+      "total_trades": 4,
+      "sharpe_ratio": 0.0
+    },
+    "RELIANCE.NS": {
+      "total_pnl": -0.06,
+      "total_return_pct": -43.22,
+      "win_rate_pct": 0.0,
+      "total_trades": 6,
+      "sharpe_ratio": 0.0
+    },
+    "RIOT": {
+      "total_pnl": 0.09,
+      "total_return_pct": 69.15,
+      "win_rate_pct": 100.0,
+      "total_trades": 2,
+      "sharpe_ratio": 0.0
+    },
+    "SBIN.NS": {
+      "total_pnl": 0.03,
+      "total_return_pct": 21.91,
+      "win_rate_pct": 100.0,
+      "total_trades": 3,
+      "sharpe_ratio": 0.0
+    },
+    "SHIB-USD": {
+      "total_pnl": -0.12,
+      "total_return_pct": -87.47,
+      "win_rate_pct": 0.0,
+      "total_trades": 1,
+      "sharpe_ratio": 0.0
+    },
+    "SOL-USD": {
+      "total_pnl": 0.78,
+      "total_return_pct": 573.85,
+      "win_rate_pct": 66.67,
+      "total_trades": 6,
+      "sharpe_ratio": 0.0
+    },
+    "T": {
+      "total_pnl": -0.03,
+      "total_return_pct": -21.65,
+      "win_rate_pct": 50.0,
+      "total_trades": 4,
+      "sharpe_ratio": 0.0
+    },
+    "TCS.NS": {
+      "total_pnl": 0.01,
+      "total_return_pct": 8.64,
+      "win_rate_pct": 66.67,
+      "total_trades": 3,
+      "sharpe_ratio": 0.0
+    },
+    "TRX-USD": {
+      "total_pnl": -0.02,
+      "total_return_pct": -11.98,
+      "win_rate_pct": 40.0,
+      "total_trades": 5,
+      "sharpe_ratio": 0.0
+    },
+    "TSLA": {
+      "total_pnl": -0.03,
+      "total_return_pct": -25.37,
+      "win_rate_pct": 0.0,
+      "total_trades": 1,
+      "sharpe_ratio": 0.0
+    },
+    "UNI-USD": {
+      "total_pnl": 0.6,
+      "total_return_pct": 445.8,
+      "win_rate_pct": 80.0,
+      "total_trades": 5,
+      "sharpe_ratio": 0.0
+    },
+    "UPST": {
+      "total_pnl": 0.77,
+      "total_return_pct": 569.1,
+      "win_rate_pct": 100.0,
+      "total_trades": 2,
+      "sharpe_ratio": 0.0
+    },
+    "USDCAD=X": {
+      "total_pnl": 0.03,
+      "total_return_pct": 25.71,
+      "win_rate_pct": 66.67,
+      "total_trades": 3,
+      "sharpe_ratio": 0.0
+    },
+    "USDCHF=X": {
+      "total_pnl": 0.03,
+      "total_return_pct": 23.67,
+      "win_rate_pct": 100.0,
+      "total_trades": 1,
+      "sharpe_ratio": 0.0
+    },
+    "VZ": {
+      "total_pnl": -0.02,
+      "total_return_pct": -15.75,
+      "win_rate_pct": 0.0,
+      "total_trades": 1,
+      "sharpe_ratio": 0.0
+    },
+    "XLB": {
+      "total_pnl": -0.08,
+      "total_return_pct": -57.5,
+      "win_rate_pct": 0.0,
+      "total_trades": 1,
+      "sharpe_ratio": 0.0
+    },
+    "XLC": {
+      "total_pnl": 0.0,
+      "total_return_pct": 0.0,
+      "win_rate_pct": 0,
+      "total_trades": 0,
+      "sharpe_ratio": 0.0
+    },
+    "XLE": {
+      "total_pnl": -0.03,
+      "total_return_pct": -25.39,
+      "win_rate_pct": 0.0,
+      "total_trades": 1,
+      "sharpe_ratio": 0.0
+    },
+    "XLF": {
+      "total_pnl": 0.0,
+      "total_return_pct": 0.0,
+      "win_rate_pct": 0,
+      "total_trades": 0,
+      "sharpe_ratio": 0.0
+    },
+    "XLI": {
+      "total_pnl": 0.0,
+      "total_return_pct": 0.0,
+      "win_rate_pct": 0,
+      "total_trades": 0,
+      "sharpe_ratio": 0.0
+    },
+    "XLK": {
+      "total_pnl": 0.0,
+      "total_return_pct": 0.0,
+      "win_rate_pct": 0,
+      "total_trades": 0,
+      "sharpe_ratio": 0.0
+    },
+    "XLM-USD": {
+      "total_pnl": 0.01,
+      "total_return_pct": 6.3,
+      "win_rate_pct": 33.33,
+      "total_trades": 3,
+      "sharpe_ratio": 0.0
+    },
+    "XLP": {
+      "total_pnl": 0.0,
+      "total_return_pct": 0.0,
+      "win_rate_pct": 0,
+      "total_trades": 0,
+      "sharpe_ratio": 0.0
+    },
+    "XLRE": {
+      "total_pnl": 0.0,
+      "total_return_pct": 0.0,
+      "win_rate_pct": 0,
+      "total_trades": 0,
+      "sharpe_ratio": 0.0
+    },
+    "XLU": {
+      "total_pnl": 0.0,
+      "total_return_pct": 0.0,
+      "win_rate_pct": 0,
+      "total_trades": 0,
+      "sharpe_ratio": 0.0
+    },
+    "XLV": {
+      "total_pnl": 0.0,
+      "total_return_pct": 0.0,
+      "win_rate_pct": 0,
+      "total_trades": 0,
+      "sharpe_ratio": 0.0
+    },
+    "XLY": {
+      "total_pnl": 0.03,
+      "total_return_pct": 23.68,
+      "win_rate_pct": 100.0,
+      "total_trades": 1,
+      "sharpe_ratio": 0.0
+    },
+    "XOM": {
+      "total_pnl": -0.23,
+      "total_return_pct": -170.05,
+      "win_rate_pct": 25.0,
+      "total_trades": 4,
+      "sharpe_ratio": 0.0
+    },
+    "XRP-USD": {
+      "total_pnl": 0.12,
+      "total_return_pct": 92.48,
+      "win_rate_pct": 100.0,
+      "total_trades": 2,
+      "sharpe_ratio": 0.0
+    }
+  },
+  "optimized_params": {
+    "strategy_type": "Ensemble",
+    "confidence_threshold": 0.5,
+    "risk_per_trade": 0.2
+  },
+  "report_id": "report_EnsembleIntelligence_20260104_201111.json",
+  "generated_at": "2026-01-04T20:11:11.161566"
+}

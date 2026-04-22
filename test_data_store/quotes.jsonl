@@ -1,0 +1,6 @@
+{"timestamp":"2026-01-04T04:04:09.349705","instrument_id":"mock:btc","price":99.41,"bid":99.36,"ask":99.46,"bid_size":null,"ask_size":null,"probability":null,"source":"MOCK_FEED","metadata":{}}
+{"timestamp":"2026-01-04T04:04:28.432073","instrument_id":"mock:btc","price":100.25,"bid":100.2,"ask":100.3,"bid_size":null,"ask_size":null,"probability":null,"source":"MOCK_FEED","metadata":{}}
+{"timestamp":"2026-01-04T04:04:28.433060","instrument_id":"mock:aapl","price":99.7,"bid":99.65,"ask":99.75,"bid_size":null,"ask_size":null,"probability":null,"source":"MOCK_FEED","metadata":{}}
+{"timestamp":"2026-01-04T04:04:28.946216","instrument_id":"mock:btc","price":100.32,"bid":100.27,"ask":100.37,"bid_size":null,"ask_size":null,"probability":null,"source":"MOCK_FEED","metadata":{}}
+{"timestamp":"2026-01-04T04:04:28.954869","instrument_id":"mock:aapl","price":99.19,"bid":99.14,"ask":99.24,"bid_size":null,"ask_size":null,"probability":null,"source":"MOCK_FEED","metadata":{}}
+{"timestamp":"2026-01-04T04:04:29.465531","instrument_id":"mock:btc","price":100.32,"bid":100.27,"ask":100.37,"bid_size":null,"ask_size":null,"probability":null,"source":"MOCK_FEED","metadata":{}}

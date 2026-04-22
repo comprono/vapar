@@ -1,0 +1,209 @@
+## Technical architecture
+
+### 1) Data layer
+
+**Ingestors (per market)**
+
+* **Equities/ETFs/FX**: broker/market-data APIs (IBKR, Polygon, Refinitiv/FactSet if available)
+* **Crypto**: exchange APIs (Binance/OKX/Coinbase) + order book (L2) where possible
+* **Sports**: odds APIs + market depth (if available) + event metadata (teams, injuries, schedule)
+
+**Normalization + feature store**
+
+* Convert all markets into a common schema:
+
+  * timestamp, instrument_id, price/odds, volume/liquidity, spread, volatility proxy, regime flags
+* Feature store (offline + online):
+
+  * “as-of” joins to avoid lookahead (critical)
+
+**Storage**
+
+* Raw append-only (S3/Blob)
+* Time-series DB for fast reads (TimescaleDB/ClickHouse)
+* Event-sourced ledger for trading actions (Postgres)
+
+---
+
+### 2) Research & modeling layer (offline first)
+
+**Model families (per market/time-horizon)**
+
+* **Short-term**: microstructure/liquidity + short horizon forecasting (classification + uncertainty)
+* **Medium-term**: regime + trend/reversion models (probability + expected return)
+* **Long-term**: factor models (equities), risk-premia models, allocation models
+
+**Outputs must be probabilistic**
+Every model outputs a *distribution*, not a single number:
+
+* ( \mathbb{E}[R] ) expected return
+* ( \sigma ) / uncertainty
+* tail risk (CVaR / worst-case quantiles)
+* confidence calibration score
+
+**Meta-model (portfolio allocator)**
+
+* Takes opportunities from all markets and produces:
+
+  * target exposures per asset class
+  * per-instrument weights
+  * “do nothing” when no edge
+
+---
+
+### 3) Decision engine (online)
+
+**Signal bus**
+
+* All strategies publish “TradeIntent” objects to a queue:
+
+  * action, instrument, size suggestion, rationale, expected return, risk, confidence, horizon, expiry
+
+**Risk committee (hard gatekeeper)**
+
+* Deterministic checks (non-AI):
+
+  * max exposure, leverage, concentration, liquidity, spread, slippage estimates
+  * daily loss lockout, max drawdown lockout
+  * correlation caps across positions
+  * “kill-switch” triggers (API errors, abnormal volatility, missing data)
+
+**Execution engine**
+
+* Smart order router:
+
+  * limit/market decision rules
+  * partial fills, retry logic, cancel/replace
+  * idempotency keys (prevents duplicate orders)
+* Broker/exchange adapters (isolated)
+
+---
+
+### 4) Learning loop (continuous improvement, but controlled)
+
+**Replay + labeling**
+
+* Full replay harness: feed historical stream → reproduce decisions exactly
+* Label outcomes by horizon (1h/1d/1w etc.) + transaction cost modeling
+
+**Post-trade analytics**
+
+* Attribution: edge vs execution vs luck
+* Failure taxonomy: model error / regime shift / execution slippage / data issue
+
+**Model registry + promotion gates**
+
+* Register model version with metrics + dataset hash
+* Promote only if it beats baseline AND passes safety/cap calibration tests
+
+---
+
+### 5) Observability & governance
+
+**Dashboards**
+
+* live PnL, exposure, VaR/CVaR, drawdown
+* decision logs (signal → risk checks → order → fill)
+* model drift + confidence calibration health
+* data health: latency, missing bars, spread anomalies
+
+**Audit**
+
+* Immutable event store: every decision + input snapshot + model version + config version
+
+---
+
+## KPIs for “ready to trade”
+
+You don’t go live because backtest looks good. You go live when **probability + risk control** is proven.
+
+### A) Data & system reliability (must pass first)
+
+* **Data completeness**: ≥ 99.9% bars/ticks present (per chosen frequency)
+* **Latency**: P95 data-to-decision < X seconds (depends on timeframe; for 1h bars, <10s is fine)
+* **Execution stability**: 0 duplicate orders; API error rate < 0.1%; graceful recovery proven
+* **Replay determinism**: same inputs → same decisions ≥ 99.99%
+
+### B) Risk integrity (non-negotiable)
+
+* **Limit compliance**: 100% (zero violations) across all paper/shadow trading
+* **Kill-switch success**: 100% trigger accuracy in simulated incidents (vol spikes, missing data, API failures)
+* **Max drawdown in shadow**: below your policy threshold (e.g., < 5% in a 30-day shadow window)
+* **Tail risk control**: CVaR(95) below target (set by your risk appetite)
+
+### C) Model validity (the “AI is not lying” checks)
+
+* **Calibration** (critical):
+
+  * Brier score improvement vs baseline
+  * Reliability curve: predicted 60% → observed ~60% (within tolerance)
+* **Edge after costs**:
+
+  * Positive expectancy *net of fees + slippage* in walk-forward
+* **Stability across regimes**:
+
+  * Performance not concentrated in one regime only
+* **Overfitting tests**:
+
+  * walk-forward + embargo
+  * stress tests with perturbed costs and delayed execution
+
+### D) Portfolio-level performance targets (shadow trading)
+
+Pick targets that match your goal horizons:
+
+* **Sharpe/Sortino**: above baseline (don’t chase huge numbers; focus on consistency)
+* **Hit rate is NOT required**, but **positive EV** is
+* **Turnover discipline**: within designed limits (prevents overtrading)
+* **Diversification benefit**: portfolio volatility lower than single-strategy volatility (proof of cross-market value)
+
+### Deployment gate rule (simple)
+
+Go live with micro-capital only if:
+
+1. A + B pass completely
+2. C shows calibrated confidence and positive net EV
+3. D meets minimum risk-adjusted targets in shadow for a fixed window (e.g., 4–8 weeks)
+
+---
+
+## What must be rule-based vs AI-based
+
+### Must be rule-based (deterministic, hard-coded)
+
+These are “seatbelts”—never delegated to AI:
+
+* Position sizing caps (max % equity, max leverage)
+* Max daily loss / max drawdown lockouts
+* Exposure limits per asset class / instrument
+* Correlation/concentration limits
+* Liquidity + spread + slippage guards
+* Order safety (idempotency, retries, cancel rules)
+* Kill-switch conditions (API errors, missing data, volatility breaks)
+* Compliance constraints (market hours, instrument eligibility)
+* Data sanity checks (outliers, stale feeds)
+
+### Can be AI-based (allowed, but bounded)
+
+These are “analysts,” not “executors”:
+
+* Regime classification (trend/range/volatility state)
+* Signal generation (probability of up/down or EV)
+* Feature learning and cross-market pattern discovery
+* Sports odds inefficiency detection (EV estimation)
+* Portfolio allocation suggestions *within caps*
+* Trade filtering (“skip low-quality trades”)
+* Post-trade diagnosis & strategy improvement proposals
+* Scenario analysis and stress testing suggestions
+
+### Hybrid (AI proposes, rules approve)
+
+Best practice for safety + speed:
+
+* AI outputs **TradeIntent** with:
+
+  * direction, size suggestion, horizon, expected return distribution, confidence, invalidation point
+* Rule engine:
+
+  * validates and either approves, downsizes, delays, or rejects
+
