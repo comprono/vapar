@@ -126,6 +126,7 @@ zone:     us-central1-a
 machine:  g2-standard-8
 gpu:      nvidia-l4 x1
 bucket:   gs://tb1ag-vertex-artifacts-116514064160
+image:    ubuntu-2204-lts with install-nvidia-driver=True metadata
 ```
 
 ## Quota and cost guidance

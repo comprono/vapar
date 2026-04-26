@@ -26,6 +26,10 @@ $remoteCommand = @"
 set -euo pipefail
 export BRANCH='$Branch'
 export GCS_BUCKET='$Bucket'
+if ! command -v git >/dev/null 2>&1 || ! command -v python3 >/dev/null 2>&1 || ! command -v pip3 >/dev/null 2>&1; then
+  sudo apt-get update
+  sudo DEBIAN_FRONTEND=noninteractive apt-get install -y git python3 python3-pip curl
+fi
 curl -fsSL '$rawScript' -o /tmp/run_on_vm_deep_policy.sh
 bash /tmp/run_on_vm_deep_policy.sh $TrainArgsLine
 "@

@@ -45,8 +45,8 @@ $cmd = @(
     "--provisioning-model",$ProvisioningModel,
     "--boot-disk-size","${BootDiskGb}GB",
     "--boot-disk-type","pd-ssd",
-    "--image-family","common-cu128-ubuntu-2204-nvidia-570",
-    "--image-project","deeplearning-platform-release",
+    "--image-family","ubuntu-2204-lts",
+    "--image-project","ubuntu-os-cloud",
     "--scopes","https://www.googleapis.com/auth/cloud-platform",
     "--metadata","install-nvidia-driver=True",
     "--tags","deep-policy-trainer"
