@@ -27,12 +27,7 @@ if (-not (Test-Path -LiteralPath $localRunner)) {
     throw "Missing local VM runner script: $localRunner"
 }
 
-Write-Host "Uploading runner script to VM..."
-& gcloud compute scp $localRunner "${InstanceName}:/tmp/run_on_vm_deep_policy.sh" --project $ProjectId --zone $Zone
-if ($LASTEXITCODE -ne 0) {
-    throw "Failed to upload VM runner script with exit code $LASTEXITCODE."
-}
-
+$runnerUploadPath = Join-Path $env:TEMP ("run_on_vm_deep_policy_{0}.sh" -f ([guid]::NewGuid().ToString("N")))
 $remoteCommandPath = Join-Path $env:TEMP ("run_gce_gpu_vm_training_{0}.sh" -f ([guid]::NewGuid().ToString("N")))
 $remoteCommand = @"
 #!/usr/bin/env bash
@@ -49,8 +44,20 @@ bash /tmp/run_on_vm_deep_policy.sh $TrainArgsLine
 echo "[vm-train] remote command finished at `$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 "@
 
-Set-Content -LiteralPath $remoteCommandPath -Value $remoteCommand -Encoding ascii
+$runnerText = Get-Content -Raw -LiteralPath $localRunner
+$runnerText = $runnerText -replace "`r`n", "`n"
+$runnerText = $runnerText -replace "`r", "`n"
+[System.IO.File]::WriteAllText($runnerUploadPath, $runnerText, [System.Text.UTF8Encoding]::new($false))
+$remoteCommand = $remoteCommand -replace "`r`n", "`n"
+$remoteCommand = $remoteCommand -replace "`r", "`n"
+[System.IO.File]::WriteAllText($remoteCommandPath, $remoteCommand, [System.Text.UTF8Encoding]::new($false))
 try {
+    Write-Host "Uploading runner script to VM..."
+    & gcloud compute scp $runnerUploadPath "${InstanceName}:/tmp/run_on_vm_deep_policy.sh" --project $ProjectId --zone $Zone
+    if ($LASTEXITCODE -ne 0) {
+        throw "Failed to upload VM runner script with exit code $LASTEXITCODE."
+    }
+
     Write-Host "Uploading remote command script to VM..."
     & gcloud compute scp $remoteCommandPath "${InstanceName}:/tmp/run_gce_gpu_vm_training.sh" --project $ProjectId --zone $Zone
     if ($LASTEXITCODE -ne 0) {
@@ -63,5 +70,6 @@ try {
     }
 }
 finally {
+    Remove-Item -LiteralPath $runnerUploadPath -ErrorAction SilentlyContinue
     Remove-Item -LiteralPath $remoteCommandPath -ErrorAction SilentlyContinue
 }
