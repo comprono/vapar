@@ -6,11 +6,13 @@ import json
 import os
 import sys
 import warnings
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List
 
 import numpy as np
+
+UTC = timezone.utc
 import pandas as pd
 from sklearn.exceptions import ConvergenceWarning
 

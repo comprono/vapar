@@ -5,7 +5,7 @@ import math
 import os
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from dataclasses import dataclass
-from datetime import UTC, date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
@@ -17,6 +17,8 @@ from sklearn.neural_network import MLPClassifier, MLPRegressor
 from sklearn.preprocessing import StandardScaler
 
 from backend.backtest.data_loader import DataLoader
+
+UTC = timezone.utc
 
 
 TRAIN_SYMBOL = "BTC-USD"
