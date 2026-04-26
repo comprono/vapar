@@ -23,6 +23,11 @@ echo ============================================================
 echo.
 
 powershell -NoProfile -ExecutionPolicy Bypass -File "%ROOT%\infra\gcp\submit_vertex_deep_policy_job.ps1" ^
+  -ProjectId "%PROJECT_ID%" ^
+  -Region "%REGION%" ^
+  -Bucket "%GCS_BUCKET%" ^
+  -Branch "%BRANCH%" ^
+  -DisplayNamePrefix "%DISPLAY_NAME_PREFIX%" ^
   -TrainArgs ^
   --years 2 ^
   --symbols BTC-USD,ETH-USD,SOL-USD,BNB-USD ^
@@ -46,4 +51,3 @@ echo Finished. Exit code: %EXITCODE%
 echo.
 pause
 exit /b %EXITCODE%
-

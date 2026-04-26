@@ -31,9 +31,18 @@ if not "%~1"=="" (
 )
 
 if "%~1"=="" (
-  powershell -NoProfile -ExecutionPolicy Bypass -File "%ROOT%\infra\gcp\submit_vertex_deep_policy_job.ps1"
+  powershell -NoProfile -ExecutionPolicy Bypass -File "%ROOT%\infra\gcp\submit_vertex_deep_policy_job.ps1" ^
+    -ProjectId "%PROJECT_ID%" ^
+    -Region "%REGION%" ^
+    -Bucket "%GCS_BUCKET%" ^
+    -Branch "%BRANCH%"
 ) else (
-  powershell -NoProfile -ExecutionPolicy Bypass -File "%ROOT%\infra\gcp\submit_vertex_deep_policy_job.ps1" -TrainArgs %*
+  powershell -NoProfile -ExecutionPolicy Bypass -File "%ROOT%\infra\gcp\submit_vertex_deep_policy_job.ps1" ^
+    -ProjectId "%PROJECT_ID%" ^
+    -Region "%REGION%" ^
+    -Bucket "%GCS_BUCKET%" ^
+    -Branch "%BRANCH%" ^
+    -TrainArgs %*
 )
 
 set "EXITCODE=%ERRORLEVEL%"
