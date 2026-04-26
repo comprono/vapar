@@ -30,7 +30,11 @@ if not "%~1"=="" (
   echo.
 )
 
-powershell -NoProfile -ExecutionPolicy Bypass -File "%ROOT%\infra\gcp\submit_vertex_deep_policy_job.ps1" -TrainArgs %*
+if "%~1"=="" (
+  powershell -NoProfile -ExecutionPolicy Bypass -File "%ROOT%\infra\gcp\submit_vertex_deep_policy_job.ps1"
+) else (
+  powershell -NoProfile -ExecutionPolicy Bypass -File "%ROOT%\infra\gcp\submit_vertex_deep_policy_job.ps1" -TrainArgs %*
+)
 
 set "EXITCODE=%ERRORLEVEL%"
 echo.
@@ -38,4 +42,3 @@ echo Finished. Exit code: %EXITCODE%
 echo.
 pause
 exit /b %EXITCODE%
-
