@@ -24,12 +24,14 @@ if [[ ! -d "${WORKDIR}/.git" ]]; then
   fi
   git clone --depth 1 --branch "${BRANCH}" https://github.com/comprono/vapar.git "${WORKDIR}"
 else
-  git -C "${WORKDIR}" fetch origin
-  git -C "${WORKDIR}" checkout "${BRANCH}"
-  git -C "${WORKDIR}" pull --ff-only origin "${BRANCH}"
+  git -C "${WORKDIR}" fetch --depth 1 origin "${BRANCH}"
+  git -C "${WORKDIR}" checkout -B "${BRANCH}" "origin/${BRANCH}"
+  git -C "${WORKDIR}" reset --hard "origin/${BRANCH}"
 fi
 
 cd "${WORKDIR}"
+echo "Training repo HEAD: $(git rev-parse --short HEAD)"
+echo "Training repo branch: $(git branch --show-current)"
 LOGDIR="${WORKDIR}/logs"
 mkdir -p "${LOGDIR}"
 "${PYTHON_BIN}" -m pip install -q --upgrade pip
