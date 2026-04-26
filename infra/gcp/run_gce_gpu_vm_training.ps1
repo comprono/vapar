@@ -21,7 +21,18 @@ Write-Host "Branch:   $Branch"
 Write-Host "Bucket:   gs://$Bucket"
 Write-Host "Args:     $TrainArgsLine"
 
-$rawScript = "https://raw.githubusercontent.com/comprono/vapar/$Branch/infra/gcp/run_on_vm_deep_policy.sh"
+$repoRoot = Resolve-Path (Join-Path $PSScriptRoot "..\..")
+$localRunner = Join-Path $repoRoot "infra\gcp\run_on_vm_deep_policy.sh"
+if (-not (Test-Path -LiteralPath $localRunner)) {
+    throw "Missing local VM runner script: $localRunner"
+}
+
+Write-Host "Uploading runner script to VM..."
+& gcloud compute scp $localRunner "${InstanceName}:/tmp/run_on_vm_deep_policy.sh" --project $ProjectId --zone $Zone
+if ($LASTEXITCODE -ne 0) {
+    throw "Failed to upload VM runner script with exit code $LASTEXITCODE."
+}
+
 $remoteCommand = @"
 set -euo pipefail
 export BRANCH='$Branch'
@@ -30,7 +41,7 @@ if ! command -v git >/dev/null 2>&1 || ! command -v python3 >/dev/null 2>&1 || !
   sudo apt-get update
   sudo DEBIAN_FRONTEND=noninteractive apt-get install -y git python3 python3-pip curl
 fi
-curl -fsSL '$rawScript' -o /tmp/run_on_vm_deep_policy.sh
+chmod +x /tmp/run_on_vm_deep_policy.sh
 bash /tmp/run_on_vm_deep_policy.sh $TrainArgsLine
 "@
 
