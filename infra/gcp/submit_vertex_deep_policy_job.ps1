@@ -1,3 +1,4 @@
+[CmdletBinding(PositionalBinding=$false)]
 param(
     [string]$ProjectId = $env:PROJECT_ID,
     [string]$Region = $env:REGION,
@@ -9,6 +10,8 @@ param(
     [int]$AcceleratorCount = $(if ($env:ACCELERATOR_COUNT) { [int]$env:ACCELERATOR_COUNT } else { 1 }),
     [string]$ContainerImage = $(if ($env:CONTAINER_IMAGE) { $env:CONTAINER_IMAGE } else { "us-docker.pkg.dev/vertex-ai/training/pytorch-gpu.2-4.py310:latest" }),
     [string]$ServiceAccount = $env:SERVICE_ACCOUNT,
+    [string]$DryRunConfigPath,
+    [string]$TrainArgsLine = $env:TRAIN_ARGS_LINE,
     [string[]]$TrainArgs
 )
 
@@ -24,6 +27,10 @@ $Bucket = $Bucket.Trim()
 
 if ($ProjectId -match "^\d+$") {
     throw "ProjectId must be the Google Cloud project ID, not the numeric project number. Use stellar-shard-376522."
+}
+
+if ((-not $TrainArgs -or $TrainArgs.Count -eq 0) -and $TrainArgsLine) {
+    $TrainArgs = @($TrainArgsLine -split "\s+" | Where-Object { $_ })
 }
 
 if (-not $TrainArgs -or $TrainArgs.Count -eq 0) {
@@ -63,12 +70,12 @@ $argsLiteral = ($TrainArgs | ForEach-Object { [string]$_ }) -join " "
 $yaml = @"
 workerPoolSpecs:
   - machineSpec:
-      machineType: $MachineType
-      acceleratorType: $AcceleratorType
+      machineType: "$MachineType"
+      acceleratorType: "$AcceleratorType"
       acceleratorCount: $AcceleratorCount
     replicaCount: 1
     containerSpec:
-      imageUri: $ContainerImage
+      imageUri: "$ContainerImage"
       command:
         - bash
       args:
@@ -115,6 +122,13 @@ Set-Content -LiteralPath $tmpConfig -Value $yaml -Encoding UTF8
 Write-Host "Submitting Vertex job: $displayName"
 Write-Host "Project ID: $ProjectId"
 Write-Host "Output prefix: $outputUri"
+
+if ($DryRunConfigPath) {
+    Copy-Item -LiteralPath $tmpConfig -Destination $DryRunConfigPath -Force
+    Remove-Item -LiteralPath $tmpConfig -ErrorAction SilentlyContinue
+    Write-Host "Dry-run config written to: $DryRunConfigPath"
+    return
+}
 
 $cmd = @(
     "ai","custom-jobs","create",
