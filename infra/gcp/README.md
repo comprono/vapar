@@ -27,6 +27,17 @@ export BRANCH="codex/deep-crypto-colab-training"
 bash infra/gcp/submit_vertex_deep_policy_job.sh
 ```
 
+Windows PowerShell usage:
+
+```powershell
+$env:PROJECT_ID="your-project-id"
+$env:REGION="us-central1"
+$env:GCS_BUCKET="your-training-bucket"
+$env:BRANCH="codex/deep-crypto-colab-training"
+
+powershell -ExecutionPolicy Bypass -File infra/gcp/submit_vertex_deep_policy_job.ps1
+```
+
 Custom training args:
 
 ```bash
@@ -55,6 +66,15 @@ What this launcher does:
 - Clones this repo branch inside the training container.
 - Runs `tests/run_deep_crypto_policy_walkforward.py`.
 - Uploads latest report/checkpoints to `gs://$GCS_BUCKET/vertex-runs/<job>/artifacts/...`.
+
+Preflight validation (recommended before first run):
+
+```powershell
+powershell -ExecutionPolicy Bypass -File infra/gcp/vertex_preflight.ps1 `
+  -ProjectId your-project-id `
+  -Region us-central1 `
+  -Bucket your-training-bucket
+```
 
 ## 2) Persistent GPU VM
 
@@ -101,4 +121,3 @@ git ls-remote origin codex/deep-crypto-colab-training
 Colab source of truth:
 - If the notebook URL starts with `https://colab.research.google.com/github/...`, it is GitHub-backed.
 - `Copy to Drive` means it is not yet a Drive-owned copy.
-
