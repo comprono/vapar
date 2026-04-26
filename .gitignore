@@ -30,3 +30,4 @@ data/cache/
 data/logs/
 data/reports/
 .playwright-mcp/
+colab-status.png
