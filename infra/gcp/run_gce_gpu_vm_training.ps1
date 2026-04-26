@@ -33,8 +33,11 @@ if ($LASTEXITCODE -ne 0) {
     throw "Failed to upload VM runner script with exit code $LASTEXITCODE."
 }
 
+$remoteCommandPath = Join-Path $env:TEMP ("run_gce_gpu_vm_training_{0}.sh" -f ([guid]::NewGuid().ToString("N")))
 $remoteCommand = @"
+#!/usr/bin/env bash
 set -euo pipefail
+echo "[vm-train] remote command started at `$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 export BRANCH='$Branch'
 export GCS_BUCKET='$Bucket'
 if ! command -v git >/dev/null 2>&1 || ! command -v python3 >/dev/null 2>&1 || ! command -v pip3 >/dev/null 2>&1; then
@@ -43,9 +46,22 @@ if ! command -v git >/dev/null 2>&1 || ! command -v python3 >/dev/null 2>&1 || !
 fi
 chmod +x /tmp/run_on_vm_deep_policy.sh
 bash /tmp/run_on_vm_deep_policy.sh $TrainArgsLine
+echo "[vm-train] remote command finished at `$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 "@
 
-& gcloud compute ssh $InstanceName --project $ProjectId --zone $Zone --command $remoteCommand
-if ($LASTEXITCODE -ne 0) {
-    throw "Remote training failed with exit code $LASTEXITCODE."
+Set-Content -LiteralPath $remoteCommandPath -Value $remoteCommand -Encoding ascii
+try {
+    Write-Host "Uploading remote command script to VM..."
+    & gcloud compute scp $remoteCommandPath "${InstanceName}:/tmp/run_gce_gpu_vm_training.sh" --project $ProjectId --zone $Zone
+    if ($LASTEXITCODE -ne 0) {
+        throw "Failed to upload remote command script with exit code $LASTEXITCODE."
+    }
+
+    & gcloud compute ssh $InstanceName --project $ProjectId --zone $Zone --command "bash /tmp/run_gce_gpu_vm_training.sh"
+    if ($LASTEXITCODE -ne 0) {
+        throw "Remote training failed with exit code $LASTEXITCODE."
+    }
+}
+finally {
+    Remove-Item -LiteralPath $remoteCommandPath -ErrorAction SilentlyContinue
 }
