@@ -43,6 +43,12 @@ Windows executable launchers (repo root):
 - [RUN_VERTEX_TRAIN.cmd](</C:/Users/paras/Documents/antigravity files/TB 1AG/RUN_VERTEX_TRAIN.cmd>)
 - [SHOW_VERTEX_PROGRESS.cmd](</C:/Users/paras/Documents/antigravity files/TB 1AG/SHOW_VERTEX_PROGRESS.cmd>)
 
+If Vertex fails with `RESOURCE_EXHAUSTED` for
+`custom_model_training_nvidia_t4_gpus` or
+`custom_model_training_nvidia_l4_gpus`, the project is blocked by Vertex
+custom-training GPU quota. That quota is separate from Compute Engine GPU
+quota.
+
 Custom training args:
 
 ```bash
@@ -106,6 +112,21 @@ This VM path is useful if you want:
 - one long-lived machine,
 - persistent local cache,
 - lower operational friction for iterative experimentation.
+
+Windows executable launchers (repo root):
+- [RUN_GCE_GPU_VM_CREATE.cmd](</C:/Users/paras/Documents/antigravity files/TB 1AG/RUN_GCE_GPU_VM_CREATE.cmd>) creates or starts `deep-policy-trainer-01`.
+- [RUN_GCE_GPU_VM_DEBUG_TRAIN.cmd](</C:/Users/paras/Documents/antigravity files/TB 1AG/RUN_GCE_GPU_VM_DEBUG_TRAIN.cmd>) runs the small debug training job on that VM.
+- [RUN_GCE_GPU_VM_FULL_TRAIN.cmd](</C:/Users/paras/Documents/antigravity files/TB 1AG/RUN_GCE_GPU_VM_FULL_TRAIN.cmd>) runs the full long training job on that VM.
+
+Default Windows VM settings:
+
+```text
+project:  stellar-shard-376522
+zone:     us-central1-a
+machine:  g2-standard-8
+gpu:      nvidia-l4 x1
+bucket:   gs://tb1ag-vertex-artifacts-116514064160
+```
 
 ## Quota and cost guidance
 
