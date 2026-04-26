@@ -38,6 +38,11 @@ $env:BRANCH="codex/deep-crypto-colab-training"
 powershell -ExecutionPolicy Bypass -File infra/gcp/submit_vertex_deep_policy_job.ps1
 ```
 
+Windows executable launchers (repo root):
+- [RUN_VERTEX_PREFLIGHT.cmd](</C:/Users/paras/Documents/antigravity files/TB 1AG/RUN_VERTEX_PREFLIGHT.cmd>)
+- [RUN_VERTEX_TRAIN.cmd](</C:/Users/paras/Documents/antigravity files/TB 1AG/RUN_VERTEX_TRAIN.cmd>)
+- [SHOW_VERTEX_PROGRESS.cmd](</C:/Users/paras/Documents/antigravity files/TB 1AG/SHOW_VERTEX_PROGRESS.cmd>)
+
 Custom training args:
 
 ```bash
