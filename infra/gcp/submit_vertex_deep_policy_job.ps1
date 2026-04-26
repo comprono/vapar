@@ -18,6 +18,14 @@ if (-not $ProjectId -or -not $Region -or -not $Bucket) {
     throw "Set PROJECT_ID, REGION, GCS_BUCKET (or pass -ProjectId, -Region, -Bucket)."
 }
 
+$ProjectId = $ProjectId.Trim()
+$Region = $Region.Trim()
+$Bucket = $Bucket.Trim()
+
+if ($ProjectId -match "^\d+$") {
+    throw "ProjectId must be the Google Cloud project ID, not the numeric project number. Use stellar-shard-376522."
+}
+
 if (-not $TrainArgs -or $TrainArgs.Count -eq 0) {
     $TrainArgs = @(
         "--years","5",
@@ -105,22 +113,26 @@ baseOutputDirectory:
 Set-Content -LiteralPath $tmpConfig -Value $yaml -Encoding UTF8
 
 Write-Host "Submitting Vertex job: $displayName"
+Write-Host "Project ID: $ProjectId"
 Write-Host "Output prefix: $outputUri"
 
 $cmd = @(
     "ai","custom-jobs","create",
-    "--project=$ProjectId",
-    "--region=$Region",
-    "--display-name=$displayName",
-    "--config=$tmpConfig"
+    "--project",$ProjectId,
+    "--region",$Region,
+    "--display-name",$displayName,
+    "--config",$tmpConfig
 )
 
 if ($ServiceAccount) {
-    $cmd += "--service-account=$ServiceAccount"
+    $cmd += @("--service-account",$ServiceAccount)
 }
 
 try {
     & gcloud @cmd
+    if ($LASTEXITCODE -ne 0) {
+        throw "gcloud ai custom-jobs create failed with exit code $LASTEXITCODE."
+    }
 }
 finally {
     Remove-Item -LiteralPath $tmpConfig -ErrorAction SilentlyContinue
