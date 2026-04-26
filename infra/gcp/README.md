@@ -49,6 +49,15 @@ If Vertex fails with `RESOURCE_EXHAUSTED` for
 custom-training GPU quota. That quota is separate from Compute Engine GPU
 quota.
 
+If Compute Engine VM creation fails with `GPUS_ALL_REGIONS exceeded`, request
+Compute Engine global GPU quota:
+
+```text
+quota:  GPUS_ALL_REGIONS-per-project
+metric: compute.googleapis.com/gpus_all_regions
+value:  at least 1
+```
+
 Custom training args:
 
 ```bash

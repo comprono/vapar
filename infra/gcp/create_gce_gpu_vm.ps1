@@ -24,6 +24,26 @@ Write-Host "GPU:      $GpuType x$GpuCount"
 
 & gcloud services enable compute.googleapis.com storage.googleapis.com --project $ProjectId | Out-Host
 
+$region = ($Zone -replace "-[a-z]$", "")
+$regionJson = & gcloud compute regions describe $region --project $ProjectId --format="json"
+$regionObj = $regionJson | ConvertFrom-Json
+$regionalGpuQuota = $regionObj.quotas |
+    Where-Object { $_.metric -eq "GPUS_ALL_REGIONS" } |
+    Select-Object -First 1
+if ($regionalGpuQuota -and [double]$regionalGpuQuota.limit -lt $GpuCount) {
+    throw @"
+Compute Engine global GPU quota is $($regionalGpuQuota.limit), but this VM needs $GpuCount GPU.
+
+Request quota increase:
+  quota:  GPUS_ALL_REGIONS-per-project
+  metric: compute.googleapis.com/gpus_all_regions
+  value:  at least $GpuCount
+
+Google Cloud Console:
+  https://console.cloud.google.com/iam-admin/quotas?project=$ProjectId
+"@
+}
+
 $existingInstance = (& gcloud compute instances list `
     --project $ProjectId `
     --filter "name=($InstanceName) AND zone:($Zone)" `
