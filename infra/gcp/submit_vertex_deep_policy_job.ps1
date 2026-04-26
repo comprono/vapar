@@ -44,12 +44,13 @@ $displayName = "{0}-{1}" -f $DisplayNamePrefix, (Get-Date).ToUniversalTime().ToS
 $outputUri = "gs://{0}/vertex-runs/{1}" -f $Bucket, $displayName
 $tmpConfig = [System.IO.Path]::GetTempFileName() + ".yaml"
 
-function ConvertTo-BashSingleQuotedArg {
-    param([Parameter(Mandatory = $true)][string]$Value)
-    return "'" + ($Value -replace "'", "'\"'\"'") + "'"
+foreach ($arg in $TrainArgs) {
+    $s = [string]$arg
+    if ($s -match "[\s'\""`$]") {
+        throw "Unsupported TrainArgs token '$s'. Use simple flag/value tokens without spaces or quotes."
+    }
 }
-
-$argsLiteral = ($TrainArgs | ForEach-Object { ConvertTo-BashSingleQuotedArg -Value ([string]$_) }) -join " "
+$argsLiteral = ($TrainArgs | ForEach-Object { [string]$_ }) -join " "
 
 $yaml = @"
 workerPoolSpecs:
