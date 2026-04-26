@@ -26,3 +26,7 @@ Thumbs.db
 *.sqlite
 *.db
 *.log
+data/cache/
+data/logs/
+data/reports/
+.playwright-mcp/

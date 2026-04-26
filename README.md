@@ -50,9 +50,30 @@ Outputs:
 
 The verification output includes:
 - `model_position` vs `oracle_position` for every day
+- `model_action`, expected next-day edge, position size, and switching cost columns
 - daily return gap (`oracle_return - model_return`)
 - monthly/yearly return breakdown in the JSON report
 
-Anti-cheat rule in pipeline:
-- Oracle (best-possible path) is computed only for verification and gap scoring
-- Oracle labels are never used as training targets
+Walk-forward rule in pipeline:
+- Training uses oracle action labels only from historical training windows
+- Final evaluation oracle paths are computed after walk-forward scoring for verification and gap scoring
+
+## Local Short-Horizon AutoLoop (1-2 years, Top-10 Crypto)
+
+Run local-only iterative training/evaluation with daily verification and compounded equity columns:
+
+```bash
+$env:PYTHONPATH="C:\Users\paras\Documents\antigravity files\TB 1AG"
+python tests/run_crypto_local_autoloop.py --years 1 --iterations 4 --month-stride 1 --initial-capital 1000
+```
+
+Windows executable wrapper:
+
+```bash
+run_local_crypto_autoloop.bat --years 1 --iterations 4 --month-stride 1 --initial-capital 1000
+```
+
+Artifacts:
+- Loop summary CSV/JSON: `data/reports/local_crypto_autoloop_*/`
+- Per-run report JSON/CSV: `data/reports/crypto_autoresearch_*y_*.json|csv`
+- Per-coin daily verification CSV (includes compounded equity): `data/reports/verification_*/`
