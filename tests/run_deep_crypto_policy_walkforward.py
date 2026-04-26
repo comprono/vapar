@@ -5,7 +5,7 @@ import json
 import os
 import sys
 import warnings
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
@@ -34,6 +34,8 @@ warnings.filterwarnings(
     message="enable_nested_tensor is True, but self.use_nested_tensor is False.*",
     category=UserWarning,
 )
+
+UTC = timezone.utc
 
 
 TOP10_SYMBOLS = [

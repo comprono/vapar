@@ -15,7 +15,6 @@ BRANCH="${BRANCH:-codex/deep-crypto-colab-training}"
 PYTHON_BIN="${PYTHON_BIN:-python3}"
 WORKDIR="${HOME}/vapar"
 LOGDIR="${WORKDIR}/logs"
-mkdir -p "${LOGDIR}"
 
 if [[ ! -d "${WORKDIR}/.git" ]]; then
   if [[ -e "${WORKDIR}" ]]; then
@@ -31,17 +30,26 @@ else
 fi
 
 cd "${WORKDIR}"
+LOGDIR="${WORKDIR}/logs"
+mkdir -p "${LOGDIR}"
 "${PYTHON_BIN}" -m pip install -q --upgrade pip
 "${PYTHON_BIN}" -m pip install -q -r backend/requirements.txt
 
+if command -v nvidia-smi >/dev/null 2>&1; then
+  nvidia-smi || true
+else
+  echo "nvidia-smi not found yet; continuing and checking PyTorch CUDA."
+fi
+
 if "${PYTHON_BIN}" - <<'PY' >/dev/null 2>&1
 import torch
-print(torch.cuda.is_available())
+raise SystemExit(0 if torch.cuda.is_available() else 1)
 PY
 then
   :
 else
-  "${PYTHON_BIN}" -m pip install -q torch --index-url https://download.pytorch.org/whl/cu128
+  echo "Installing CUDA-enabled PyTorch wheel..."
+  "${PYTHON_BIN}" -m pip install -q --upgrade torch --index-url https://download.pytorch.org/whl/cu128
 fi
 
 TRAIN_ARGS=("$@")
