@@ -8,6 +8,8 @@ set "PROJECT_ID=stellar-shard-376522"
 set "REGION=us-central1"
 set "GCS_BUCKET=tb1ag-vertex-artifacts-116514064160"
 set "BRANCH=codex/deep-crypto-colab-training"
+set "MACHINE_TYPE=g2-standard-8"
+set "ACCELERATOR_TYPE=NVIDIA_L4"
 
 set "GCLOUD_BIN=%LOCALAPPDATA%\Google\Cloud SDK\google-cloud-sdk\bin"
 if exist "%GCLOUD_BIN%\gcloud.cmd" set "PATH=%GCLOUD_BIN%;%PATH%"
@@ -23,6 +25,8 @@ echo Project: %PROJECT_ID%
 echo Region:  %REGION%
 echo Bucket:  gs://%GCS_BUCKET%
 echo Branch:  %BRANCH%
+echo Machine: %MACHINE_TYPE%
+echo GPU:     %ACCELERATOR_TYPE%
 echo ============================================================
 echo.
 if not "%~1"=="" (
