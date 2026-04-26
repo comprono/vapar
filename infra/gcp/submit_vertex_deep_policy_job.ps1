@@ -44,7 +44,12 @@ $displayName = "{0}-{1}" -f $DisplayNamePrefix, (Get-Date).ToUniversalTime().ToS
 $outputUri = "gs://{0}/vertex-runs/{1}" -f $Bucket, $displayName
 $tmpConfig = [System.IO.Path]::GetTempFileName() + ".yaml"
 
-$argsLiteral = ($TrainArgs | ForEach-Object { [System.Management.Automation.Language.CodeGeneration]::QuoteArgument($_) }) -join " "
+function ConvertTo-BashSingleQuotedArg {
+    param([Parameter(Mandatory = $true)][string]$Value)
+    return "'" + ($Value -replace "'", "'\"'\"'") + "'"
+}
+
+$argsLiteral = ($TrainArgs | ForEach-Object { ConvertTo-BashSingleQuotedArg -Value ([string]$_) }) -join " "
 
 $yaml = @"
 workerPoolSpecs:
@@ -119,4 +124,3 @@ try {
 finally {
     Remove-Item -LiteralPath $tmpConfig -ErrorAction SilentlyContinue
 }
-
