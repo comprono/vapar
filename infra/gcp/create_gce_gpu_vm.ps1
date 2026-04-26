@@ -24,8 +24,11 @@ Write-Host "GPU:      $GpuType x$GpuCount"
 
 & gcloud services enable compute.googleapis.com storage.googleapis.com --project $ProjectId | Out-Host
 
-& gcloud compute instances describe $InstanceName --project $ProjectId --zone $Zone *> $null
-if ($LASTEXITCODE -eq 0) {
+$existingInstance = (& gcloud compute instances list `
+    --project $ProjectId `
+    --filter "name=($InstanceName) AND zone:($Zone)" `
+    --format "value(name)" 2>$null | Select-Object -First 1)
+if ($existingInstance) {
     Write-Host "VM already exists. Starting it if needed..."
     & gcloud compute instances start $InstanceName --project $ProjectId --zone $Zone | Out-Host
     exit $LASTEXITCODE
