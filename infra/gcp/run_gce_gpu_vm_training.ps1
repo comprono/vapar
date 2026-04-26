@@ -9,6 +9,25 @@ param(
 
 $ErrorActionPreference = "Stop"
 
+function Wait-ForVmSsh {
+    param(
+        [string]$ProjectId,
+        [string]$Zone,
+        [string]$InstanceName,
+        [int]$TimeoutSeconds = 420
+    )
+
+    $deadline = (Get-Date).AddSeconds($TimeoutSeconds)
+    while ((Get-Date) -lt $deadline) {
+        Start-Sleep -Seconds 8
+        & gcloud compute ssh $InstanceName --project $ProjectId --zone $Zone --command "echo vm-ssh-ready" *> $null
+        if ($LASTEXITCODE -eq 0) {
+            return $true
+        }
+    }
+    return $false
+}
+
 if (-not $TrainArgsLine) {
     $TrainArgsLine = "--years 5 --window-size 128 --train-lookback-days 1460 --calibration-lookback-days 365 --min-train-samples 2048 --max-train-samples 30000 --max-months 36 --pretrain-epochs 25 --epochs 35 --batch-size 512 --d-model 128 --n-heads 8 --n-layers 4 --dropout 0.10 --lr 0.0003 --ranking-weight 1.0 --initial-capital 10"
 }
@@ -65,8 +84,17 @@ try {
     }
 
     & gcloud compute ssh $InstanceName --project $ProjectId --zone $Zone --command "bash /tmp/run_gce_gpu_vm_training.sh"
-    if ($LASTEXITCODE -ne 0) {
-        throw "Remote training failed with exit code $LASTEXITCODE."
+    $firstExit = $LASTEXITCODE
+    if ($firstExit -ne 0) {
+        Write-Host "Initial SSH run exited with $firstExit. If the VM rebooted for driver install, waiting for SSH and retrying once..."
+        $ready = Wait-ForVmSsh -ProjectId $ProjectId -Zone $Zone -InstanceName $InstanceName -TimeoutSeconds 420
+        if (-not $ready) {
+            throw "Remote training failed with exit code $firstExit and VM did not return to SSH readiness in time."
+        }
+        & gcloud compute ssh $InstanceName --project $ProjectId --zone $Zone --command "bash /tmp/run_gce_gpu_vm_training.sh"
+        if ($LASTEXITCODE -ne 0) {
+            throw "Remote training failed after retry with exit code $LASTEXITCODE."
+        }
     }
 }
 finally {
