@@ -37,11 +37,12 @@ mkdir -p "${LOGDIR}"
 "${PYTHON_BIN}" -m pip install -q --upgrade pip
 "${PYTHON_BIN}" -m pip install -q -r backend/requirements.txt
 
-if command -v nvidia-smi >/dev/null 2>&1; then
-  nvidia-smi || true
-else
-  echo "nvidia-smi not found yet; continuing and checking PyTorch CUDA."
+if ! command -v nvidia-smi >/dev/null 2>&1; then
+  echo "nvidia-smi not found; installing Google Compute Engine NVIDIA driver..."
+  curl -fsSL https://storage.googleapis.com/compute-gpu-installation-us/installer/latest/cuda_installer.pyz -o /tmp/cuda_installer.pyz
+  sudo "${PYTHON_BIN}" /tmp/cuda_installer.pyz install_driver
 fi
+nvidia-smi
 
 if "${PYTHON_BIN}" - <<'PY' >/dev/null 2>&1
 import torch
@@ -53,6 +54,16 @@ else
   echo "Installing CUDA-enabled PyTorch wheel..."
   "${PYTHON_BIN}" -m pip install -q --upgrade torch --index-url https://download.pytorch.org/whl/cu128
 fi
+
+"${PYTHON_BIN}" - <<'PY'
+import torch
+print("torch", torch.__version__)
+print("cuda_available", torch.cuda.is_available())
+if torch.cuda.is_available():
+    print("cuda_device", torch.cuda.get_device_name(0))
+else:
+    raise SystemExit("CUDA is still not available after driver/PyTorch setup.")
+PY
 
 TRAIN_ARGS=("$@")
 if [[ "${#TRAIN_ARGS[@]}" -eq 0 ]]; then
