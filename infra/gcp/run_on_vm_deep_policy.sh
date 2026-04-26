@@ -18,6 +18,11 @@ LOGDIR="${WORKDIR}/logs"
 mkdir -p "${LOGDIR}"
 
 if [[ ! -d "${WORKDIR}/.git" ]]; then
+  if [[ -e "${WORKDIR}" ]]; then
+    BACKUP_DIR="${WORKDIR}.non_git.$(date -u +%Y%m%d_%H%M%S)"
+    echo "Found non-Git workdir at ${WORKDIR}; moving it to ${BACKUP_DIR}"
+    mv "${WORKDIR}" "${BACKUP_DIR}"
+  fi
   git clone --depth 1 --branch "${BRANCH}" https://github.com/comprono/vapar.git "${WORKDIR}"
 else
   git -C "${WORKDIR}" fetch origin
@@ -78,4 +83,3 @@ if [[ -n "${LATEST_REPORT}" ]]; then
     echo "Synced to gs://${GCS_BUCKET}/vm-runs/${RUN_ID}/"
   fi
 fi
-
