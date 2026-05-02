@@ -1597,13 +1597,62 @@ def _calibrate_portfolio_selector(
     cal_returns = {dt: returns_by_date[dt] for dt in usable_dates}
     cal_scores = {dt: scores_by_date[dt] for dt in usable_dates}
     cal_oracle = {dt: oracle_by_date[dt] for dt in usable_dates if oracle_by_date and dt in oracle_by_date}
+    if len(usable_dates) >= 2 * MIN_CALIBRATION_SAMPLES:
+        split_idx = min(max(int(len(usable_dates) * 0.65), MIN_CALIBRATION_SAMPLES), len(usable_dates) - MIN_CALIBRATION_SAMPLES)
+        tune_dates = usable_dates[:split_idx]
+        validation_dates = usable_dates[split_idx:]
+    else:
+        tune_dates = usable_dates
+        validation_dates = usable_dates
+    tune_returns = {dt: returns_by_date[dt] for dt in tune_dates}
+    tune_scores = {dt: scores_by_date[dt] for dt in tune_dates}
+    tune_oracle = {dt: oracle_by_date[dt] for dt in tune_dates if oracle_by_date and dt in oracle_by_date}
+    validation_returns = {dt: returns_by_date[dt] for dt in validation_dates}
+    validation_scores = {dt: scores_by_date[dt] for dt in validation_dates}
+    validation_oracle = {dt: oracle_by_date[dt] for dt in validation_dates if oracle_by_date and dt in oracle_by_date}
     base_top_k = max(1, int(base_config.get("top_k", 1) or 1))
     thresholds = _portfolio_selector_thresholds(cal_scores, float(base_config.get("threshold", 0.0)))
-    top_ks = sorted({1, 2, 3, base_top_k})
+    top_ks = sorted({1, min(2, base_top_k)})
     modes = [str(base_config.get("trade_mode", "long_short"))]
     if "long_only" not in modes:
         modes.append("long_only")
-    scales = [0.35, 0.65, 1.0]
+    scales = [0.25, 0.50, 0.75]
+
+    def candidate_objective(sim: Dict[str, Any], *, enforce_live_gate: bool) -> Tuple[float, bool]:
+        metrics = sim["model_validation"]
+        gap = sim["gap_validation"]
+        total_return = float(metrics.get("total_return", 0.0))
+        excess = float(gap.get("excess_vs_buyhold", 0.0))
+        active_rate = float(metrics.get("active_rate", 0.0))
+        trade_rate = float(metrics.get("trade_rate", 0.0))
+        turnover_per_day = float(metrics.get("avg_turnover_per_day", 0.0))
+        max_drawdown = float(metrics.get("max_drawdown", 0.0))
+        oracle_match = float(gap.get("oracle_action_match_rate", 0.0))
+        oracle_capture = float(gap.get("oracle_edge_capture_rate", 0.0))
+        objective = (
+            5.00 * excess
+            + 2.00 * total_return
+            + 0.45 * _bounded_metric(float(metrics.get("sharpe", 0.0)), limit=2.0)
+            + 0.25 * _bounded_metric(float(metrics.get("sortino", 0.0)), limit=2.0)
+            + 1.10 * oracle_match
+            + 1.75 * oracle_capture
+            - 2.25 * max_drawdown
+            - 1.75 * turnover_per_day
+            - 1.20 * trade_rate
+            - 0.85 * max(active_rate - 0.50, 0.0)
+        )
+        passes_live_gate = (
+            total_return >= 0.0
+            and excess >= 0.0
+            and max_drawdown <= 0.35
+            and turnover_per_day <= 0.35
+            and trade_rate <= 0.45
+            and active_rate <= 0.55
+            and oracle_capture >= 0.08
+        )
+        if enforce_live_gate and not passes_live_gate:
+            objective -= 100.0
+        return float(objective), bool(passes_live_gate)
 
     best: Dict[str, Any] | None = None
     candidates_evaluated = 0
@@ -1619,30 +1668,27 @@ def _calibrate_portfolio_selector(
                         "position_scale": float(scale),
                     }
                     sim = _score_portfolio_series(
-                        returns_by_date=cal_returns,
-                        scores_by_date=cal_scores,
+                        returns_by_date=tune_returns,
+                        scores_by_date=tune_scores,
                         config=candidate,
-                        oracle_by_date=cal_oracle,
+                        oracle_by_date=tune_oracle,
                     )
-                    metrics = sim["model_validation"]
-                    gap = sim["gap_validation"]
+                    validation_sim = _score_portfolio_series(
+                        returns_by_date=validation_returns,
+                        scores_by_date=validation_scores,
+                        config=candidate,
+                        oracle_by_date=validation_oracle,
+                    )
+                    tune_objective, _ = candidate_objective(sim, enforce_live_gate=False)
+                    validation_objective, passes_live_gate = candidate_objective(validation_sim, enforce_live_gate=True)
+                    objective = validation_objective + 0.35 * tune_objective
+                    metrics = validation_sim["model_validation"]
+                    gap = validation_sim["gap_validation"]
                     total_return = float(metrics.get("total_return", 0.0))
                     excess = float(gap.get("excess_vs_buyhold", 0.0))
                     active_rate = float(metrics.get("active_rate", 0.0))
                     trade_rate = float(metrics.get("trade_rate", 0.0))
                     turnover_per_day = float(metrics.get("avg_turnover_per_day", 0.0))
-                    objective = (
-                        float(sim["score"])
-                        + 0.45 * max(excess, 0.0)
-                        + 0.20 * _bounded_metric(total_return, limit=1.0)
-                        - 0.95 * max(active_rate - 0.65, 0.0)
-                        - 0.75 * max(turnover_per_day - 0.55, 0.0)
-                        - 0.45 * max(trade_rate - 0.65, 0.0)
-                    )
-                    if total_return < -0.05:
-                        objective -= 1.0 + 4.0 * abs(total_return)
-                    if active_rate < 0.02 and excess <= 0.0:
-                        objective -= 0.40
                     candidates_evaluated += 1
                     if best is None or objective > float(best["objective"]):
                         best = {
@@ -1652,9 +1698,12 @@ def _calibrate_portfolio_selector(
                             "position_scale": float(scale),
                             "trade_mode": mode,
                             "samples": int(len(usable_dates)),
+                            "tune_samples": int(len(tune_dates)),
+                            "validation_samples": int(len(validation_dates)),
+                            "passes_live_gate": bool(passes_live_gate),
                             "used_default": False,
                             "calibration_model_total_return": total_return,
-                            "calibration_buyhold_total_return": float(sim["buyhold_validation"].get("total_return", 0.0)),
+                            "calibration_buyhold_total_return": float(validation_sim["buyhold_validation"].get("total_return", 0.0)),
                             "calibration_excess_vs_buyhold": excess,
                             "calibration_active_rate": active_rate,
                             "calibration_trade_rate": trade_rate,
@@ -1671,12 +1720,12 @@ def _calibrate_portfolio_selector(
         "position_scale": 0.0,
     }
     flat_sim = _score_portfolio_series(
-        returns_by_date=cal_returns,
-        scores_by_date=cal_scores,
+        returns_by_date=validation_returns,
+        scores_by_date=validation_scores,
         config=flat_candidate,
-        oracle_by_date=cal_oracle,
+        oracle_by_date=validation_oracle,
     )
-    flat_objective = float(flat_sim["score"]) - 0.15
+    flat_objective = -0.05
     candidates_evaluated += 1
     if best is None or flat_objective > float(best["objective"]):
         best = {
@@ -1686,6 +1735,9 @@ def _calibrate_portfolio_selector(
             "position_scale": 0.0,
             "trade_mode": "flat",
             "samples": int(len(usable_dates)),
+            "tune_samples": int(len(tune_dates)),
+            "validation_samples": int(len(validation_dates)),
+            "passes_live_gate": True,
             "used_default": False,
             "calibration_model_total_return": float(flat_sim["model_validation"].get("total_return", 0.0)),
             "calibration_buyhold_total_return": float(flat_sim["buyhold_validation"].get("total_return", 0.0)),
@@ -1704,6 +1756,9 @@ def _calibrate_portfolio_selector(
         "trade_mode": str(best["trade_mode"]),
         "calibration_score": float(best["objective"]),
         "samples": int(best["samples"]),
+        "tune_samples": int(best.get("tune_samples", best["samples"])),
+        "validation_samples": int(best.get("validation_samples", best["samples"])),
+        "passes_live_gate": bool(best.get("passes_live_gate", False)),
         "used_default": bool(best["used_default"]),
         "candidates_evaluated": int(candidates_evaluated),
         "calibration_model_total_return": float(best["calibration_model_total_return"]),

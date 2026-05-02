@@ -97,6 +97,7 @@ def ranking_loss(outputs: Dict[str, torch.Tensor], batch: Dict[str, torch.Tensor
     scores = outputs["score"]
     selected = batch["is_selected"] > 0.5
     date_ids = batch["date_id"]
+    direction = torch.where(batch["action"] == 2, 1.0, torch.where(batch["action"] == 0, -1.0, 0.0))
     losses = []
     for date_id in torch.unique(date_ids):
         mask = date_ids == date_id
@@ -106,9 +107,14 @@ def ranking_loss(outputs: Dict[str, torch.Tensor], batch: Dict[str, torch.Tensor
         day_selected = selected[mask]
         if not bool(day_selected.any()) or bool(day_selected.all()):
             continue
-        pos_score = day_scores[day_selected].max()
-        neg_scores = day_scores[~day_selected]
-        losses.append(F.softplus(0.0025 - (pos_score - neg_scores)).mean())
+        selected_direction = direction[mask][day_selected]
+        selected_direction = selected_direction[selected_direction.abs() > 0.0]
+        if int(selected_direction.numel()) == 0:
+            continue
+        signed_day_scores = day_scores * selected_direction[0]
+        pos_score = signed_day_scores[day_selected].max()
+        neg_scores = signed_day_scores[~day_selected]
+        losses.append(F.softplus(0.01 - (pos_score - neg_scores)).mean())
     if not losses:
         return torch.zeros((), dtype=scores.dtype, device=scores.device)
     return torch.stack(losses).mean()
@@ -123,12 +129,14 @@ def policy_loss(outputs: Dict[str, torch.Tensor], batch: Dict[str, torch.Tensor]
 
     direction = torch.where(batch["action"] == 2, 1.0, torch.where(batch["action"] == 0, -1.0, 0.0))
     signed_score = outputs["score"]
-    margin_loss = F.relu(0.0025 - direction * signed_score)
+    target_score = direction * batch["edge"] * batch["size"]
+    score_loss = F.smooth_l1_loss(signed_score, target_score, reduction="none")
+    margin_loss = F.relu(0.01 - direction * signed_score)
     margin_loss = torch.where(direction.abs() > 0.0, margin_loss, signed_score.abs())
 
     next_return = batch["target_return"]
     differentiable_position = torch.tanh(signed_score * 80.0)
-    net_return = differentiable_position * next_return - outputs["switch_cost"].detach() * differentiable_position.abs()
+    net_return = differentiable_position * next_return - batch["switch_cost"] * differentiable_position.abs()
     pnl_loss = -torch.log(torch.clamp(1.0 + net_return, min=1e-4))
     rank_loss = ranking_loss(outputs, batch)
 
@@ -137,6 +145,7 @@ def policy_loss(outputs: Dict[str, torch.Tensor], batch: Dict[str, torch.Tensor]
         + 0.75 * edge_loss
         + 0.35 * size_loss
         + 0.25 * switch_loss
+        + 0.90 * score_loss
         + 0.55 * margin_loss
         + 0.35 * pnl_loss
     )
