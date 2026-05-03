@@ -131,7 +131,7 @@ Default Windows VM settings:
 
 ```text
 project:  stellar-shard-376522
-zone:     us-central1-a
+zone:     us-central1-b
 machine:  g2-standard-8
 gpu:      nvidia-l4 x1
 bucket:   gs://tb1ag-vertex-artifacts-116514064160
