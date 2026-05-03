@@ -20,7 +20,7 @@ function Wait-ForVmSsh {
     $deadline = (Get-Date).AddSeconds($TimeoutSeconds)
     while ((Get-Date) -lt $deadline) {
         Start-Sleep -Seconds 8
-        & gcloud compute ssh $InstanceName --project $ProjectId --zone $Zone --command "echo vm-ssh-ready" *> $null
+        & gcloud compute ssh $InstanceName --project $ProjectId --zone $Zone --tunnel-through-iap --command "echo vm-ssh-ready" *> $null
         if ($LASTEXITCODE -eq 0) {
             return $true
         }
@@ -39,6 +39,20 @@ Write-Host "Instance: $InstanceName"
 Write-Host "Branch:   $Branch"
 Write-Host "Bucket:   gs://$Bucket"
 Write-Host "Args:     $TrainArgsLine"
+
+$status = (& gcloud compute instances describe $InstanceName --project $ProjectId --zone $Zone --format "value(status)").Trim()
+if ($status -ne "RUNNING") {
+    Write-Host "VM status is $status. Starting VM..."
+    & gcloud compute instances start $InstanceName --project $ProjectId --zone $Zone | Out-Host
+    if ($LASTEXITCODE -ne 0) {
+        throw "Failed to start VM with exit code $LASTEXITCODE."
+    }
+}
+Write-Host "Waiting for SSH readiness..."
+$readyBeforeUpload = Wait-ForVmSsh -ProjectId $ProjectId -Zone $Zone -InstanceName $InstanceName -TimeoutSeconds 420
+if (-not $readyBeforeUpload) {
+    throw "VM did not become SSH-ready in time."
+}
 
 $repoRoot = Resolve-Path (Join-Path $PSScriptRoot "..\..")
 $localRunner = Join-Path $repoRoot "infra\gcp\run_on_vm_deep_policy.sh"
@@ -72,18 +86,18 @@ $remoteCommand = $remoteCommand -replace "`r", "`n"
 [System.IO.File]::WriteAllText($remoteCommandPath, $remoteCommand, [System.Text.UTF8Encoding]::new($false))
 try {
     Write-Host "Uploading runner script to VM..."
-    & gcloud compute scp $runnerUploadPath "${InstanceName}:/tmp/run_on_vm_deep_policy.sh" --project $ProjectId --zone $Zone
+    & gcloud compute scp $runnerUploadPath "${InstanceName}:/tmp/run_on_vm_deep_policy.sh" --project $ProjectId --zone $Zone --tunnel-through-iap
     if ($LASTEXITCODE -ne 0) {
         throw "Failed to upload VM runner script with exit code $LASTEXITCODE."
     }
 
     Write-Host "Uploading remote command script to VM..."
-    & gcloud compute scp $remoteCommandPath "${InstanceName}:/tmp/run_gce_gpu_vm_training.sh" --project $ProjectId --zone $Zone
+    & gcloud compute scp $remoteCommandPath "${InstanceName}:/tmp/run_gce_gpu_vm_training.sh" --project $ProjectId --zone $Zone --tunnel-through-iap
     if ($LASTEXITCODE -ne 0) {
         throw "Failed to upload remote command script with exit code $LASTEXITCODE."
     }
 
-    & gcloud compute ssh $InstanceName --project $ProjectId --zone $Zone --command "bash /tmp/run_gce_gpu_vm_training.sh"
+    & gcloud compute ssh $InstanceName --project $ProjectId --zone $Zone --tunnel-through-iap --command "bash /tmp/run_gce_gpu_vm_training.sh"
     $firstExit = $LASTEXITCODE
     if ($firstExit -ne 0) {
         Write-Host "Initial SSH run exited with $firstExit. If the VM rebooted for driver install, waiting for SSH and retrying once..."
@@ -91,7 +105,7 @@ try {
         if (-not $ready) {
             throw "Remote training failed with exit code $firstExit and VM did not return to SSH readiness in time."
         }
-        & gcloud compute ssh $InstanceName --project $ProjectId --zone $Zone --command "bash /tmp/run_gce_gpu_vm_training.sh"
+        & gcloud compute ssh $InstanceName --project $ProjectId --zone $Zone --tunnel-through-iap --command "bash /tmp/run_gce_gpu_vm_training.sh"
         if ($LASTEXITCODE -ne 0) {
             throw "Remote training failed after retry with exit code $LASTEXITCODE."
         }
