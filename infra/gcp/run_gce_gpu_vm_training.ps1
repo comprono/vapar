@@ -40,7 +40,11 @@ Write-Host "Branch:   $Branch"
 Write-Host "Bucket:   gs://$Bucket"
 Write-Host "Args:     $TrainArgsLine"
 
-$status = (& gcloud compute instances describe $InstanceName --project $ProjectId --zone $Zone --format "value(status)").Trim()
+$status = (& gcloud compute instances describe $InstanceName --project $ProjectId --zone $Zone --format "value(status)" 2>$null)
+if ($LASTEXITCODE -ne 0 -or -not $status) {
+    throw "VM $InstanceName was not found in $Zone. Run RUN_GCE_GPU_VM_CREATE.cmd first, then rerun this training launcher."
+}
+$status = $status.Trim()
 if ($status -ne "RUNNING") {
     Write-Host "VM status is $status. Starting VM..."
     & gcloud compute instances start $InstanceName --project $ProjectId --zone $Zone | Out-Host
