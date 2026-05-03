@@ -20,10 +20,22 @@ function Wait-ForVmSsh {
     $deadline = (Get-Date).AddSeconds($TimeoutSeconds)
     while ((Get-Date) -lt $deadline) {
         Start-Sleep -Seconds 8
-        & gcloud compute ssh $InstanceName --project $ProjectId --zone $Zone --tunnel-through-iap --command "echo vm-ssh-ready" *> $null
-        if ($LASTEXITCODE -eq 0) {
+        $previousErrorActionPreference = $ErrorActionPreference
+        $ErrorActionPreference = "Continue"
+        try {
+            & gcloud compute ssh $InstanceName --project $ProjectId --zone $Zone --tunnel-through-iap --command "echo vm-ssh-ready" *> $null
+            $sshExit = $LASTEXITCODE
+        }
+        catch {
+            $sshExit = 1
+        }
+        finally {
+            $ErrorActionPreference = $previousErrorActionPreference
+        }
+        if ($sshExit -eq 0) {
             return $true
         }
+        Write-Host "SSH not ready yet; retrying..."
     }
     return $false
 }
