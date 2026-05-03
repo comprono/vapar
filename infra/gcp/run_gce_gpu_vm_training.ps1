@@ -40,11 +40,22 @@ Write-Host "Branch:   $Branch"
 Write-Host "Bucket:   gs://$Bucket"
 Write-Host "Args:     $TrainArgsLine"
 
-$status = (& gcloud compute instances describe $InstanceName --project $ProjectId --zone $Zone --format "value(status)" 2>$null)
-if ($LASTEXITCODE -ne 0 -or -not $status) {
-    throw "VM $InstanceName was not found in $Zone. Run RUN_GCE_GPU_VM_CREATE.cmd first, then rerun this training launcher."
+$status = (& gcloud compute instances list `
+    --project $ProjectId `
+    --filter "name=($InstanceName) AND zone:($Zone)" `
+    --format "value(status)" 2>$null | Select-Object -First 1)
+if (-not $status) {
+    Write-Host "VM $InstanceName was not found in $Zone. Creating it now..."
+    & powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $PSScriptRoot "create_gce_gpu_vm.ps1") `
+        -ProjectId $ProjectId `
+        -Zone $Zone `
+        -InstanceName $InstanceName | Out-Host
+    if ($LASTEXITCODE -ne 0) {
+        throw "Failed to create VM with exit code $LASTEXITCODE."
+    }
+    $status = "RUNNING"
 }
-$status = $status.Trim()
+$status = ([string]$status).Trim()
 if ($status -ne "RUNNING") {
     Write-Host "VM status is $status. Starting VM..."
     & gcloud compute instances start $InstanceName --project $ProjectId --zone $Zone | Out-Host
